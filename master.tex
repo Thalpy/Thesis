@@ -1,0 +1,89 @@
+% Remove the oneside option below for double sided printing (e.g. for final (post-viva) submission)
+\documentclass[a4paper,12pt,oneside,openright]{book}
+
+% Preamble commands go here
+\usepackage{customisations}
+
+\usepackage{siunitx}
+%% Some of the below packages may be useful to thesis writers in Physics
+%% Googling `latex <packagename>' will usually give you some documentation
+% \usepackage[load-configurations=abbreviations]{siunitx} % siunitx typesets physical units in a consistent manner
+\usepackage{booktabs} % booktabs provides professional formatting commands for tables
+\usepackage{amsmath} % amsmath provides extra maths symbols
+\usepackage{textcomp} % textcomp provides extra text symbols (like a degrees celsius symbol)
+% \usepackage{tikz} % tikz is a package for drawing diagrams and adding annotations to figures
+% \usepackage{threeparttable} % threeparttable allows for adding notes to tables
+% \usepackage{eps2pdf} % eps2pdf allows background transformation of eps files to pdfs so they 
+%						work seamlessly with pdflatex. If using this with the LaTeX editor Kile,
+%						you need to add --shell-escape before '%source', in
+%						Settings -> Configure Kile... -> Tools -> Build -> build_pdflatex
+\usepackage{mathtools} %To allow multiline eqns
+\usepackage{blindtext}
+\usepackage{pdfpages}
+
+% End preamble
+
+% REPLACE THESE with your thesis title, your name and the date of submission of the thesis
+
+
+\begin{document}
+
+\tableofcontents
+%Background
+%Finish up background
+%Reviewing
+\include{chapter1/chapter1}
+
+%AFM background
+%Review/rewrite/more detail
+\include{chapter2/chapter2}
+
+%AFM imaging
+%Write up
+%Imaging process
+\include{chapter3/chapter3}
+
+%AFM force curve operation
+%More detail
+%Review
+\include{chapter4/chapter4}
+
+%Problem solution cycle !!!
+%Approach curve analysis
+%Process 1/5th curves
+%Process new AFM curves
+%Write new AFM wrangle code
+%Experimental difficulties (DIRT)
+%Problem solution cycle
+%\include{chapter5/chapter5}
+
+
+%Retract curve analysis
+%Process 4/5th curves
+%New AFM wrangling
+%CHAPT 6
+%\include{chapter6/chapter6}
+
+%Bad graphs
+%Thesis correction post viva
+%Priority based management of time
+%Computed the time I have left
+
+%Bacterial
+%\include{chapter8/chapter8}
+
+
+
+\backmatter
+
+\singlespace
+
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+% Choose a bibliography style to suit your taste here
+% This one was downloaded from http://web.reed.edu/cis/help/latex/bibtexstyles.html (June 2012)
+\bibliographystyle{ChicagoReedweb}
+%\bibliography{chapter2/chapter2bib}
+\bibliography{chapter1/chapter1bib,chapter2/chapter2bib,chapter4/chapter4bib}
+
+\end{document}
