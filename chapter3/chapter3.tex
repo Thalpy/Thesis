@@ -1,12 +1,17 @@
 
-
 \chapter{Surface Imaging}
 
 \section{Introduction}
 
+One of the most common uses of atomic force microscopy is surface imaging. This allows the operator to trace the surface and get an idea of the topology of the sample. this technique was used throughout all of the various steps to get an idea of what the surface roughness of the various interacting elements would be. 
+
 The AFM used for imaging was the Bruker Nanoscope 2, which contains a sample mounted on a 1cm disc, atop the J scanner piezo. The head unit is then held down using springs, and a mirror used to align the laser onto the mounted cantilever.
 
+\subsection{Measuring the surface of mica}
 
+In order to assess the capabilities of the AFM a freshly cleaved mica surface was scanned under the AFM. As mica is assumed to be atomically flat 
+
+\cite{MicaSurf}
 
 \begin{figure}[h!!!!!!!]     %Insert a figure as soon as possible
         \begin{center}
@@ -16,9 +21,9 @@ The AFM used for imaging was the Bruker Nanoscope 2, which contains a sample mou
 \label{fig:ImageAFM}                 % Reference label to the figure.
 \end{figure}
 
-In order to characterise the borosilicate glass capillaries used an Atomic force microscopy (AFM) investigation was performed. This intended to investigate the uniformity of a borosilicate capillary across multiple capillaries by profiling the surface topology and roughness within the same length scale of the cantilver heads. This glass capiliary was then cross referenced against the petri dish in use, to ensure that the surface of the petri dish was representative of borosilicate glass. This surface was then referenced against scanning electron microscopy images of the tips, alongside inverted AFM imaging of the tip.
+ One common sample that was regularly imaged across the entire investigation was silica, be it a silica sphere or borosilica glass surface. A range of different types of silica surfaces was investigated as well as surface treatment techniques performed on the same glass surface. Initially borosilicate glass capillaries were investigated. This investigation intended to resolve the uniformity of a borosilicate capillary across multiple capillaries by profiling the surface topology and roughness across a range of different points. This glass capillary was then cross referenced against the petri dish in use, to ensure that the surface of the petri dish was representative of borosilicate glass. This surface was then referenced against scanning electron microscopy images of the tips, alongside inverted AFM imaging of the tip.
 
-Initially the inside of a glass capillary was imaged.
+Initially the inside of a glass capillary was imaged. The inside of the capillary was imaged by scoring the glass with a diamond tipped pen, with pressure applied on the outside to break the glass cleanly open \ref{fig:figure8}. This was used as a reference for the borosilica glass interface used in Chapter 4 and 8, as the sample size was greatly limited by the AFM's geometry.
 
 \begin{figure}[h]     %Insert a figure as soon as possible
         \begin{center}
@@ -28,9 +33,9 @@ Initially the inside of a glass capillary was imaged.
 \label{fig:figure8}                 % Reference label to the figure.
 \end{figure}   
 
-The inside of the capillary was imaged by scoring the glass with a diamond tipped pen, with pressure applied on the outside to break the glass cleanly open \ref{fig:figure8}. 
 
-The sample was then loaded inside up into a Nanoscope AFM under tapping mode operation in air. Multiple antimony doped silicon tips were used to scan several samples each, giving a range of tips used for imaging. This was done to reduce any tip artifacts or degradation of tips so that image quality was retained throughout. A constant scan rate of 0.4Hz across all samples with the integral and proportional gain determined using the initial sample, then kept constant at 0.22 and 0.63 respectively. This was done to produce images that were similar as possible to one another from a parameter point of view. Each capillary was imaged 12 times at a 10μm x 10μm scan size followed by a 2μm x 2μm scan size. Images were taken at the top, the middle and the bottom of the capillary with a repeat image taken per site. Finally, two capillaries were imaged giving a total of 24 images. Scan sizes were chosen to give a larger view of the surface of the capillary giving respect to the initial size of the silica bead on the end of the cantilever chosen for use with the surface profiling methodology (1.6μm x 1.6μm). 
+The sample was then loaded inside up into the AFM under tapping mode operation in air. Multiple antimony doped silicon tips were used to scan several samples each, giving a range of tips used for imaging. This was done to reduce any tip artifacts or degradation of tips so that image quality was retained throughout. A constant scan rate of 0.4Hz across all samples with the integral and proportional gain determined using the initial sample, then kept constant at 0.22 and 0.63 respectively. This was done to produce images that were similar as possible to one another from a parameter point of view. Large hysteresis effects present in the pizeo was negated by a small dummy scan window, where the AFM was left to run for a few seconds then reset to the origin of the scan. Each capillary was imaged 12 times at a 10μm x 10μm scan size followed by a 2μm x 2μm scan size. Images were taken at the top, the middle and the bottom of the capillary with a repeat image taken per site. Finally, two capillaries were imaged giving a total of 24 images. Scan sizes were chosen to give a larger view of the surface of the capillary giving respect to the initial size of the silica bead on the end of the cantilever chosen for use with the surface profiling methodology (1.6μm x 1.6μm). 
+
 Resultant images were then mean plane subtracted to remove image tilt, with each row aligned afterwards using a 5th order polynomial transformation. The images were then saved and compared by eye. Any images with objects identified as dust were then repeated to ensure that said object was dust and to provide a clear image of the surface topology.
 
 \begin{figure}[h]     %Insert a figure as soon as possible
@@ -44,6 +49,8 @@ Resultant images were then mean plane subtracted to remove image tilt, with each
 The images produced showed a uniform surface across the 24 image dataset, with a maximum peak to peak roughness of 3.64nm for 10μm x 10μm images and 2.55nm for 2μm x 2μm images. Figure \ref{fig:figure9} demonstrates an example of each image per scan size, giving the general topology of the observed glass.
 The observed images demonstrated that the topology and roughness of the capillary was constant across the entire length of the inside capillary as well as uniform across multiple capillaries. As a result of these images the capillaries used in the main investigation are assumed to demonstrate similar surface structure to figure \ref{fig:figure9}.
 
+\subsubsection{Drift anaylsis}
+
 In order to ensure that any error incurred by physical error was accounted for an investigation into the x, y and z error was carried out. The AFM was left to image the same glass sample repeatedly in order to produce the same image several times. This image was then two dimensionally cross correlated with the next image in the sequence and the difference removed between the two z data points. The results are displayed in Figure\ref{fig:CrossCor}.
 
 \begin{figure}[h]     %Insert a figure as soon as possible
@@ -56,15 +63,51 @@ In order to ensure that any error incurred by physical error was accounted for a
 
 Due to the drift experienced while scanning, the rows were found to be increasingly misaligned towards the bottom of the image.The result of this is shown by the gradient seen from the top of the image downwards , as the first image scanned from the bottom up, then the second image was scanned from the top down. The process was repeated on a row by row alignment basis and the resultant drift between the two images was found to be approximately 1 angstrom on the z axis, 8nm on the y axis and 28 on the x axis. However given the speed of the scan was low at 0.4Hz each image took approximately 40 minutes to image, giving an approximate drift of 0.1nm by 0.5nm drift per minute.
 
+It was concluded from this analysis that the artificial effects of drift on the measured surface roughness would ultimately be negligible. Due to the small drift observed over time the influence of the resulting plane angle at points drifted towards would not have a large enough influence to impact the calculated roughness.
+
+%Surface treatment
+
+
+
+\section{Glass surface cleaning}
+
+In order to ensure that the glass used in experiments was free of contaminants a study was performed to determine the cleanliness of the surface.
+
+
+
 %SILICA TIP SURFACE
 
 \section{Silica particle surface resolution} % MOVE TO CHAPTER 3 PLEASE
+
+In order to determine the surface roughness of a silica sphere, a range of 1.5$\mu m$ silica sphere were placed upon a surface and imaged. This was done in order to determine if there was any roughness difference between a flat place silica surface, or spherical one. This was done this way due to the high cost associated with the tips used and covered in Chapter 4.
+
+\begin{figure}[h]     %Insert a figure as soon as possible
+        \begin{center}
+          \includegraphics[width=130mm]{chapter3/5umareat2.jpg}
+\end{center}
+\caption{The flattened surface of a silica sphere.}
+\label{fig:Sili2}                 % Reference label to the figure.
+\end{figure}
+
+Initially, serveral scans were required in order to "zoom in" on an individual sphere. Due to the AFM's limit of 512 data points per line, the resolution of an individual sphere suffered unless it was the focus of the scanning frame. However, due to the drift in location due to pizeo error, attempting to suddenly zoom into a specific surface would dislocate the frame of reference from the intended area. As a result, an individual sphere was slowly zoomed in until it was the focus of the frame.
+
+Another feature of these sphere is their hexagon appearance under AFM. This is due to the tip's geometry, which limits the area it can reach, and therefore probe. As the geometry of the tip is pyramidal in shape and the true shape of the sphere is spherical, the areas that are unreachable by the probe are reported with a straight line and the height around the sphere are erroneously high. However, due to the intent of the procedure being focused on mapping the surface of a sphere, this does not affect the results as an area outside of this interference was chosen.
+
+\begin{figure}[h]     %Insert a figure as soon as possible
+        \begin{center}
+          \includegraphics[width=130mm]{chapter3/5umareat2.jpg}
+\end{center}
+\caption{The flattened surface of a silica sphere.}
+\label{fig:Sili2}                 % Reference label to the figure.
+\end{figure}
+
+
 
 Successful resolution of a 1.5$\mu$m silica sphere was imaged under AFM and spherical deconvolution was processed with gwyddion. \cite{gwy} Futher work will be done to investigate adhesive forces between silica particles and to determine if the "pit" present in the center of the image is due to sonication.
 
 \begin{figure}[h]     %Insert a figure as soon as possible
         \begin{center}
-          \includegraphics[width=130mm]{chapter4/Sili2.png}
+          \includegraphics[width=130mm]{chapter3/Sili2.png}
 \end{center}
 \caption{The flattened surface of a silica sphere.}
 \label{fig:Sili2}                 % Reference label to the figure.
@@ -73,9 +116,10 @@ Successful resolution of a 1.5$\mu$m silica sphere was imaged under AFM and sphe
 
 From the region any tilt or shift in the constant phase is taken away from the whole dataset. %What am I talk- oh, AFM image interpretation
 
-\newpage
-\newpage
-\newpage
+
 
 \section{Root mean squared roughness}
+
+
+
 \newpage
