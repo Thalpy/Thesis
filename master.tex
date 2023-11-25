@@ -20,6 +20,38 @@
 \usepackage{mathtools} %To allow multiline eqns
 \usepackage{blindtext}
 \usepackage{pdfpages}
+\usepackage{graphicx}
+
+
+%Custom commands
+
+\newcommand{\insertapproachfigures}[3]{
+\newpage
+\subsection{#1mM Site #2}
+#3
+
+\begin{figure}[ht!!!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter5/#1/Site #2/approach_df_zp_bin}
+    \caption{A graph demonstrating the binned average curve post fit for #1mM LiCl at contact site #2.}
+    \label{fig:#1_site#2_forcezp}
+\end{figure}
+
+\begin{figure}[ht!!!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{chapter5/#1/Site #2/approach_force_sep_log_lin}
+    \caption{A log-linear plot of the force as a function of the Z-piezo position, highlighting the interaction phase for #1mM LiCl at contact site #2.}
+    \label{fig:#1_site#2_loglin}
+\end{figure}
+
+\begin{figure}[ht!!!!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter5/#1/Site #2/approach_f_c_hist}
+    \caption{A graph demonstrating the force histogram calculated from the range of curves for #1mM LiCl at contact site #2. The averaged contact force with the standard deviation is given above.}
+    \label{fig:#1_site#2_hist}
+\end{figure}
+}
+
 
 % End preamble
 
@@ -28,24 +60,26 @@
 
 \begin{document}
 
+%Regulation 34
+%\include{regulation/regulation}
+
 \tableofcontents
 %Background
-%Finish up background
-%Reviewing
-\include{chapter1/chapter1}
+%Reviewing/done
+%\include{chapter1/chapter1}
 
 %AFM background
-%Review/rewrite/more detail
-\include{chapter2/chapter2}
+% Should be done??
+%\include{chapter2/chapter2}
 
 %AFM imaging
-%Write up
-%Imaging process
-\include{chapter3/chapter3}
+% Need more detail on attempts to clean/reduce dust on surfaces
+%Need plasma images if possible (Or talk about how they didn't work)
+%Need JPK images
+%\include{chapter3/chapter3}
 
 %AFM force curve operation
-%More detail
-%Review
+%Done
 \include{chapter4/chapter4}
 
 %Problem solution cycle !!!
@@ -55,7 +89,7 @@
 %Write new AFM wrangle code
 %Experimental difficulties (DIRT)
 %Problem solution cycle
-%\include{chapter5/chapter5}
+\include{chapter5/chapter5}
 
 
 %Retract curve analysis

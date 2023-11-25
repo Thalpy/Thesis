@@ -16,83 +16,40 @@
 %Have to be phrases that make sense/say something
 %Have a purpose
 
+\chapter{Analysis of Approach Force Curves in Colloidal Systems}
+\label{chap:approach_force_curves}
 
-\chapter{Approach force curves}
+This chapter aims to serve a simple goal. To provide a clear route to force at contact extraction from raw data. As the raw unprocessed data is severely voluminous the scope of this chapter is kept to one goal, provide the data and justification for the contact forces calculated for each concentration, site and parameter. The results of this analysis is then concluded in Chapter 7, which, free of the need to justify every data point and thus focuses on the conclusions from this data. 
 
-Further to the previous work done in liquid AFM operation, further force curves were taken with a silica-tipped cantilever interacting with a borosilca surface (petri-dish) in a controlled liquid. For each of the curves a controlled concentration of LiCl was added to a 50:50 mix of deionised water and glycerol. Initially the curves were too noisy and unrefined to be taken directly from the machine, thus a script was written and refined over the months from the previous report. For each curve a minimum of 100 curves were binned and averaged into a master curve, with any anomalous lone curves removed. These curves were then analyzed through a python script that corrects the resultant curves from the machine by leveling the noise floor across all curves (\textit{Fig.1}) and defining the contact area linearly (\textit{Fig.2}). 
+\section{MFP-1D contact force derivation}
 
+For the data collected from the MFP-1D the analytical approach to this elucidation is given in Chapter 4. This section will overview the results for the following LiCl concentrations: 0.6mM, 1.6mM, 5mM, 10mM, 25mM, 50mM, 230mM, 550mM. Then the impact of pH, piezo movement (Hz), differing tips and contact force will be concluded.
 
-\newpage
+\subsection{Rejected curves}
 
-While the initial curves taken on the machine were too noisy, further repeats and refinements to the procedure eventually resulted in 14 averaged curves taken; 7 concentrations with 2 different contact areas taken. Finally these curves were then further tested primarily by analyzing the derivative of the curve and the calculated debye length taken from the exponent of the curve. Additional further dignostic curves were produced and checked by eye for every single curve taken into the average, resulting in well over several thousand total curves processed and checked (\textit{Fig.3}).
+ During the process, several curves were rejected from the data set as part of the processing method. Due to the sheer volume of curves (10,000+ curves) involved in this analysis.  This was either due to machine failure to engage in the surface, or due to significant noise due to mechanical failure (Over-correction in peizo movement by the AFM or vibrations in the building.) While the initial curves taken on the machine were too noisy, further repeats and refinements to the procedure eventually resulted in usable curves. In some of the data collected, the impact from residual vibrations was mitigated in later datasets by operating the AFM in the night. Other improvements were found by optimising the AFM parameters  - such as tip speed, dwell time (contact and retract) and target force. The optimal parameters found were 0.5Hz for tip speed, including a short dwell time after the curve was taken and a target force of 8-12nN. 
 
-\begin{figure}[!tbph]
-  \centering
-  \subfloat[Site 1 curves.]{\includegraphics[width=0.45\textwidth]{chapter5/Comparison1.jpg}\label{fig:C1}}
-  \hfill
-  \subfloat[Site 2 curves.]{\includegraphics[width=0.45\textwidth]{chapter5/Comparison2.jpg}\label{fig:C2}}
-  \caption{The resultant averaged force curves for each of the concentrations. (a) showing the curves taken for the initial contact site and (b) showing the curves taken for the second contact site. }
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{chapter5/miss_error.png}
+    \caption{A graph demonstrating a rejected curve. In this case the AFM failed to reach the surface for the recorded data, leading to a single up and down motion. This was rejected due to }
+    \label{fig:miss-error}
 \end{figure}
 
-Finally the repulsive force was derived from the curves (the repulsive force applied on the cantilever at contact between the tip and the surface) (\textit{Fig.4}). This was done by tuning the fitting parameters of the curves, then analysing the resultant curves over and over until an optimal was found. The contact area parameter were then altered over +/-10nm of the visually derived optimal to calculate the range. If a better fit was found, the optimal was recentered, additionally the range was reduced in the case of a clearly incorrect fit.
+The other reason for rejected curves was due to the shift of the snapshot window providing too little data in either the approach phase or the contact phase (covered in Chapter 4). 
 
-\begin{figure}[!tbph!!!]
-  \centering
-  \subfloat[Site 1 curves.]{\includegraphics[width=0.45\textwidth]{chapter5/ContF1.png}\label{fig:CF1}}
-  \hfill
-  \subfloat[Site 2 curves.]{\includegraphics[width=0.45\textwidth]{chapter5/ContF2.png}\label{fig:CF2}}
-  \caption{The resultant calculated repulsive force between the surface and the tip. The AFM data is compared against data taken from rheology. In the case of 550mM the repulsive forces transition to attractive, corresponding to the onset stress transitioning into yield stress (as seen from rheological data). F0 is taken from when the curve is within the onset of the contact region, Fc is taken from when the curve bends towards the surface, at the onset of contact (observable in \textit{Fig.3}. (a) and (b) are site 1 and 2 respectively\cite{John}.}
-\end{figure}
+\subsection{Contact force calculations}
 
-\newpage
-
-\subsubsection{Analysis of Silica-silica retract curves}
-
-Further analysis is currently being performed on the retract curves utilizing an adapted version of the approach script. This is done in a similar method to the previous, with parameters refined by eye, then the range tested by adding or subtracting 10nm to the contact fitting region. The literature surrounding silica-silica force curves taken in salt usually omit the retract curves, while only a few mention them \cite{Retrace}. 
-
-\cite{John}.
+In this results section, the contact force graphs displayed represent only a subset of the total analyzed graphs, selected to illustrate the most significant aspects of the analysis procedure. The remainder of the curves, not shown here, played an instrumental role in guiding the parameter optimization process for the data processing script. This process involved the review and refinement of several thousand curves in order to deal with the noise intrinsic to the system. Ensuring a good fit for these curves is paramount; otherwise, one risks obtaining erratic and misleading graphs that could compromise the integrity of the data interpretation. The selection process for the resulting curves involved the exclusion of certain outliers and repeat measurements, a necessary step taken to refine the data and enhance the clarity of the observed trends. Three types of graphs were chosen for their analysis of the fitting parameters and results: the histogram of contact forces provides a statistical view of the interaction forces at the point of contact, demonstrating the range of forces across the graph. The log-linear plot of the force as a function of the Z-piezo position (in nanometers), highlighting of the separation distance between the AFM tip and the sample surface during the interaction phase. At the top of the graph the transition to the contact phase can be seen. This point of transition is the contact force. The logarithmic scale for force highlights the sensitivity of the AFM in detecting forces at the nanoscale. Finally the overall approach force curve derived from binned data presents a view of the resulting averaged force curve behavior during the approach phase. Each graph was selected for its ability to support the chosen parameters and thus the resulting contact force.
 
 
-\section{Introduction}
+%0.6mM
+\insertapproachfigures{0.6}{2}{Site one demonstrates one of the difficulties with collecting the data at the lower ranges of the molar concentrations. As the repulsive force is over a wider range there is a smaller window captured of the contact phase. This means that when trying to fit to the data, there is less data available to provide a solid fit.  As such, a slight bowing effect is seen in the binned average curve.}
+\insertapproachfigures{0.6}{3}{Site two demonstrates an ideally fitted curve, however in the log-linear plot an unusually is seen - the point in which the contact force area is raised up the graph. This is due to the large amount of noise seen during this interface phase, giving a large variation in the contact force histogram.}
+% ... and so on for other sites and concentrations.
 
-\newpage
+%1.6
 
-\subsection{0.6mM}
-%This is saved locally
-\newpage.
-\newpage
-
-\subsection{1.6mM}
-
-\newpage.
-\newpage
-
-\subsection{5mM}
-
-\newpage.
-\newpage
-
-\subsection{10mM}
-
-\newpage
-
-\subsection{25mM}
-
-\newpage
-
-\subsection{50mM}
-
-\newpage
-
-\subsection{230mM}
-
-\newpage.
-\newpage
-
-\subsection{550mM}
-
-\newpage.
-\newpage
 
 \section{Effects of hydrodynamics}
 

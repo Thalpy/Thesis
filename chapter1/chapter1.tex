@@ -61,7 +61,7 @@ In addition to these effects solvation forces can also affect colloidal systems.
 
 Hydrophobic interactions, especially in amphiphilic systems, arise from hydrophobic molecules or groups to aqueous environments. This tendency drives the aggregation of hydrophobic regions, playing a key role in the self-assembly of micelles, vesicles, and the organization of cellular membranes. In these structures, hydrophobic tails cluster away from water, while hydrophilic heads interact with the aqueous environment, creating a dynamic interface. 
 
-When profiling colloidal interactions, it can helpful to imagine it as a dynamic interplay of forces that resolve with one another dependant on distance. As two colloids move towards one another, the forces shift and change between the attractive and repulsive regime. As one expects with a dynamic system such as this, the particle will settle into distinct energy wells. The colloid can be destabilised from this energy well by influential forces overcoming the entrapping energy barriers. These can take the form of kinetic impulses (i.e. a 3rd party physical force applied upon the system), hydrodynamic forces or changes in the suspending medium. In the following sections, each of these forces will be examined in detail, unraveling their individual contributions and collective interplay in shaping the fascinating behavior of colloidal systems
+When profiling colloidal interactions, it can be fruitful to imagine such interactions as a dynamic interplay of forces that resolve with one another dependant on distance. As two colloids move towards one another, the forces shift and change between the attractive and repulsive regime. As one expects with a dynamic system such as this, the particle will settle into distinct energy wells. The colloid can be destabilised from this energy well by influential forces overcoming the entrapping energy barriers. These can take the form of kinetic impulses (i.e. a 3rd party physical force applied upon the system), hydrodynamic forces or changes in the suspending medium. In the following sections, each of these forces will be examined in detail, unraveling their individual contributions and collective interplay in shaping the fascinating behavior of colloidal systems
 
 
 \subsection{Electrostatic interactions} %The repulsive part, unfortunately not in that way.
@@ -73,6 +73,7 @@ Coulomb's law provides a basis for understanding these forces in colloidal conte
 equation:
 
 \begin{equation}
+\
 F = \frac{q_1q_2}{4 \pi \epsilon_r \epsilon_0 r^2}
 \end{equation}
 
@@ -109,7 +110,7 @@ When oppositely charged ions in the solution approach the charged surface, they 
 \end{figure}
 
 %Foundations of colloid science
-These ions are subjected to an electrostatic potential ($\Psi$) as they get closer towards the oppositely charged surface. The positive counterions (see fig \ref{fig:ioncloud}) are attracted by the electric field generated from the negatively charged surface producing a potential seen in fig \ref{psi}. 
+These ions are subjected to an electrostatic potential ($\Psi$) as they get closer towards the oppositely charged surface. The positive counter-ions (see fig \ref{fig:ioncloud}) are attracted by the electric field generated from the negatively charged surface producing a potential seen in fig \ref{psi}. 
 
 \begin{figure}[h]    
         \begin{center}
@@ -193,10 +194,13 @@ Electrostatic repulsion plays a significant role in maintaining the stability of
 %\end{equation} %WRONG
 
 \begin{equation} %WHERE DID THIS COME FROM!?!?!?
-U_E(r) = \frac{\epsilon_r \epsilon_0 \Psi_0^2}{\kappa} e^{-\kappa h}
+\begin{split}
+U_E(r) = \frac{\epsilon_r \epsilon_0 \Psi_0^2}{\kappa} e^{-\kappa h} \\
+U_E(r)= \frac{64 \pi \epsilon \epsilon_0 kT \Psi_0^2}{\kappa^2} e^{-\kappa h}
+\end{split}
 \end{equation}
 
-\( U_E(r) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \Psi_0 \) is the surface potential of the colloidal particles. \( \kappa \) is the inverse Debye length   determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. \cite{OHSHIMA200218} \cite{behrens2001charge}
+\( U_E(r) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \Psi_0 \) is the surface potential of the colloidal particles. \( \kappa \) is the inverse Debye length   determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. $T$ represents the absolute temperature and $k$ is the Boltzmann constant. \cite{OHSHIMA200218} \cite{behrens2001charge}
 
 The Debye length is a key factor that governs the range of electrostatic interactions. In solutions with high ionic strength, the Debye length is shorter, leading to a more compressed double layer. Consequently, the electrostatic repulsion decreases more rapidly with distance, allowing particles to come closer before experiencing significant repulsive forces. In contrast, in low ionic strength solutions, the Debye length is longer, and particles experience repulsive forces over greater distances, contributing to the stability of the suspension by preventing aggregation.
 
@@ -382,7 +386,7 @@ This equation expresses the total interaction potential within DLVO theory, wher
 \label{fig:DLVO}                 % Reference label to the figure.
 \end{figure}
 
-One key feature of DLVO is the repulsive barrier that is seen from the initial dip. This energy barrier prevents colloids from agglomerating. The Van der Waals forces are generally attractive due to the nature of their interactions at longer ranges, giving rise to the inital dip, before the electrostatic repulsion dominates, producing said barrier. However, after this energy barrier is broken, the attraction descends to infinity, demonstrating a very strong attraction. If this barrier is substantial enough to offset the kinetic energy from Brownian motion, colloidal stability is achieved. In the absence of sufficient repulsion, particles may overcome this barrier, leading to aggregation.
+One key feature of DLVO is the repulsive barrier that is seen from the initial dip. This energy barrier prevents colloids from agglomerating. The Van der Waals forces are generally attractive due to the nature of their interactions at longer ranges, giving rise to the inital dip, before the electrostatic repulsion dominates, producing said barrier. However, after this energy barrier is broken, the attraction descends to infinity, demonstrating a very strong attaraction. If this barrier is substantial enough to offset the kinetic energy from Brownian motion, colloidal stability is achieved. In the absence of sufficient repulsion, particles may overcome this barrier, leading to aggregation.
 
 While DLVO has proven itself a functional and applicable model for the description of interacting colloids, there remains a few assumptions that can limit its accuracy. DLVO assumes that the interacting surfaces is perfectly flat, expanding in all directions, and that the surface charge density is uniformly distributed along said surface. Additionally, it assumes that the surface electric potential is constant, and that any counter ions remain static and uniformly distributed too, with any interactions between said ions or solvent being purely born from their dielectric constant. While some of these assumptions aren't true for particle-particle interactions, DLVO holds up as one of the main theories for predicting interactions. \cite{particledep} \cite{effectHetSurf} \cite{colloidDepKin} \cite{chemDiscCharge} \cite{DLVOreview} 
 
@@ -563,7 +567,7 @@ This calculation assumes the marble is a perfect sphere and uses the Hamaker con
         \begin{center}
           \includegraphics[width=110mm]{chapter1/Sphere_on_roof.png}
 \end{center}
-\caption{A diagram demonstrating a 2mm $radius?? Oh no why is it diameter in the diagram?!$ sphere attached to the ceiling.}
+\caption{A diagram demonstrating a 2mm radius sphere attached to the ceiling.}
 \label{fig:disp}                 % Reference label to the figure.
 \end{figure}
 
