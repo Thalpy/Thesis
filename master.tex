@@ -25,32 +25,86 @@
 
 %Custom commands
 
-\newcommand{\insertapproachfigures}[3]{
+\newcommand{\insertapproachfigures}[4]{
 \newpage
-\subsection{#1mM Site #2}
-#3
+\subsection{#2mM Site #3}
+#4
 
 \begin{figure}[ht!!!]
     \centering
-    \includegraphics[width=0.7\linewidth]{chapter5/#1/Site #2/approach_df_zp_bin}
-    \caption{A graph demonstrating the binned average curve post fit for #1mM LiCl at contact site #2.}
-    \label{fig:#1_site#2_forcezp}
+    \includegraphics[width=0.7\linewidth]{chapter#1/#2/Site #3/approach_df_zp_bin}
+    \caption{A graph demonstrating the binned average curve post fit for #2mM LiCl at contact site #3.}
+    \label{fig:#2_site#3_forcezp}
 \end{figure}
 
 \begin{figure}[ht!!!]
     \centering
-    \includegraphics[width=0.6\linewidth]{chapter5/#1/Site #2/approach_force_sep_log_lin_cont}
-    \caption{A log-linear plot of the force as a function of the Z-piezo position, highlighting the interaction phase for #1mM LiCl at contact site #2.}
-    \label{fig:#1_site#2_loglin}
+    \includegraphics[width=0.6\linewidth]{chapter#1/#2/Site #3/approach_force_sep_log_lin_cont}
+    \caption{A log-linear plot of the force as a function of the Z-piezo position, highlighting the interaction phase for #2mM LiCl at contact site #3.}
+    \label{fig:#2_site#3_loglin}
 \end{figure}
 
 \begin{figure}[ht!!!!]
     \centering
-    \includegraphics[width=0.7\linewidth]{chapter5/#1/Site #2/approach_f_c_hist}
-    \caption{A graph demonstrating the force histogram calculated from the range of curves for #1mM LiCl at contact site #2. The averaged contact force with the standard deviation is given above.}
-    \label{fig:#1_site#2_hist}
+    \includegraphics[width=0.7\linewidth]{chapter#1/#2/Site #3/approach_f_c_hist}
+    \caption{A graph demonstrating the force histogram calculated from the range of curves for #2mM LiCl at contact site #3. The averaged contact force with the standard deviation is given above.}
+    \label{fig:#2_site#3_hist}
 \end{figure}
 }
+
+
+\newcommand{\insertsnowflakefigures}[4]{
+\newpage
+\subsection{#2mM Site #3}
+#4
+
+\begin{figure}[ht!!!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter#1/#2/Site #3/approach_force_zp_bin}
+    \caption{A graph demonstrating the binned average curve post fit for #2mM LiCl at contact site #3.}
+    \label{fig:#2_site#3_forcezp}
+\end{figure}
+
+\begin{figure}[ht!!!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{chapter#1/#2/Site #3/approach_force_sep_log_lin_cont}
+    \caption{A log-linear plot of the force as a function of the Z-piezo position, highlighting the interaction phase for #2mM LiCl at contact site #3.}
+    \label{fig:#2_site#3_loglin}
+\end{figure}
+
+\begin{figure}[ht!!!!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter#1/#2/Site #3/approach_f_a_hist}
+    \caption{A graph demonstrating the force histogram calculated from the range of curves for #2mM LiCl at contact site #3. The averaged attractive force with the standard deviation is given above.}
+    \label{fig:#2_site#3_hist}
+\end{figure}
+}
+
+\newcommand{\insertretractfigures}[4]{
+\newpage
+\subsection{#2mM Site #3}
+#4
+
+\begin{figure}[ht!!!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter#1/#2/Site #3/retract_force_zp_bin}
+    \caption{A graph demonstrating the binned average curve post fit for #2mM LiCl at contact site #3.}
+    \label{fig:#2_site#3_forcezp}
+\end{figure}
+
+\begin{figure}[ht!!!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{chapter#1/#2/Site #3/retract_force_sep}
+    \caption{A linear plot of the force as a function of the Z-piezo position, highlighting the contact phase alignment for #2mM LiCl at contact site #3.}
+    \label{fig:#2_site#3_loglin}
+\end{figure}
+
+\begin{figure}[ht!!!!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter#1/#2/Site #3/retract_f_a_hist}
+    \caption{A graph demonstrating the force histogram calculated from the range of curves for #2mM Li
+
+
 
 
 % End preamble
@@ -96,7 +150,7 @@
 %Process 4/5th curves
 %New AFM wrangling
 %CHAPT 6
-%\include{chapter6/chapter6}
+\include{chapter6/chapter6}
 
 %Bad graphs
 %Thesis correction post viva
