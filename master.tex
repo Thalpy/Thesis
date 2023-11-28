@@ -25,6 +25,10 @@
 
 %Custom commands
 
+%#1 is the chapter number.
+%#2 is the concentration (e.g., '1mM').
+%#3 is the site number.
+%#4 is additional content.
 \newcommand{\insertapproachfigures}[4]{
 \newpage
 \subsection{#2mM Site #3}
@@ -80,6 +84,7 @@
 \end{figure}
 }
 
+
 \newcommand{\insertretractfigures}[4]{
 \newpage
 \subsection{#2mM Site #3}
@@ -102,8 +107,10 @@
 \begin{figure}[ht!!!!]
     \centering
     \includegraphics[width=0.7\linewidth]{chapter#1/#2/Site #3/retract_f_a_hist}
-    \caption{A graph demonstrating the force histogram calculated from the range of curves for #2mM Li
-
+    \caption{A graph demonstrating the force histogram calculated from the range of curves for #2mM LiCl at contact site #2. The averaged attractive force with the standard deviation is given above.}
+    \label{fig:#1_site#2_hist}
+\end{figure}
+}
 
 
 
@@ -134,7 +141,7 @@
 
 %AFM force curve operation
 %Done
-\include{chapter4/chapter4}
+%\include{chapter4/chapter4}
 
 %Problem solution cycle !!!
 %Approach curve analysis
@@ -156,10 +163,13 @@
 %Thesis correction post viva
 %Priority based management of time
 %Computed the time I have left
+\include{chapter7/chapter7}
 
 %Bacterial
 %\include{chapter8/chapter8}
 
+%Automated
+%\include{chapter9/chapter9}
 
 
 \backmatter
