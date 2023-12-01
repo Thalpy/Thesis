@@ -42,11 +42,11 @@ The term colloid, coined in 1861 from the Greek word $κόλλα$ (kolla), meani
 
 Consider the idea of marbles kept within a liquid. At rest, they would lie upon the bottom of the container, yielding to the force of gravity\cite{Neuton}. However, as you scale down these marbles, to smaller and smaller sizes, the kinetic energy of the system is enough for keep the marbles dispersed within the liquid, due to Brownian motion\cite{Brown}.
 
-At micrometer sizes however, the marbles begin to affect one another; when two marbles are brought together by Brownian motion, provided the interactions between the two of them are attractive, they will attract towards each other, and eventually aggregate, until they are large enough to sediment again. If there is no attraction, or indeed repulsion, between the marbles, they will stay suspended within the solution.
+At micrometer sizes however, the marbles begin to affect one another; when two marbles are brought together by Brownian motion, provided the interactions between the two of them are attractive, they will attract towards each other, and eventually aggregate, until they are large enough to sediment again. If there is no attraction, or indeed there is repulsion between the marbles, they will stay suspended within the solution.
 
 %Interactions between the marble's surfaces, are defined by a few fundamental forces resolving linearly with one another. These interplay of forces, borne from electrostatics, van der Waals and solvation forces, all sum up into a force profile based on distance between the two surfaces.
 
-On the macro scale, these interactions ultimately contribute to bulk properties. As this system is disturbed by external forces, a characteristic relaxation time is observed, dependant on the ions in solution and surface properties of the solid phase particles. 
+On the macro scale, these interactions ultimately contribute to bulk properties. As this system is disturbed by external forces, a characteristic relaxation time is observed, dependent on the ions in solution and surface properties of the solid phase particles. 
 These properties give rise to the time dependent effects seen in colloidal systems. 
 
 The various interactions between the marble surfaces can be combined to give a force profile, describing the strength of the interaction between the marbles with respect to the distance between them.\cite{FoundColloidBook}\cite{IsGreenBook}
@@ -55,7 +55,7 @@ The various interactions between the marble surfaces can be combined to give a f
 %properties intrinsic to the phenomena. %To define these variables in a broad stroke; the liquid the solid colloid is immersed in (liquid phase properties), the surface properties of the solid phase (solid phase properties) and interactions between same phase particles (same phase interacting properties).
 
 
-These forces are not merely determined by chemical composition; they are a web of multiple interactions shaped by the colloidal enviromata. Specifically, van der Waals forces, electrostatic interactions, and steric hindrances play significant roles in a solutions stability and organisation. Van der Waals forces, although weak individually, collectively contribute to significant attractions or repulsions at the nanoscale. Electrostatic interactions, governed by the surface charge of the particles and the ionic composition of the medium, further influence particle behavior. Steric hindrance, resulting from the physical size and shape of the particles, adds another layer to this complex interplay.
+These forces are not merely determined by chemical composition; they are a web of multiple interactions shaped by the colloidal enviromata. Specifically, van der Waals forces, electrostatic interactions, and steric hindrances play significant roles in a solutions stability and organisation. van der Waals forces, although weak individually, collectively contribute to significant attractions or repulsions (more rarely) at the nanoscale. Electrostatic interactions, governed by the surface charge of the particles and the ionic composition of the medium, further influence particle behavior. Steric hindrance, resulting from the physical size and shape of the particles, adds another layer to this complex interplay.
 
 In addition to these effects solvation forces can also affect colloidal systems. When a colloid is introduced into a solvent, the solvent molecules rearrange around the colloid, leading to a structured layer of solvent molecules at the colloid's surface. This structuring can lead to either attraction or repulsion between colloids, depending on the nature of the colloidal surface and the solvent. Solvation forces are particularly significant in polar solvents like water, where the solvent molecules can form hydrogen bonds and other directional interactions with the colloid surface. Additionally, hydrodynamic forces can affect the distribution of stability of a colloidal system. These forces are governed by factors such as the viscosity of the fluid, the relative velocity between the particle and the fluid, and the size and shape of the particles. Hydrodynamic interactions play a significant role in determining the behavior of colloids under dynamic conditions, such as in suspension flow or by perturbation by a cantilever. These forces arise from the movement of colloidal particles relative to the suspension, resulting in effects like drag and flow-induced reorientation.
 
@@ -154,8 +154,7 @@ The measurement of the distance beyond which the electrostatic force between cha
 \lambda_D = \kappa^{-1} = \sqrt{ \frac{ \epsilon_r \epsilon_0 k_B T}{2Z^2 e^2 n_b}}
 \end{equation}
 
-Where $\epsilon_0$ is the vacuum permitivity, $k_B$ is boltzmann constant, T is  Temp in K) 
-$\epsilon_r$ is the relative dielectric constant, e is the elementary charge, Z is the charge number of the ions in solution and $n_b$ is the number density of the ions. %(units $\frac{1}{m^3}$)
+Where $\kappa$ is the inverse debye length,  $\epsilon_0$ is the vacuum permitivity, $k_B$ is the Boltzmann constant, T is temperature in degrees K, $\epsilon_r$ is the relative dielectric constant, e is the elementary charge, Z is the charge number of the ions in solution and $n_b$ is the number density of the ions. %(units $\frac{1}{m^3}$)
 The number density is given by:
 %(LiCl, NaCl etc at 1:1 electrolytes, so Z=1, if you have multiple types of ions in solution you have to sum up the different contributions, but we don’t need to worry about this)
 \begin{equation}
@@ -173,6 +172,8 @@ Where I (the ionic strength) is calculated using:
 \begin{equation} 
 I = \frac{1}{2} \Sigma c_i z_i^2
 \end{equation}
+
+Where $\sigma c_i$ is ci is the concentration of the $i$ ionic species, and $z_i$ is the valency or charge of the $i$ ionic species.
 
 The Debye length measures the effective thickness of this diffuse layer. It represents the distance beyond which the electrostatic influence of the surface charge becomes insignificant. The Debye length is dependent on factors such as temperature, the dielectric constant of the medium, and the ionic strength of the solution. The ionic strength, in turn, affects the distribution and concentration of ions in the diffuse layer.
 
@@ -196,15 +197,15 @@ Electrostatic repulsion plays a significant role in maintaining the stability of
 \begin{equation} %WHERE DID THIS COME FROM!?!?!?
 \begin{split}
 U_E(r) = \frac{\epsilon_r \epsilon_0 \Psi_0^2}{\kappa} e^{-\kappa h} \\
-U_E(r)= \frac{64 \pi \epsilon \epsilon_0 kT \Psi_0^2}{\kappa^2} e^{-\kappa h}
+U_E(r)= \frac{64 \pi \epsilon \epsilon_0 k_BT \Psi_0^2}{\kappa^2} e^{-\kappa h}
 \end{split}
 \end{equation}
 
-\( U_E(r) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \Psi_0 \) is the surface potential of the colloidal particles. \( \kappa \) is the inverse Debye length   determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. $T$ represents the absolute temperature and $k$ is the Boltzmann constant. \cite{OHSHIMA200218} \cite{behrens2001charge}
+\( U_E(r) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \Psi_0 \) is the surface potential of the colloidal particles. \( \kappa \) is the inverse Debye length and determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. $T$ represents the absolute temperature and $k_B$ is the Boltzmann constant. \cite{OHSHIMA200218} \cite{behrens2001charge}
 
 The Debye length is a key factor that governs the range of electrostatic interactions. In solutions with high ionic strength, the Debye length is shorter, leading to a more compressed double layer. Consequently, the electrostatic repulsion decreases more rapidly with distance, allowing particles to come closer before experiencing significant repulsive forces. In contrast, in low ionic strength solutions, the Debye length is longer, and particles experience repulsive forces over greater distances, contributing to the stability of the suspension by preventing aggregation.
 
-The other factor that affects colloids in suspections is the attractive component. This component derives from Van der Waals forces.
+The other factor that affects colloids in suspections is the attractive component. This component derives from van der Waals forces.
 
 %\begin{equation} %~1 - 100 (50-100 silica ph9) (find ref)
 %\Psi_0 \approx \frac{\epsilon_r \epsilon_0 \kappa}{\sigma}
@@ -276,27 +277,32 @@ This equation signifies that the interaction energy (\(U\)) decreases very rapid
 
 These equations collectively describe the fundamental mechanism of dispersion forces, highlighting how forces arise from instantaneous dipole-induced dipole interactions and lead to an attractive force between atoms or molecules. This attraction occurs even in the absence of permanent dipole moments, leading to an attractive force seen between colloidal particles.
 
-The stability of colloids is significantly influenced by Van der Waals forces, which govern the attractive interactions between particles. These forces can lead to particle aggregation especially when they overpower repulsive forces such as electrostatic interactions in charged colloids. The phenomenon of aggregation resulting from dominant Van der Waals attractions can reduce colloidal stability, potentially causing sedimentation or phase separation. 
+The stability of colloids is significantly influenced by van der Waals forces, which govern the attractive interactions between particles. These forces can lead to particle aggregation especially when they overpower repulsive forces such as electrostatic interactions in charged colloids. The phenomenon of aggregation resulting from dominant van der Waals attractions can reduce colloidal stability, potentially causing sedimentation or phase separation. 
 
-These van der Waals forces, comprising Keesom, Debye, and London dispersion forces, play a pivotal role in the behavior of colloids. Their predominance in short-range interactions is essential for understanding the stability and dynamics of colloidal systems \cite{colloid_review1}\cite{lilBlueBook}\cite{IsGreenBook}\cite{FoundColloidBook}. These overall forces can be expanded to describe the full positive effect on colloids by the following equation \ref{Hammy}: 
+These van der Waals forces, comprising Keesom, Debye, and London dispersion forces, play a pivotal role in the behavior of colloids. Their predominance in short-range interactions is essential for understanding the stability and dynamics of colloidal systems \cite{colloid_review1}\cite{lilBlueBook}\cite{IsGreenBook}\cite{FoundColloidBook}. These overall forces can be expanded to describe the full positive effect on colloids by equation \ref{Hammy}: 
 
 %Fill out - T
 \subsubsection{Mathematical basis of dispersion forces} %inseperable
 
-The Van der Waals interaction energies in colloidal systems can be represented mathematically through various equations. Two such expressions for the Van der Waals potential energy (\(U_{vdW}\)) are:
+The van der Waals interaction energies in colloidal systems can be represented mathematically through various equations. Two such expressions for the van der Waals potential energy (\(U_{vdW}\)) are:
 
 \begin{equation}  %Alternative - from excel model paper (Nano focused, misses out on larger particles?) R must be distance then?? (nanocoatings practice and principles)
-U_{vdW} (r) = - \frac{A}{12hkT} \times \frac{r}{R}
+U_{vdW} (r) = - \frac{A  R}{6h^2} 
 \label{Hammy}
 \end{equation}
 
-\begin{equation}
-U_{vdW} (r) = - \frac{A}{12\pi} \left( \frac{R}{r}\right)^2
-\label{VDWeqn}
-\end{equation}
+%\begin{equation}  %Alternative - from excel model paper (Nano focused, misses out on larger particles?) R must be distance then?? (nanocoatings practice and principles)
+%U_{vdW} (r) = - \frac{A}{12hkT} \times \frac{r}{R}
+%\label{Hammy}
+%\end{equation}
+
+%\begin{equation}
+%U_{vdW} (r) = - \frac{A}{12\pi} \left( \frac{R}{r}\right)^2
+%\label{VDWeqn}
+%\end{equation}
 
 
-In these equations, \(U_{vdW}\) is the attractive cohesive energy, \(A\) is the Hamaker constant, \(R\) is the radius of the colloidal particle, and \(r\) is the distance between the two particles. Equation \ref{Hammy} is derived under specific conditions and is more applicable to nano-scale interactions, whereas Equation \ref{VDWeqn} can be used for larger particle interactions highlighting the modification of these models needed for different size regimes. The Hamaker constant (\(A\)), a fundamental parameter in these equations, is influenced by the material properties of the colloidal particles and the medium. The Hamaer constant is given by:
+In these equations, \(U_{vdW}\) is the attractive cohesive energy, \(A\) is the Hamaker constant, \(R\) is the radius of the colloidal particle, and \(r\) is the distance between the two particles. Equation \ref{Hammy} is derived under specific conditions and is more applicable to nano-scale interactions, whereas Equation \ref{VDWeqn} can be used for larger particle interactions highlighting the modification of these models needed for different size regimes. The Hamaker constant (\(A\)), a fundamental parameter in these equations, is influenced by the material properties of the colloidal particles and the medium. The Hamaker constant is given by:
 
 \begin{equation} %Foundation of collodial science
 A = \pi^2 C p_1 p_2
@@ -317,7 +323,7 @@ One striking element of these interactions is their short range - their signific
 
 \section{The Interplay of Attractive and Repulsive Forces on Colloidal Systems}
 
-The intricate balance between attractive and repulsive forces plays a pivotal role in determining the stability of colloidal systems. This interplay between Van der Waals forces and electrostatic interactions, forms the theoretical foundation of colloidal behavior. While Van der Waals forces tend to draw particles together, potentially leading to aggregation, it is the counteracting electrostatic repulsion that often dictates whether a colloidal system remains stable or not. The stability of colloids thus depends on the equilibrium between these competing forces. Delving deeper into this complex interaction, the subsequent sections will explore the Lennard-Jones potential and the DLVO theory. The Lennard-Jones potential provides a fundamental model for understanding the balance of attraction and repulsion at a molecular level, while the DLVO theory offers a comprehensive framework that elucidates how this equilibrium contributes to the overall stability of colloidal systems and provides the main theoretical basis of understanding this practical thesis.
+The intricate balance between attractive and repulsive forces plays a pivotal role in determining the stability of colloidal systems. This interplay between van der Waals forces and electrostatic interactions, forms the theoretical foundation of colloidal behavior. While van der Waals forces tend to draw particles together, potentially leading to aggregation, it is the counteracting electrostatic repulsion that often dictates whether a colloidal system remains stable or not. The stability of colloids thus depends on the equilibrium between these competing forces. Delving deeper into this complex interaction, the subsequent sections will explore the Lennard-Jones potential and the DLVO theory. The Lennard-Jones potential provides a fundamental model for understanding the balance of attraction and repulsion at a molecular level, while the DLVO theory offers a comprehensive framework that elucidates how this equilibrium contributes to the overall stability of colloidal systems and provides the main theoretical basis of understanding this practical thesis.
 
 \subsection{Lennard-Jones potential} %Mostly bulk? Not sure if needed.
 %Give a history lesson not a maths lesson
@@ -334,13 +340,13 @@ The Lennard-Jones potential stands as an introduction in modeling intermolecular
 
 The Lennard-Jones potential offers a useful visual representation of intermolecular forces. This model is particularly useful for visualizing the variation of potential energy as a function of the distance between particles. At the nadir of this curve lies the energy well, a concept that illustrates the balance between attractive and repulsive forces, and demonstrates the optimal distance location between interacting particles under no external forces. This balance occurs at a specific inter-particle distance where the system achieves its minimal potential energy and thus equilibrium state.
 
-The graphical representation of the Lennard-Jones potential (see Figure \ref{fig:potato}) serves as a visual representation of the concepts discussed earlier, combining the effects of electrostatic repulsion and Van der Waals attraction into a singular curve. The curve demonstrates how these two forces interplay to create a stable configuration at the energy well. This model also shares the form of an atomic force microscopy (AFM) force curve, further emphasizing its practical relevance. 
+The graphical representation of the Lennard-Jones potential (see Figure \ref{fig:potato}) serves as a visual representation of the concepts discussed earlier, combining the effects of electrostatic repulsion and van der Waals attraction into a singular curve. The curve demonstrates how these two forces interplay to create a stable configuration at the energy well. This model also shares the form of an atomic force microscopy (AFM) force curve, further emphasizing its practical relevance. 
 
 %Pauli - electron spin repulsion (possible to have two electrons on the same quantum state due to electron shell overlap - this leads to repulsion)
 
 This originally sought to model interactions between two noble gas atoms by describing Pauli repulsion coupled with an attractive long range term. This provides a simplistic view by assuming all interactions between all particles are the same and thus the solution is homogeneous. This is done by summing the contributions from all particles interacting with one another. However, this simplification also introduces limitations. The Lennard-Jones potential does not account for solvent effects and assumes particles are in a vacuum. Additionally, it overlooks the role of charge, which is particularly important when ions are present in the solvent. In reality, particles immersed in a solvent experience modified forces leading to a reduced attractive interaction than vacuum conditions.
 \cite{lilBlueBook}
-%For each interaction the attraction is given by the Van der Waals attraction (See equation \ref{VDWeqn}). The repulsive term is given by:
+%For each interaction the attraction is given by the van der Waals attraction (See equation \ref{VDWeqn}). The repulsive term is given by:
 
 
 
@@ -355,7 +361,7 @@ This originally sought to model interactions between two noble gas atoms by desc
 
 %This removes the need for the $A$ and $B$ constants, instead expressing the relationship using the depth of the potential well ($\epsilon_{min}$) and the distance at which the potential is 0 ($r_0$).  
 
-These limitations highlight the need for more comprehensive models which leads us into DLVO theory. DLVO theory, which integrates electrostatic repulsion and Van der Waals attraction, addresses some of the shortcomings of the Lennard-Jones potential by considering the specific conditions of colloidal systems, including the presence of a solvent and the role of ionic strength.\cite{} %Find a paper to support this, just in case. What do you mean you don't have one past me??
+These limitations highlight the need for more comprehensive models which leads us into DLVO theory. DLVO theory, which integrates electrostatic repulsion and van der Waals attraction, addresses some of the shortcomings of the Lennard-Jones potential by considering the specific conditions of colloidal systems, including the presence of a solvent and the role of ionic strength.\cite{} %Find a paper to support this, just in case. What do you mean you don't have one past me??
 
 %In order to improve upon the basics laid out here, these factors need to be considered mathematically. To this end, electrostatics are introduced and considered.
 
@@ -386,7 +392,7 @@ This equation expresses the total interaction potential within DLVO theory, wher
 \label{fig:DLVO}                 % Reference label to the figure.
 \end{figure}
 
-One key feature of DLVO is the repulsive barrier that is seen from the initial dip. This energy barrier prevents colloids from agglomerating. The Van der Waals forces are generally attractive due to the nature of their interactions at longer ranges, giving rise to the inital dip, before the electrostatic repulsion dominates, producing said barrier. However, after this energy barrier is broken, the attraction descends to infinity, demonstrating a very strong attaraction. If this barrier is substantial enough to offset the kinetic energy from Brownian motion, colloidal stability is achieved. In the absence of sufficient repulsion, particles may overcome this barrier, leading to aggregation.
+One key feature of DLVO is the repulsive barrier that is seen from the initial dip. This energy barrier prevents colloids from agglomerating. The van der Waals forces are generally attractive due to the nature of their interactions at longer ranges, giving rise to the inital dip, before the electrostatic repulsion dominates, producing said barrier. However, after this energy barrier is broken, the attraction descends to infinity, demonstrating a very strong attaraction. If this barrier is substantial enough to offset the kinetic energy from Brownian motion, colloidal stability is achieved. In the absence of sufficient repulsion, particles may overcome this barrier, leading to aggregation.
 
 While DLVO has proven itself a functional and applicable model for the description of interacting colloids, there remains a few assumptions that can limit its accuracy. DLVO assumes that the interacting surfaces is perfectly flat, expanding in all directions, and that the surface charge density is uniformly distributed along said surface. Additionally, it assumes that the surface electric potential is constant, and that any counter ions remain static and uniformly distributed too, with any interactions between said ions or solvent being purely born from their dielectric constant. While some of these assumptions aren't true for particle-particle interactions, DLVO holds up as one of the main theories for predicting interactions. \cite{particledep} \cite{effectHetSurf} \cite{colloidDepKin} \cite{chemDiscCharge} \cite{DLVOreview} 
 
