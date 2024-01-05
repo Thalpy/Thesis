@@ -1,0 +1,11 @@
+\section{Tip speed analysis}
+
+One of the differences between the different tip speeds was the data density. For faster speed less data was taken, while slower speeds had more data taken. This was due to the rate in which the AFM takes in data - the AFM was set to take in the maximum rate of data throughout the whole process. This was done to maximise the volume of data usable for the binning process (as seen in chapter 5). 
+<<<<<<< HEAD
+
+For 0.1 and 0.5Hz, the data rate was more than enough the support the processing of the curves, while 2Hz had significantly less data, and required a more involved fitting, with generally a lower bitsize setting used in the script - increasing the noise in the averaged curve.
+=======
+>>>>>>> origin/overleaf-2023-12-29-0237
+
+For 0.1 and 0.5Hz, the data rate was more than enough the support the processing of the curves, while 2Hz had significantly less data, and required a more involved fitting, with generally a lower bitsize setting used in the script - increasing the noise in the averaged curve.
+
