@@ -56,7 +56,29 @@ Dielectric Relaxation Effects: In systems where dielectric relaxation is signifi
 
 Ion Mobility and Redistribution: In solutions with mobile ions, the movement of the AFM tip can cause redistribution of ions in the vicinity of the tip-sample interface. The speed of the tip can influence this redistribution, potentially altering the local ionic concentration and, consequently, the electrostatic interactions. Faster speeds might not allow sufficient time for ions to redistribute evenly, which could result in a different measurement compared to a scenario where the tip moves more slowly.
 
-\newpage
+\section*{AFM contact force measurements and rheological behaviour of dense colloidal suspensions}
+
+The significance of the present work does not confine in the direct measurement and fundamental understanding of forces of material surfaces in close proximity within aqueous media. Moreover, it allows to investigate a working hypothesis in the colloidal rheology community regarding the onset of shear thickening behaviour in dense colloidal suspensions.~\cite{reference1}
+
+Currently it is assumed that the colloidal particles do not experience any frictional forces at low shear stresses and it is only above an ``onset'' stress, $\sigma^*$, that frictional contact occurs leading to shear thickening behaviour.~\cite{reference2} It is speculated that it is this frictional contact occurring above the onset stress that is responsible for the characteristic viscosity increase observed during shear thickening. Following this reasoning, in order for the frictional contact to occur the shear stress has to overcome the repulsive interparticle force that inhibits contact, i.e. the repulsive critical “contact” force, Fc, which is directly related to the shear thickening onset stress σ*. Using Derjaguin approximation [3], a critical surface energy W* can be associated with the critical force , Fc (as measured by AFM) experiments as follows
+
+% The formula can be included as follows
+\[ W_{AFM} = \frac{F_c}{\pi R_t} \]
+
+Where $W^*_{AFM}$ is the critical surface energy deduced from AFM fd curves and $R_t$ is the radius of the colloidal sphere we have used in these measurements ($3.3 \mu m$) at varying ionic strengths. The usage of the critical surface energy to describe the interactions has advantages as it is an intrinsic surface materials/media property and is independent of sizes. Equivalently, the shear thickening onset shear stress $\sigma^*$ in rheology experiments should also be related to this critical surface energy $W^*$ and simple dimensional analysis indicates that $W^* R^*$, where $R^*$ is the radius of colloidal particles used in rheological experiments. More precisely, numerical simulations have already confirmed this relationship and provide the numerical predictor~\cite{reference4}.
+
+\[ W^* = 2.11 R^* \]
+
+Samuel C. Brown conducted systematic rheological experiments (colloidal silica spheres of radius of 0.75 μm) at different ionic strengths and a set of his measurements is used to calculate the critical surface energy in Figure \ref{fig:critical_surface_energy} where we also depict the calculated critical stress from the completely independent AFM fd curves presented in this thesis. The agreement is remarkable and indicates strongly and directly for first time the validity of the interparticle friction origins of the shear thickening behaviour.
+
+% Here's how you might include a figure with a caption:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{path_to_your_figure.jpg}
+\caption{Critical surface energy values deduced from AFM (red circles) and rheological experiments (black squares) at different ionic strengths.}
+\label{fig:critical_surface_energy}
+\end{figure}
+
 \newpage
 \newpage
 
