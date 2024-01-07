@@ -79,9 +79,50 @@ Where $W^*_{AFM}$ is the critical surface energy deduced from AFM fd curves and 
 Samuel C. Brown conducted systematic rheological experiments (colloidal silica spheres of radius of 0.75 μm) at different ionic strengths and a set of his measurements is used to calculate the critical surface energy in Figure \ref{fig:critical_surface_energy} where we also depict the calculated critical stress from the completely independent AFM fd curves presented in this thesis. The agreement is remarkable and indicates strongly and directly for first time the validity of the interparticle friction origins of the shear thickening behaviour.
 
 % Here's how you might include a figure with a caption:
-\begin{figure}[H]
+\begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{chapter8/r}
+\includegraphics[width=\textwidth]{chapter8/Rheology/Comparison graph.png}
+\caption{Critical surface energy values deduced from AFM (red circles) and rheological experiments (black squares) at different ionic strengths.}
+\label{fig:critical_surface_energy}
+\end{figure}
+
+\section{Comparing results to DLVO theory}
+
+
+The Force at Contact vs. LiCl Concentration plot is designed to show how the force at the point of contact between an Atomic Force Microscopy (AFM) tip and a sample varies with the concentration of LiCl in a 50:50 water-glycerol mixture. This relationship is important for understanding how ionic strength affects the interaction forces at the nanoscale.
+
+\section*{Equations Used}
+
+Several equations are used in the script to model the interactions. These equations are taken from chapter 1 to represent the types of equations used by those looking to model interactions. 
+
+\textbf{Debye Length:} The inverse Debye length, $\kappa$, is given by
+    \[
+    \kappa = \sqrt{\frac{2 N_A e^2 I}{\varepsilon_0 \varepsilon_r k_B T}},
+    \]
+    where $N_A$ is Avogadro's number, $e$ is the elementary charge, $I$ is the ionic strength, $\varepsilon_0$ is the vacuum permittivity, $\varepsilon_r$ is the relative permittivity of the mixture, $k_B$ is the Boltzmann constant, and $T$ is the temperature. $\epsilon_r$ was taken from \cite{behrends2006dielectric}
+    
+\textbf{Electrostatic Repulsion Force:} The electrostatic repulsion force per unit area between a sphere and a plane, taking into account the surface potential $\Psi_0$, is calculated as
+    \[
+    U_E(r) = 2 \pi R \kappa \epsilon_0 \epsilon_r \left( \frac{k_B T}{e} \right)^2 \tanh^2\left(\frac{e \Psi_0}{4 k_B T}\right) e^{-\kappa h},
+    \]
+    where $R$ is the radius of the sphere and $h$ is the separation distance. $Psi_0$ was taken from \cite{silica2021}.
+    
+\textbf{Van der Waals Force:} The van der Waals force for a sphere-plane interaction is given by
+    \[
+    U_{\text{vdW}}(r) = -\frac{A_H R}{6 h^2},
+    \]
+    where $A_H$ is the Hamaker constant taken from \cite{Bergstrom1997}.
+    
+\textbf{Total Interaction Energy:} The total interaction energy or force at a separation $h$ is the sum of the van der Waals and electrostatic forces. When adjusted for surface roughness, the combined rms roughnesses of the two surfaces was added to the separation distance as a simple means to model roughness.
+
+
+\section*{Plot Explanation}
+
+The plot displays the calculated force at contact as a function of LiCl concentration. Experimental data points are overlaid to compare the theoretical model with actual measurements. The use of a logarithmic scale for the concentration axis allows for a clear visualization of the data over several orders of magnitude.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{chapter8/cal}
 \caption{Critical surface energy values deduced from AFM (red circles) and rheological experiments (black squares) at different ionic strengths.}
 \label{fig:critical_surface_energy}
 \end{figure}
