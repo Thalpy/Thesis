@@ -1,12 +1,6 @@
-\chapter{Bacterial colloids AFM}
+\chapter{Futher analysis}
 
-\section{Introduction}
-
-In addition to this in liquid force curves were produced from probing bacteria. The possibility of force mapping a bacterial surface was investigated, but ultimately ruled impossible on the current machine. However efforts have been made to procure access to a more suitable AFM (See section 2.1).
-
-\subsection{AFM tip treatment} \chapter{Force analysis}
-
-This chapter aims to analyse the findings presented in the previous two chapters, focusing on the intricate details and implications of Atomic Force Microscopy (AFM) force curve analysis. The preceding chapters laid a foundational understanding of the colloidal interactions and the work involved to process the raw data into a usable format. This chapter instead will focus on using the previous chapters' data to draw conclusions about collodial systems. The force-distance profiles obtained from AFM are analysed, providing a direct and nuanced insight into the particle interactions at an individual level. The force curves, reflecting the precise nature of forces acting at the nanoscale, will be juxtaposed against the bulk property measurements to draw a more comprehensive picture of the colloidal dynamics. This analysis will not only validate but also potentially challenge and refine the conclusions drawn from the bulk measurements, offering a more holistic understanding of the colloidal systems under study. Through this integrative approach, we aim to bridge the gap between our microscopic observations and derive behaviour on the macro scale. This chapter takes the following format, firstly over viewing the approach data, then the retract data.
+This chapter aims to analyse the findings presented in the previous three chapters, focusing on the intricate details and implications of Atomic Force Microscopy (AFM) force curve analysis. The preceding chapters laid a foundational understanding of the colloidal interactions and the work involved to process the raw data into a usable format. This chapter instead will focus on using the previous chapters' data to draw conclusions about collodial systems. The force-distance profiles obtained from AFM are analysed, providing a direct and nuanced insight into the particle interactions at an individual level. The force curves, reflecting the precise nature of forces acting at the nanoscale, will be juxtaposed against the bulk property measurements to draw a more comprehensive picture of the colloidal dynamics. This analysis will not only validate but also potentially challenge and refine the conclusions drawn from the bulk measurements, offering a more holistic understanding of the colloidal systems under study. Through this integrative approach, we aim to bridge the gap between our microscopic observations and derive behaviour on the macro scale. This chapter takes the following format, firstly over viewing the approach data, then the retract data.
 
 \section{Approach force curves}
 
@@ -24,11 +18,27 @@ The interaction forces in macroscale colloidal suspensions was calculated as $F�
 
 \section{Shelf analysis}
 
-The shelf seen in some datapoints 
+The shelf seen in some datapoints is a consistent feature across multiple sites, present in the majority of the curves. The only concentration that doesn't feature the shelf in any of the sites is the 0.6mM concentrations, which is equally true in both the MFP and JPK AFMs.
 
-\section{Variability in data}
+However The shelf was also seen in the JPK forcemaps as well - specifically the 10mM curves. Though, the shelf prominence varies between sites, some have a visible shelf that extends across multiple nanometers, while others d
 
-The variability (noise) in the data may be due to the change in force applied to the surface. This is because the AFM is old and doesn't apply consistent pressure. It may have an affect, but you'd expect to see it more pronouced in the different salt concentrations. Plot the std dev vs concentration graph.
+This feature is also seen in other papers from literature.\cite{guleryuz2012afm}
+
+\section{Overcoming the noise in data}
+
+The noise in the data from MFP AFM is significant. Not all AFMs can be operated in optimal conditions such as AFMs isolated from vibrations, under peak maintenance, free from external factors, etc. Other sources of noise in AFM can stem from electronic components, particularly those involved in the detection system, such as photodiodes and amplifiers. This includes shot noise from random electron motion, Johnson noise related to thermal motion within resistors, and noise intrinsic to operational amplifiers. Additionally, mechanical vibrations and thermal fluctuations also contribute to noise, affecting the spatial and temporal resolution of measurements. \cite{gittes1997signals}
+
+Given the the MFP is potentially over 30 years old, these sources of noise could have impacted the resulting graphs from the age of the components in the system. In science there is a constant pressure to use newer equipment, when older equipment is still potentially suitable. Given that newer AFMs can brush up against the million pound mark, it is imperative to consider whether the trade-offs justify such investments. The challenge with older AFMs, particularly with models like the MFP, is that the wear and tear over time can exacerbate the inherent noise issues. Components such as piezoelectric scanners, which are responsible for the precise movements required for imaging and force measurements, may degrade in performance, leading to drifts or instability in the collected data. Similarly, older detection systems may not be as effective in filtering out noise or may not have the same sensitivity as modern instruments.
+
+However, the core principles of AFM technology have remained consistent througout the years, the primary mechanisms of force detection and image resolution are still based on the deflection of a cantilever and the distance control between the probe and the sample. Hence, an older, well-maintained AFM can still provide valuable data, particularly for applications where ultra-high resolution is not mandatory.
+
+The software developed during this investigation provides a powerful tool for older AFMs, particularly for noiser systems. The ability to resolve the shelf feature is a significant one, as the baseline noise present in the MFP curves often hide the feature. This capability is seen throughout all of the variability in conditions seen throughout the various different sites. By utilising the scripts and methods used in this investigation, it opens up the possibility of the scientific community to extend the lifespan of older equipment, making it viable for current and future research without the immediate need for costly upgrades.
+
+The scripts and analysis methods developed as part of this research cater to the nuanced intricacies of noise in AFM data, enabling the extraction of meaningful results even from signals that might be considered too noisy or from data that would otherwise be discarded. This notion is particularly relevant in the context of educational institutions and research facilities with limited funding, where such software enhancements can democratize access to high-quality research opportunities. 
+
+By making this software open source and accessible on a git repository, the scientific community can utilise, revise and improve upon tools that aloow for a greater applicability of AFM\cite{YourGithub2023}
+
+may be due to the change in force applied to the surface. This is because the AFM is old and doesn't apply consistent pressure. It may have an affect, but you'd expect to see it more pronounced in the different salt concentrations. Plot the std dev vs concentration graph.
 
 There is *alot* of noise at this scale. Because 
 - I think it's cause it's a short period between phases?
@@ -46,9 +56,6 @@ You can't just Lmao bin more cause then you have no data
 
 Successful adaption and development of the glass treatment to AFM tips was performed. In particular a tip was treated with DCDMS surface coating. This tip was planned to be used with force mapping to investigate the presence of adhesive patches theorized by the group \cite{Teun1} and other literature \cite{Patchy}. 
 
-\subsection{Attaching bacteria to a cantilever}
-\newpage
-
 \section{Tip speed}
 Temporal Resolution of Electrostatic Forces: The speed at which the AFM tip approaches or retracts from the sample surface can affect the temporal resolution of the electrostatic forces. Faster tip speeds might not fully capture the gradual build-up or decay of electrostatic forces, whereas slower speeds allow for a more detailed measurement of these forces as they evolve over time. This is particularly important in systems where electrostatic interactions change rapidly with distance.
 
@@ -58,23 +65,23 @@ Ion Mobility and Redistribution: In solutions with mobile ions, the movement of 
 
 \section*{AFM contact force measurements and rheological behaviour of dense colloidal suspensions}
 
-The significance of the present work does not confine in the direct measurement and fundamental understanding of forces of material surfaces in close proximity within aqueous media. Moreover, it allows to investigate a working hypothesis in the colloidal rheology community regarding the onset of shear thickening behaviour in dense colloidal suspensions.~\cite{reference1}
+The significance of the present work does not confine in the direct measurement and fundamental understanding of forces of material surfaces in close proximity within aqueous media. Moreover, it allows us to investigate a working hypothesis in the colloidal rheology community regarding the onset of shear thickening behaviour in dense colloidal suspensions.~\cite{reference1}
 
-Currently it is assumed that the colloidal particles do not experience any frictional forces at low shear stresses and it is only above an ``onset'' stress, $\sigma^*$, that frictional contact occurs leading to shear thickening behaviour.~\cite{reference2} It is speculated that it is this frictional contact occurring above the onset stress that is responsible for the characteristic viscosity increase observed during shear thickening. Following this reasoning, in order for the frictional contact to occur the shear stress has to overcome the repulsive interparticle force that inhibits contact, i.e. the repulsive critical “contact” force, Fc, which is directly related to the shear thickening onset stress σ*. Using Derjaguin approximation [3], a critical surface energy W* can be associated with the critical force , Fc (as measured by AFM) experiments as follows
+Currently it is assumed that the colloidal particles do not experience any frictional forces at low shear stresses and it is only above an ``onset'' stress, $\sigma^*$, that frictional contact occurs leading to shear thickening behaviour.~\cite{reference2} It is speculated that it is this frictional contact occurring above the onset stress that is responsible for the characteristic viscosity increase observed during shear thickening. Following this reasoning, in order for the frictional contact to occur the shear stress has to overcome the repulsive interparticle force that inhibits contact, i.e. the repulsive critical “contact” force, $F_c$, which is directly related to the shear thickening onset stress $\sigma^*$. Using Derjaguin approximation [3], a critical surface energy $W^*$ can be associated with the critical force , $F_c$ (as measured by AFM) experiments as follows
 
 % The formula can be included as follows
-\[ W_{AFM} = \frac{F_c}{\pi R_t} \]
+\[ W^*_{AFM} = \frac{F_c}{\pi R_t} \]
 
-Where $W^*_{AFM}$ is the critical surface energy deduced from AFM fd curves and $R_t$ is the radius of the colloidal sphere we have used in these measurements ($3.3 \mu m$) at varying ionic strengths. The usage of the critical surface energy to describe the interactions has advantages as it is an intrinsic surface materials/media property and is independent of sizes. Equivalently, the shear thickening onset shear stress $\sigma^*$ in rheology experiments should also be related to this critical surface energy $W^*$ and simple dimensional analysis indicates that $W^* R^*$, where $R^*$ is the radius of colloidal particles used in rheological experiments. More precisely, numerical simulations have already confirmed this relationship and provide the numerical predictor~\cite{reference4}.
+Where $W^*_{AFM}$ is the critical surface energy deduced from AFM fd curves and $R_t$ is the radius of the colloidal sphere we have used in these measurements ($3.3 \mu m$) at varying ionic strengths. The usage of the critical surface energy to describe the interactions has advantages as it is an intrinsic surface materials/media property and is independent of sizes. Equivalently, the shear thickening onset shear stress $\sigma^*$ in rheology experiments should also be related to this critical surface energy $W^*$ and simple dimensional analysis indicates that $W^* \propto R\sigma^*$, where $R$ is the radius of colloidal particles used in rheological experiments. More precisely, numerical simulations have already confirmed this relationship and provide the numerical predictor~\cite{reference4}.
 
-\[ W^* = 2.11 R^* \]
+\[ W^* = 2.11 R\sigma^* \]
 
 Samuel C. Brown conducted systematic rheological experiments (colloidal silica spheres of radius of 0.75 μm) at different ionic strengths and a set of his measurements is used to calculate the critical surface energy in Figure \ref{fig:critical_surface_energy} where we also depict the calculated critical stress from the completely independent AFM fd curves presented in this thesis. The agreement is remarkable and indicates strongly and directly for first time the validity of the interparticle friction origins of the shear thickening behaviour.
 
 % Here's how you might include a figure with a caption:
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{path_to_your_figure.jpg}
+\includegraphics[width=0.5\textwidth]{chapter8/r}
 \caption{Critical surface energy values deduced from AFM (red circles) and rheological experiments (black squares) at different ionic strengths.}
 \label{fig:critical_surface_energy}
 \end{figure}
