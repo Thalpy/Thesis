@@ -1,6 +1,6 @@
-\chapter{Further analysis}
+\chapter{Further analysis and discussion}
 
-This chapter aims to analyse the findings presented in the previous three chapters, focusing on the intricate details and implications of Atomic Force Microscopy (AFM) force curve analysis. The preceding chapters laid a foundational understanding of the colloidal interactions and the work involved to process the raw data into a usable format. This chapter instead will focus on using the previous chapters' data to draw conclusions about colloidal systems. The force-distance profiles obtained from AFM are analysed, providing a direct and nuanced insight into the particle interactions at an individual level. The force curves, reflecting the precise nature of forces acting at the nanoscale, will be juxtaposed against the bulk property measurements to draw a more comprehensive picture of the colloidal dynamics. This analysis will not only validate but also potentially challenge and refine the conclusions drawn from the bulk measurements, offering a more holistic understanding of the colloidal systems under study. Through this integrative approach, we aim to bridge the gap between our microscopic observations and derive behaviour on the macro scale. This chapter takes the following format, firstly over viewing the approach data, then the retract data.
+This chapter aims to analyse and discuss the findings presented in the previous three chapters, focusing on the intricate details and implications of Atomic Force Microscopy (AFM) force curve analysis. The preceding chapters laid a foundational understanding of the colloidal interactions and the work involved to process the raw data into a usable format. This chapter instead will focus on using the previous chapters' data to draw conclusions about colloidal systems. The force-distance profiles obtained from AFM are analysed, providing a direct and nuanced insight into the particle interactions at an individual level. The force curves, reflecting the precise nature of forces acting at the nanoscale, will be juxtaposed against the bulk property measurements to draw a more comprehensive picture of the colloidal dynamics. This analysis will not only validate but also potentially challenge and refine the conclusions drawn from the bulk measurements, offering a more holistic understanding of the colloidal systems under study. Through this integrative approach, we aim to bridge the gap between our microscopic observations and derive behaviour on the macro scale. This chapter takes the following format, firstly over viewing the approach data, then the retract data.
 
 \section{Approach force curves}
 
@@ -73,16 +73,16 @@ However one interesting point about the findings in that paper is the notation o
 \label{fig:forcecalc}
 \end{figure}
 
-This data was taken for all datapoints that could be extracted this way (one or two shelves were omitted due to the inability to define a firm range, i.e. the repulsive curve bled into the shelf feature, a good example of this is 25mM site 3). These points were then plotted
+This data was taken for all datapoints that could be extracted this way (one or two shelves were omitted due to the inability to define a firm range, i.e. the repulsive curve blended into the shelf feature, a good example of this is 25mM site 3). These points were then plotted in figure \ref{fig:resultsShelf}.
 
 \begin{figure}[h!!]
 \centering
-\includegraphics[width=0.8\textwidth]{chapter8/Shelf/ShelfScatter.png}
+\includegraphics[width=0.8\textwidth]{chapter8/Shelf/ShelfScatter2.png}
 \caption{Demonstrating the range of self force and self range. For the range of data, there was no significant change in the datapoints due to salt concentration for both features.}
 \label{fig:resultsShelf}
 \end{figure}
 
-The results in \ref{fig:resultsShelf} show that the shelf had a consistent range between 1-2nm, and the the yield force was between 1.5-4nN. While the range was slightly higher in our data, our findings align with what Kilpatrick et al discusses. The fact that the shelf is consistent across a broad range of salt concentrations might imply that these additional forces are present regardless of ionic strength variations, possibly due to surface charge heterogeneities or charge fluctuation forces that are less sensitive to ionic strength.
+The results in \ref{fig:resultsShelf} show that the shelf had a consistent range between 1-2nm, and the yield force was between 1.5-4nN. While the range was slightly higher in our data, our findings align with what Kilpatrick et al discusses \cite{Kilpatrick2013DirectlyProbing}. The fact that the shelf is consistent across a broad range of salt concentrations might imply that these additional forces are present regardless of ionic strength variations, possibly due to surface charge heterogeneities or charge fluctuation forces that are less sensitive to ionic strength.
 
 In addition to this finding, the JPK forcemapping curves demonstrated the same shelf seen across the standard dataset. As the tip moved across multiple locations, the shelf force changed, however the shelf range was relatively static.
 
@@ -95,7 +95,7 @@ In addition to this finding, the JPK forcemapping curves demonstrated the same s
 
 One interesting aspect of this shelf as seen in the JPK AFM is the sudden attractive force felt by the tip. This again is in line with Kilpatrick et al.
 
-As such our findings match Kilpatrick et al., where the shelf can be attributed to additional, non-DLVO attractive forces likely related to the specific ion effects, such as ion-ion correlations, surface charge heterogeneities, or other surface-specific interactions at the water-silica interface. These forces can be significant in the presence of multivalent ions, which are known to impact the surface charge and hydration layers in a manner not fully accounted for by classical DLVO theory. As such, this provides evidence towards a growing call for improvements to the current DLVO theory.
+As such our findings match Kilpatrick et al. \cite{Kilpatrick2013DirectlyProbing}, where the shelf can be attributed to additional, non-DLVO attractive forces likely related to the specific ion effects, such as ion-ion correlations, surface charge heterogeneities, or other surface-specific interactions at the water-silica interface such as hydration forces. These forces can be significant in the presence of multivalent ions, which are known to impact the surface charge and hydration layers in a manner not fully accounted for by classical DLVO theory. As such, this provides evidence towards a growing call for improvements to the current DLVO theory.
 
 \section{Overcoming the noise in data}
 
@@ -108,9 +108,9 @@ The noise in the data from MFP AFM is significant. Not all AFMs can be operated 
 \label{fig:noisey}
 \end{figure}
 
-Given the the MFP is potentially over 30 years old, these sources of noise could have impacted the resulting graphs from the age of the components in the system. Other sources of noise and frustration during the data taking process is due to the variability in the force feedback loop. It was observed that the AFM doesn't always apply consistent pressure, especially during the dwell time graphs, which was the source of difficulty during their processing. The data rate as well limited the amount of binning that could possible be done, as features would be lost/smoothed out. 
+These sources of noise could have impacted the resulting graphs from the age of the components in the system. Other sources of noise and frustration during the data taking process is due to the variability in the force feedback loop. It was observed that the AFM doesn't always apply consistent pressure, especially during the dwell time graphs, which was the source of difficulty during their processing. The data rate as well as the limited amount of binning that could possible be done, as features would be lost/smoothed out. 
 
-In science there is a constant pressure to use newer equipment, when older equipment is still potentially suitable. Given that newer AFMs can brush up against the million pound mark, it is imperative to consider whether the trade-offs justify such investments. The challenge with older AFMs, particularly with models like the MFP, is that the wear and tear over time can exacerbate the inherent noise issues. Components such as piezoelectric scanners, which are responsible for the precise movements required for imaging and force measurements, may degrade in performance, leading to drifts or instability in the collected data. Similarly, older detection systems may not be as effective in filtering out noise or may not have the same sensitivity as modern instruments.
+In science there is a constant pressure to use newer equipment, when older equipment is still potentially suitable. Given that newer AFMs can brush up against the million pound mark, it is imperative to consider whether the trade-offs justify such investments. The challenge with older instruments, is that the wear and tear over time can exacerbate the inherent noise issues. Components such as piezoelectric scanners, which are responsible for the precise movements required for imaging and force measurements, may degrade in performance, leading to drifts or instability in the collected data. Similarly, older detection systems may not be as effective in filtering out noise or may not have the same sensitivity as modern instruments.
 
 However, the fundamental mechanics of AFM have remained relatively consistent, the primary mechanisms of force detection and image resolution are still based on the deflection of a cantilever and the distance control between the probe and the sample. Hence, an older, well-maintained AFM can still provide valuable data, particularly for applications where ultra-high resolution is not mandatory.
 
@@ -125,7 +125,7 @@ The scripts and analysis methods developed as part of this research cater to the
 \label{fig:noisey}
 \end{figure}
 
-The software utilises several methods of adjusting the curves towards a more user readable graph, without impacting the underlying data, this is in addition to binning the data to reduce the noise floor, while keeping binning rates sensible to retain the features of the curve. The sum effects of the software can be clearly seen in the extraction of the shelf features, which have previously been observed in literature \cite{}, from otherwise convoluted curves %DO NOT FORGET MEEEEE
+The software utilises several methods of adjusting the curves towards a more user readable graph, without impacting the underlying data, this is in addition to binning the data to reduce the noise floor, while keeping binning rates sensible to retain the features of the curve. The sum effects of the software can be clearly seen in the extraction of the shelf features, which have previously been observed in literature \cite{Kilpatrick2013DirectlyProbing}, from otherwise convoluted curves. %DO NOT FORGET MEEEEE
 
 By making this software open source and accessible on a git repository, the scientific community can utilise, revise and improve upon tools that allow for a greater applicability of AFM. While the software presently is modest, the potential for the wider community to contribute and grow the software to address the current issues is always present. \cite{YourGithub2023}
 
@@ -171,11 +171,11 @@ The Force at Contact vs. LiCl Concentration plot is designed to show how the for
 
 \subsection*{Equations Used}
 
-Several equations are used in the script to model the interactions. These equations are taken from chapter 1 to represent the types of equations used by those looking to model interactions. 
+Several equations are used in the script to model the interactions. These equations draw from chapter 1 to represent the types of equations used by those looking to model interactions. Appropriate equations were used to model sphere-plane interactions. 
 
 \textbf{Debye Length:} The inverse Debye length, $\kappa$, is given by
     \[
-    \kappa = \sqrt{\frac{2 N_A e^2 I}{\varepsilon_0 \varepsilon_r k_B T}},
+    \kappa^{-1} = \sqrt{\frac{2 N_A e^2 I}{\varepsilon_0 \varepsilon_r k_B T}},
     \]
     where $N_A$ is Avogadro's number, $e$ is the elementary charge, $I$ is the ionic strength, $\varepsilon_0$ is the vacuum permittivity, $\varepsilon_r$ is the relative permittivity of the mixture, $k_B$ is the Boltzmann constant, and $T$ is the temperature. $\epsilon_r$ was taken from \cite{behrends2006dielectric}
     
@@ -193,6 +193,29 @@ Several equations are used in the script to model the interactions. These equati
     
 \textbf{Total Interaction Energy:} The total interaction energy or force at a separation $h$ is the sum of the van der Waals and electrostatic forces. When adjusted for surface roughness, the combined rms roughnesses of the two surfaces was added to the separation distance as a simple means to model roughness.
 
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Value (Unit)} \\ \hline
+Relative Permittivity, $\epsilon_r$ & 62 (dimensionless) \cite{behrends2006dielectric} \\ \hline
+Vacuum Permittivity, $\epsilon_0$ & $8.854 \times 10^{-12}$ F/m \\ \hline
+Radius of the Sphere, $R$ & $3.3 \times 10^{-6}$ m \\ \hline
+Surface Potential, $\Psi_0$ & -0.040 V \cite{silica2021}\\ \hline
+Temperature, $T$ & 300 K \\ \hline
+Avogadro's Number, $NA$ & $6.022 \times 10^{23}$ molecules/mol \\ \hline
+Elementary Charge, $e$ & $1.602 \times 10^{-19}$ C \\ \hline
+Boltzmann Constant, $k_B$ & $1.38064852 \times 10^{-23}$ m\(^2\) kg s\(^{-2}\) K\(^{-1}\) \\ \hline
+Separation Distance, $h$ & $2 \times 10^{-9}$ m \\ \hline
+Hamaker Constant $A_H$ & $0.63 \times 10^{-20}$ J \cite{Bergstrom1997}\\ \hline
+Valency, $z_i$ & 1 (dimensionless) \\ \hline
+Roughness Values & $2.4 \times 10^{-10} + 6.45 \times 10^{-10}$ m (chpt 3) \\ \hline
+\end{tabular}
+\caption{Parameters with their values with units}
+\label{table:parameters_units}
+\end{table}
+
+
 
 \subsection*{Plot Explanation}
 
@@ -207,7 +230,7 @@ The plot displays the calculated force at contact as a function of LiCl concentr
 
 While the calculated fit in figure \ref{fig:calc1} doesn't follow the experimentally derived calculations, there are some useful aspects of this calculation. For one, the values are all roughly same order of magnitude, and the curve follows the downwards trend towards the higher concentrations. This deviation isn't entirely unexpected; DLVO has been known to break down at small lengthscales. \cite{Horinek2014}
 
-One aspect that can easily be added is the roughnesses taken from Chapter 3 (0.26nm rms roughness and 0.64583nm rms roughness), which can then be added to the separation distance.
+One aspect that can easily be added is the roughnesses taken from Chapter 3 (0.24nm rms roughness and 0.64583nm rms roughness), which can then be added to the separation distance.
 
 \begin{figure}[h!]
 \centering
@@ -216,6 +239,6 @@ One aspect that can easily be added is the roughnesses taken from Chapter 3 (0.2
 \label{fig:calc2}
 \end{figure}
 
-This addition brings down the curve into a better fit with the experimentally derived data - While this isn't definitive, as there are plenty of other issues with DLVO (such as the inability to predict the shelf seen in both AFM datasets and other papers), it does show that DLVO is sensitive to surface roughness - which we have previously proven to be significantly rough. This trait that could potentially be responsible for the larger degree of variation seen between experimental sites, which could be an avenue worth further exploration.
+This addition brings down the curve into a better fit with the experimentally derived data (Figure \ref{fig:calc2}). While this isn't definitive, as there are plenty of other issues with DLVO (such as the inability to predict the shelf seen in both AFM datasets and other papers), it does show that DLVO is sensitive to surface roughness - which we have previously proven to be significantly rough. This trait that could potentially be responsible for the larger degree of variation seen between experimental sites, which could be an avenue worth further exploration.
 
 

@@ -4,10 +4,12 @@
 
 Building on the foundations laid by the preceding chapters, this chapter delves into a more nuanced investigation of the parametric influences on the resulting force curves obtained through Atomic Force Microscopy (AFM). When operating an AFM, it is typical to use a standard set of operational parameters. \cite{Schirmeisen2007} These parameters are often found during operation in an exploratory manner to find a good signal to noise ratio. However, it can be prudent  to examine a spectrum of force curves under varied conditions. Such an investigation enables the assessment of result consistency across diverse settings, thereby ensuring that the observed outcomes are not merely artifacts of parameter-specific minima phenomena. Additionally, a range of differing conditions can provide an insight into how other phenomena may have an effect on the observed behaviour of the curves.
 
-A range of differing conditions were repeated with the following parameter changes: Tip speed, dwell time, solution pH and forcemapping. 
+A range of differing conditions were repeated with the following parameter changes: Tip speed, dwell time, solution pH and force mapping. 
 
 \subsubsection{Tip Speed Variations}
 The velocity of the AFM tip's approach and retraction impacts the force measurements, potentially altering the energy landscape of particle interactions. Varying the tip speed not only affects the kinetic parameters but also provides insight into time-dependent phenomena such as lubrication forces and simple viscous drag. The adjustment of the tip's velocity probes the dynamic response of the system, shedding light on the viscoelastic properties of the medium and the rate-dependent behavior of interparticle forces.
+
+The previous results were taken at 0.5Hz, or a tip speed of 1$\mu$m/s. Two other speeds were used; 0.1Hz (0.2$\mu$m/s) and 2Hz (4$\mu$m/s). 0.1Hz was done exclusively on 10mM.
 
 \subsubsection{Effect of Dwell Time}
 
@@ -23,7 +25,7 @@ Forcemapping, a method of tracking force-distance curves over a defined grid are
 
 The exploration of these parameters serves not just as a methodical inquiry into the forces acting within colloidal dispersions, but also as a means to justify our approach to force curve analysis. The diversity of these conditions reflects the complex nature of the studied system and underscores the need for a comprehensive dataset that accurately represents the multifaceted nature of particle interactions.
 
-The subsequent section presents the force distributions across our dataset, providing empirical evidence to the impact of these discussed factors. Finally, the section highlights the differences between the "standard" dataset and the modified parameters.
+The subsequent section presents the force distributions across our dataset, providing empirical evidence to the impact of these discussed factors. Finally, the section highlights the differences between the ``standard" dataset and the modified parameters.
 
 \section{Tip speed analysis}
 
@@ -39,13 +41,13 @@ For 0.6mM only one site was recorded. Interestingly 0.6mM presented the highest 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{chapter7/Tip speed/0.6mM/approach_f_c_hist.jpg}
-\caption{Approach force-current histogram at 0.6mM}
+\caption{Approach force-current histogram at 0.6mM at 2Hz}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{chapter7/Tip speed/0.6mM/retract_f_a_hist.jpg}
-\caption{Retract force-amplitude histogram at 0.6mM}
+\caption{Retract force-amplitude histogram at 0.6mM at 2Hz}
 \end{figure}
 
 \newpage
@@ -262,7 +264,7 @@ For 0.6mM only one site was recorded. Interestingly 0.6mM presented the highest 
 
 % 230mM Section
 \subsubsection*{230mM}
-230mM again shows data within expected ranges, while having a slightly higher approach repulsive force. For the retrace attractive force, the results are similar, again with a slightly lower attractive force.
+230mM 2Hz again shows data within expected ranges, while having a slightly higher approach repulsive force. For the retrace attractive force, the results are similar, again with a slightly lower attractive force.
 \begin{figure}[h!]
 \paragraph{S1 2Hz}
 \centering
@@ -296,7 +298,7 @@ For 0.6mM only one site was recorded. Interestingly 0.6mM presented the highest 
 
 % 550mM Section
 \subsubsection*{550mM}
-550mM marks a shift in approach forces towards the attractive. The results are similar again to other datapoints in this series; minorly reduced attractive force on the retrace. However, interestingly, the approach has very little attractive force. 
+550mM 2Hz marks a shift in approach forces towards the attractive. The results are similar again to other datapoints in this series; minorly reduced attractive force on the retrace. However, interestingly, the approach has very little attractive force. 
 \begin{figure}[h!]
 \paragraph{S2 2Hz}
 \centering
@@ -326,11 +328,9 @@ For 0.6mM only one site was recorded. Interestingly 0.6mM presented the highest 
 \newpage
 
 \subsubsection{Averaged curve of data}
-These datapoints were then averaged, with the standard deviations concatenated between sites using the following equation:
+These datapoints were then averaged, with the standard deviations ($Stdev_{avg}$) concatenated between sites using equation \ref{eq:Stdevavg}
 
-$\sqrt{\frac{{n_1}^2 + {n_2}^2 + {n_3}^2}{S_no}}$
-
-Where $n_#$ is the site's standard deviation and $S_no$ is the number of sites in the calculation (i.e. where there were 3 sites, this value was 3). These points were then plotted against the original dataset to investigate if any noticeable overall differences between points could be discerned.
+These points were then plotted against the original dataset to investigate if any noticeable overall differences between points could be discerned.
 
 \begin{figure}[h!]
 \centering
@@ -339,7 +339,7 @@ Where $n_#$ is the site's standard deviation and $S_no$ is the number of sites i
 \label{fig:ApproachAverageSpeed}
 \end{figure}
 
-The approach curve ($Figure \ref{fig:ApproachAverageSpeed}$) demonstrates an interesting observation: While minor, the increase in tip speed seems to indicate that the force required to bring the tip in contact increases with the speed of the tip. Possibly indicating that the system relaxes or changes in response to an approaching surface. 550mM is particularly interesting for example, where there was very little in the way of variation, and the approach force was nearly 0, potentially indicating that as the tip approaches, the surface was unable to relax in this way. 0.1Hz, while interestingly overlaps with the 2Hz datapoint, does not represent enough datapoints to fully make any solid conclusions. 
+The approach curve ($Figure \ref{fig:ApproachAverageSpeed}$) demonstrates an interesting observation: While minor, the increase in tip speed seems to indicate that the force required to bring the tip in contact increases with the speed of the tip. Possibly indicating that the system relaxes or changes in response to an approaching surface. 0.6mM is particularly interesting - as there was a significant increase in repulsive force at the higher speed, potentially indicating that tip speed has larger effects at very low ionic concentrations. 550mM is also interesting, where there was very little in the way of variation, and the approach force was nearly 0, potentially indicating that as the tip approaches, the surface was unable to relax in this way. 0.1Hz, while interestingly overlaps with the 2Hz datapoint, does not represent enough datapoints to fully make any solid conclusions. 
 
 \begin{figure}[h!]
 \centering
@@ -348,7 +348,7 @@ The approach curve ($Figure \ref{fig:ApproachAverageSpeed}$) demonstrates an int
 \label{fig:RetractAverageSpeed}
 \end{figure}
 
-The retrace curve ($Figure \ref{fig:RetractAverageSpeed}$ shows a similar story - the majority of each of the datapoints are slightly less attracted to the surface, and as such, are easier to disengage. This again could indicate that the potential relaxation of the system to introduced conditions. The 0.1Hz datapoint, also seems to indicate that as tip speed decreases, the attractive potential between tip and surface increases. Another interesting factor is the 25mM datapoints; the wide range and intrigue of a sudden spike in attractive force is retained, if muted, in the data. However, for 25mM it is important to point out that the sites for 25mM values are the same between speeds, so if the cause is due to the site location themselves that would not be changed in this case.
+The retrace curve ($Figure \ref{fig:RetractAverageSpeed}$ shows a similar story - the majority of each of the datapoints are slightly less attracted to the surface, and as such, are easier to disengage. This again could indicate that the potential relaxation of the system to introduced conditions. 0.6mM as well does not seem to carry over the large change seen in the retrace curve, instead giving a value within expected ranges. The 0.1Hz datapoint, also seems to indicate that as tip speed decreases, the attractive potential between tip and surface increases. Another interesting factor is the 25mM datapoints; the wide range and intrigue of a sudden spike in attractive force is retained, if muted, in the data. However, for 25mM it is important to point out that the sites for 25mM values are the same between speeds, so if the cause is due to the site location themselves that would not be changed in this case.
 
 Another aspect of investigation worth looking into is how the speed influences the reliability of the data. As tip speed increases, the volume of data decreases, as mentioned before, and as such it stands to reason that the standard deviation of the data would increase with this phenomena too.
 
@@ -383,20 +383,20 @@ One other frustration seen during this operational mode was the inconsistency in
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{chapter7/Dwell/Retrace overall.png}
-\caption{}
+\caption{A graph demonstrating the averaged retract forces felt by the AFM tip at different LiCl concentrations with 5s dwell time and 0s dwell time respectively.}
 \label{fig:RetractDwell}
 \end{figure}
 
-The retrace curve presents ($Figure \ref{fig:RetractDwell}$ an interesting but not unexpected conclusion: As tip exposure time increases, so too does the retentive force between the surface and tip on the retrace motion. For the majority of the datapoints this is true, to varying degrees of magnitude. However, one that significantly stands out is 25mM, where the postulation is inverse. This could potentially be due to the previosuly proposed relaxation time.
+The retrace curve presents ($Figure \ref{fig:RetractDwell}$ an interesting but not unexpected conclusion: As tip exposure time increases, so too does the retentive force between the surface and tip on the retrace motion for some of the data points (0.6mM, 230mM and 550mM particularly). However, one that significantly stands out is 25mM, where the postulation is inverse. This could potentially be due to the previously proposed relaxation time, or because 25mM is consistently weird.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.95\textwidth]{chapter7/Dwell/Approach overall.png}
-\caption{}
+\caption{A graph demonstrating the averaged approach forces felt by the AFM tip at different LiCl concentrations with 5s dwell time and 0s dwell time respectively.}
 \label{fig:ApproachDwell}
 \end{figure}
 
-However, when we look at the approach curve for the 2 points, we see a confusing picture. 
+However, when we look at the approach curve for the 2 points (figure \ref{fig:ApproachDwell}, we see an interesting picture. As the dwell time is increased, the time between curves is increased too, providing more time for water molecules and ions to adapt to the approaching tip, thus decreasing the repulsive force. This highlights that there is potentially hysteric effects.
 
 \newpage
 \section{pH analysis}
@@ -405,14 +405,14 @@ The pH level of a solution can significantly affect the forces between silica pa
 
 Silica surfaces are known to have silanol groups that can either accept or donate protons depending on the pH. At pH 5, which is close to the isoelectric point of silica, the surface charge density is reduced. This condition is interesting for force measurements since the electrostatic repulsion between particles is minimized, allowing other forces (such as van der Waals or steric forces) to be more prominently observed. \cite{Pavan2019}
 
-While the solutions used in the standard dataset was around pH 7 on creation the pH can drift to slightly acidic due to carbon dioxide (CO2) from the air dissolving in the water, forming carbonic acid (H2CO3), which can dissociate to form bicarbonate (HCO3-) and hydrogen ions (H+). Though this effect is generally quite small, it is worth investigating to see if changes in pH could've altered the resulting dataset.
+While the solutions used in the standard dataset was around pH 7 on creation the pH can drift to slightly acidic due to carbon dioxide (CO\textsubscript{2}) from the air dissolving in the water, forming carbonic acid (H\textsubscript{2}CO\textsubscript{3}), which can dissociate to form bicarbonate (HCO\textsubscript{3}\textsuperscript{-}) and hydrogen ions (H\textsuperscript{+}). Though this effect is generally quite small, it is worth investigating to see if changes in pH could've altered the resulting dataset.
 
 For this analysis a solution made up to pH of 5 instead of the standard pH 7 was performed, with the results directly compared against the 0.6mM LiCl concentration solution. 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{chapter7/pH/Overall image.png}
-\caption{}
+\caption{A graph demonstrating the differences in approach and retract forces at differing pHes. pH 5 is the deviation and pH 7 is the standard.}
 \label{fig:pHOverall}
 \end{figure}
 
@@ -421,9 +421,9 @@ From the observed change in pH, the resulting forces are similar to what would b
 \newpage
 \section{JPK Forcemapping}
 
-One of the limitations of using the interpretation software is that it assumes that all curves are of the same shape. This is not the case for a range of sites. While this helps highlight features 
+One of the limitations of using the interpretation software is that it assumes that all curves are of the same shape. This is not the case for a range of sites. While this helps highlight features (such as the shelf) across multiple repeats on the same area, it does not take into account a range of different sites. That being said, however, as long as the user does not attempt to use the software incorrectly to provide an averaged graph, the attractive/repulsive force analysis is perfectly applicable and as such was used to analyse each induvidual curve from the forcemapping.
 
-Due to the differences between the AFMs, and potentially the way the AFMs were used to measure the interactions, the "shelf" seen was more of a snap to contact point in the curve. This meant that the shelf seen in the previous AFM, may have been the point in which the tip snapped to the surface, and the older AFM may not have been able to detect or measure this sudden change in the way the new one has. 
+Due to the differences between the AFMs, and potentially the way the AFMs were used to measure the interactions, the ``shelf" seen was more of a snap to contact point in the curve. This meant that the shelf seen in the previous AFM, may have been the point in which the tip snapped to the surface, and the older AFM may not have been able to detect or measure this sudden change in the way the new one has. 
 
 Due to the limited window in which this AFM was available, it was not possible to explore this interaction further, but it is promising that this shelf feature is present across multiple AFMs and sites. The script was adapted in order to use the new data type, with a specialised script written to convert exportable JPK filetypes into the format expected by the software.
 
@@ -525,7 +525,7 @@ The retract portion of the curve is even more unusual with a consistent attracti
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{chapter7/ForceMaps/10mM/Retract_heatmap.png}
-\caption{}
+\caption{Retract heatmap for 10mM concentration.}
 \label{fig:pHOverall}
 \end{figure}
 

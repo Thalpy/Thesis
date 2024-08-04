@@ -1,4 +1,4 @@
-\chapter{Retract force curves}
+\chapter{Analysis of Retract Force Curves in Colloidal Systems}
 
 \section{Introduction}
 
@@ -55,7 +55,7 @@ The force histogram statistical compiles a distribution of the retrace forces en
 \insertretractfigures{6}{10}{2}{}
 \insertretractfigures{6}{10}{3}{}
 
-10mM starts to transition from a the occasional adhesive retrace curve, to a distribution of attractive ranges.Both site 2 and 3 have a a distribution similar to a normal distribution, unlike it's predecessors.
+10mM starts to transition from a the occasional adhesive retrace curve, to a distribution of attractive ranges.Both site 2 and 3 have a a distribution similar to a normal distribution, unlike its predecessors.
 
 %25 3 sites
 \insertretractfigures{6}{25}{1}{}
@@ -81,31 +81,20 @@ The force histogram statistical compiles a distribution of the retrace forces en
 
 \section{Overall force vs LiCl concentration graphs}
 
-The pull off forces calculated were subsequently plotted on a series of graphs.
+The pull off forces calculated were subsequently averaged, with the standard deviation calculated using equation \ref{eq:Stdevavg}.
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{chapter6/Overall/Site 1.png}
+    \includegraphics[width=1\linewidth]{chapter6/Averages.png}
     \caption{Site one calculated attractive force retained from contact with standard deviation error bars.}
     \label{fig:site1cont}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{chapter6/Overall/Site 2.png}
-    \caption{Site two calculated attractive force retained from contact with standard deviation error bars.}
-    \label{fig:site2cont}
-\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{chapter6/Overall/Site 3.png}
-    \caption{Site Three calculated attractive force retained from contact with standard deviation error bars.}
-    \label{fig:site3cont}
-\end{figure}
-
-The retrace curves shown in the images represent the attractive forces that are retained when the AFM tip is retracted from the contact with the surface at different LiCl concentrations. The retrace curves shows a significant attractive force that increases with increasing LiCl concentration, with the forces generally following a trend downwards. However 25mM is perplexing, as it demonstrates the strongest attractive force. This could be due to other reasons, such as a unexpected surface perturbation providing additional friction. In general, however, there is a trend of increasing attractive force, and thus pull off force across the datapoints.
+The retrace curve shown in figure \ref{fig:site1cont} represent the attractive forces that are retained when the AFM tip is retracted from the contact with the surface at different LiCl concentrations. The retrace curve shows an attractive force plateu, until a critical concentration at around 50mM where the attractive force between the tip and surface increases increasing LiCl concentration, with the force generally following a trend downwards. However 25mM is perplexing, as it demonstrates the strongest attractive force, though it is worth noting that 25mM was also a bit of an oddity in the approach curves due to it's higher standard deviation. This could be due to other reasons, such as a unexpected surface perturbation providing additional friction. In general, however, there is a trend of increasing attractive force past 50mM concentration, and thus pull off force across the datapoints.
 
 Another aspect that stands out is the prominence of the standard deviation, especially at the higher concentrations. This is typical for retrace curves due to the reasons mentioned earlier such as tip changes upon contact. It is also interesting to note that the attractive forces in retrace curves are usually not symmetrical with the approach curves due to various interactions that can occur when the tip is in contact with the surface. These interactions include adhesion hysteresis, capillary forces, and possible tip contamination or wear, which can all affect the tip as it retracts and lead to the variability observed.
 
-This  analysis is important for interpreting the overall behavior of the system and for validating models of interfacial forces, which is the focus of our next chapter.
+One final interesting note is the observation of the 50mM tipping point present in both the approach and retrace curve, indicating that past 50mM there potentially could be some kind of mechanism that impacts the electrostatic repulsion, rather than a linear build up of ions on the surface (potentially enough ions to fully saturate the surface?).
+
+This analysis is important for interpreting the overall behavior of the system and for validating models of interfacial forces, which is the focus of our next chapter.
