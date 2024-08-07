@@ -13,7 +13,7 @@
 %Check what I define what a long range force is, what is a short range force is?
 
 %add nomenclature/glossary
-%Where is Ue(r) defined ?
+%Where is Ue(h) defined ?
 
 %REFERENCES ARE BUGGERED PLEASE FIX BEFORE SENDING OFF TO BE READ!!!
 
@@ -148,7 +148,8 @@ The Diffuse layer is characterized by a gradual reduction in counterion concentr
 \label{fig:Stern}                 % Reference label to the figure.
 \end{figure}
 
-The measurement of the distance beyond which the electrostatic force between charged particles is insignificant is known as the The Debye length ($\lambda_D$). It represents the distance over which the electrostatic influence of a collodial surface charge extends into the solution. The Debye length is given by:
+
+The Debye length ($\lambda_D$) is a measure of the distance over which the electrostatic influence of a colloidal surface charge extends into the surrounding solution. It represents the characteristic distance at which the electrostatic potential decays by a factor of ($e^{-1}$). The Debye length is given by:
 
 \begin{equation}
     \lambda_D = \kappa^{-1} = \sqrt{\frac{2 N_A e^2 I}{\varepsilon_0 \varepsilon_r k_B T}},
@@ -178,18 +179,18 @@ The Debye length measures the effective thickness of this diffuse layer. It repr
 Electrostatic repulsion plays a significant role in maintaining the stability of colloidal suspensions. When two colloidal particles in a suspension approach each other, their respective electrical double layers begin to overlap and repel one another. Without this repulsion attractive van der Waals forces (detailed in the next section) would dominate, leading to particle aggregation. The nature of this electrostatic repulsion is closely linked to the presence of the electrical double layer surrounding each colloidal particle. As detailed previously, the double layer consists of surface-bound charges and a diffuse layer of counterions, which create a repulsive force when two colloidal particles approach each other. This repulsion counterbalances the attractive van der Waals forces, thereby stabilizing the colloidal system.\cite{hunter1989foundations} The electrostatic energy of this repulsion is given by:
 
 %\begin{equation} %This can't be right??
-%U_E (r) = 4\pi\epsilon R \Psi^2_{0} \epsilon_0 e^{-\kappa h}
+%U_E (h) = 4\pi\epsilon R \Psi^2_{0} \epsilon_0 e^{-\kappa h}
 %\end{equation} %WRONG
 
 \begin{equation} %WHERE DID THIS COME FROM!?!?!?
 \begin{split}
-%U_E(r) = \frac{\epsilon_r \epsilon_0 \Psi_0^2}{\kappa} e^{-\kappa h} \\
-U_E(r)= \frac{64 \pi \epsilon \epsilon_0 k_BT \Psi_0^2}{\kappa^2} e^{-\kappa h}
+%U_E(h) = \frac{\epsilon_r \epsilon_0 \Psi_0^2}{\kappa} e^{-\kappa h} \\
+U_E(h)= \frac{64 \pi \epsilon \epsilon_0 k_BT \Psi_0^2}{\kappa^2} e^{-\kappa h}
 %Z = 64 \pi \varepsilon_0 \varepsilon_r \left( \frac{k_B T}{e} \right)^2 \tanh^2\left( \frac{z e \Psi_0}{4 k_B T} \right)
 \end{split}
 \end{equation}
 
-\( U_E(r) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \Psi_0 \) is the surface potential of the colloidal particles. \( \kappa \) is the inverse Debye length and determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. $T$ represents the absolute temperature and $k_B$ is the Boltzmann constant. \cite{OHSHIMA200218} \cite{behrens2001charge}
+\( U_E(h) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \Psi_0 \) is the surface potential of the colloidal particles. \( \kappa \) is the inverse Debye length and determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. $T$ represents the absolute temperature and $k_B$ is the Boltzmann constant. \cite{OHSHIMA200218} \cite{behrens2001charge}
 
 The Debye length is a key factor that governs the range of electrostatic interactions. In solutions with high ionic strength, the Debye length is shorter, leading to a more compressed double layer. Consequently, the electrostatic repulsion decreases more rapidly with distance, allowing particles to come closer before experiencing significant repulsive forces. In contrast, in low ionic strength solutions, the Debye length is longer, and particles experience repulsive forces over greater distances, contributing to the stability of the suspension by preventing aggregation.
 
@@ -202,7 +203,7 @@ The other factor that affects colloids in suspections is the attractive componen
 %where does this come frommmmmmmmmmmmmm
 
 
-%w(r) is Joules, ~ 8x10^-19J, kT is 5x10^-21J. Stronk.
+%w(h) is Joules, ~ 8x10^-19J, kT is 5x10^-21J. Stronk.
 
 %lennard jones potential here?
 
@@ -275,18 +276,18 @@ These van der Waals forces, comprising Keesom, Debye, and London dispersion forc
 The van der Waals interaction energies in colloidal systems can be represented mathematically through various equations. Two such expressions for the van der Waals potential energy (\(U_{vdW}\)) are:
 
 \begin{equation}  %Alternative - from excel model paper (Nano focused, misses out on larger particles?) R must be distance then?? (nanocoatings practice and principles)
-%U_{vdW} (r) = - \frac{A  R}{6h^2} 
+%U_{vdW} (h) = - \frac{A  R}{6h^2} 
 U_{vdW} = -\frac{A_H R}{6 h^2}
 \label{Hammy}
 \end{equation}
 
 %\begin{equation}  %Alternative - from excel model paper (Nano focused, misses out on larger particles?) R must be distance then?? (nanocoatings practice and principles)
-%U_{vdW} (r) = - \frac{A}{12hkT} \times \frac{r}{R}
+%U_{vdW} (h) = - \frac{A}{12hkT} \times \frac{r}{R}
 %\label{Hammy}
 %\end{equation}
 
 %\begin{equation}
-%U_{vdW} (r) = - \frac{A}{12\pi} \left( \frac{R}{r}\right)^2
+%U_{vdW} (h) = - \frac{A}{12\pi} \left( \frac{R}{r}\right)^2
 %\label{VDWeqn}
 %\end{equation}
 
@@ -301,11 +302,11 @@ A = \pi^2 C p_1 p_2
 Where \(C\) is the interaction parameter, given by the coefficient in the particle-particle pair interaction, and \(p_1\) and \(p_2\) represent the number densities of the two interacting particle types. \cite{FoundColloidBook} The interaction parameter \(C\) is determined as follows:
 
 \begin{equation}
-%w(r) = - \frac{C}{r^6}
-C = -w(r) r^6
+%w(h) = - \frac{C}{r^6}
+C = -w(h) h^6
 \end{equation}
 
-where \(w(r)\) denotes the pair interaction energy between two particles. 
+where \(w(h)\) denotes the pair interaction energy between two particles. 
 
 One striking element of these interactions is their short range - their significance only felt up to tens of nanometers. This is significant in colloidal systems particularly in solvent environments, where the Hamaker constant (\(A\)) assumes characteristic values depending on the colloidal and solvent properties. The interaction range significantly influences colloidal properties such as aggregation, stability, and rheology, highlighting the importance of understanding these forces.\cite{israelachvili2011intermolecular} %Great where did my citation go
 
@@ -329,7 +330,7 @@ The Lennard-Jones potential stands as an introduction in modeling intermolecular
 The Lennard-Jones potential offers a useful visual representation of intermolecular forces. This model is particularly useful for visualizing the variation of potential energy as a function of the distance between particles. At the nadir of this curve lies the energy well, a concept that illustrates the balance between attractive and repulsive forces, and demonstrates the optimal distance location between interacting particles under no external forces. This balance occurs at a specific inter-particle distance where the system achieves its minimal potential energy and thus equilibrium state. The Lennard-Jones potential is given by:
 
 \begin{equation}
-U(r) = 4 \epsilon \left[ \left( \frac{\sigma}{h} \right)^{12} - \left( \frac{\sigma}{h} \right)^6 \right]
+U(h) = 4 \epsilon \left[ \left( \frac{\sigma}{h} \right)^{12} - \left( \frac{\sigma}{h} \right)^6 \right]
 \end{equation}
 
 Where $\epsilon$ is the depth of the potential well, representing the strength of the attraction at the equilibrium distance. $\sigma$ is the finite distance at which the inter-particle potential is zero; it represents the distance at which the potential between the two particles changes from repulsive to attractive. $h$ is the distance between the particles. The first term is the repulsive forces, which are strong at very short distances and decay rapidly with distance. The second term represents the attractive forces, which decay relatively slower with distance.
@@ -363,7 +364,7 @@ These limitations highlight the need for more comprehensive models which leads u
 
 
 
-DLVO theory, named after its developers Derjaguin, Landau, Verwey, and Overbeek in the mid-20th century, describes the complex interplay of forces within colloidal systems. This theory represents a dance of forces where electrostatic repulsions \( U_E(r) \) and van der Waals attractions \( U_{\text{vdW}}(r) \) continually sway between dominance, impacting the stability and behavior of colloids.\cite{israelachvili2011intermolecular} \cite{Origin2V} \cite{DERJAGUINORIGIN}
+DLVO theory, named after its developers Derjaguin, Landau, Verwey, and Overbeek in the mid-20th century, describes the complex interplay of forces within colloidal systems. This theory represents a dance of forces where electrostatic repulsions \( U_E(h) \) and van der Waals attractions \( U_{\text{vdW}}(h) \) continually sway between dominance, impacting the stability and behavior of colloids.\cite{israelachvili2011intermolecular} \cite{Origin2V} \cite{DERJAGUINORIGIN}
 
 
 The context of the initial theory was done upon lyophobic colloids, which is to say a colloidal suspension of particles in a medium that does not precipitate. Particles are prevented from merging (coalescence) and separating via repulsive forces present between one another, and as a result in an equilibrated state it is stable. This repulsion is produced due to the repulsive electrostatic forces described in 1.1.2, present due to the surface charges of the colloid. The attractive forces of the equation result from van der Waals forces present from the electron distribution of the atomic core, from the molecular surface of the colloid, described in 1.1.2.\cite{ninhama1999progress}
@@ -382,7 +383,7 @@ This equation expresses the total interaction potential within DLVO theory, wher
         \begin{center}
           \includegraphics[width=110mm]{chapter1/DLVO.PNG}
 \end{center}
-\caption{A graphical demonstration of the competing forces between colloidal particles. The electrostatic repulsion ($U_E(r)$) and the van der Waals attraction $U_{vdW}(r)$ combine together the sum interplay known as DLVO theory (bold line).}
+\caption{A graphical demonstration of the competing forces between colloidal particles. The electrostatic repulsion ($U_E(h)$) and the van der Waals attraction $U_{vdW}(h)$ combine together the sum interplay known as DLVO theory (bold line).}
 \label{fig:DLVO}                 % Reference label to the figure.
 \end{figure}
 
@@ -419,9 +420,9 @@ Where $R_1$ and $R_2$ are the radii of the two interacting particles. In systems
 \label{fig:h_graph}                 % Reference label to the figure.
 \end{figure}
 
-This approximation holds up when the size of the interacting particles is relatively larger compared to other force magnitudes present in the system. 
+The Derjaguin approximation is most effective when the interacting surfaces are significantly curved, and the size of the particles is large relative to the interaction range of the forces. This approximation simplifies the complex geometry of interacting curved surfaces by treating them as a series of infinitesimal parallel planes, making it more approachable for understanding and predicting the forces at play in colloidal interactions. This method is particularly useful when direct calculations of forces between complex geometries are challenging, as it leverages the geometry of the interacting bodies to estimate the interaction forces rather than directly comparing magnitudes of forces and distances.
 
-This approximation is most effective when the size of the interacting particles is relatively larger compared to other force magnitudes in the system. It allows for a more approachable method to understanding and predicting the forces at play in colloidal interactions, especially when direct calculations of forces between complex geometries is challenging. \cite{smolBook1} \cite{Origin2V} \cite{IsGreenBook} \cite{surfpattQ}\cite{Surfquestion} %\cite{DLVOsmolOverview}
+\cite{smolBook1} \cite{Origin2V} \cite{IsGreenBook} \cite{surfpattQ}\cite{Surfquestion} %\cite{DLVOsmolOverview}
 
 %\cite{DLVOsmolOverview, smolBook1}
 
@@ -534,13 +535,13 @@ Experimental verification of these simulations is important, as current models h
 
 \section{Considering reality}
 
-Whenever considering a mathematical model of reality it is always worth testing it against an assumed case to see whether or not it would hold up. One such case would be to calculate the maximum size of a spherical particle that would retain contact to the roof under its own attractive force, governed by van der Waals interactions.
+Whenever considering a mathematical model of reality it is always worth testing it against an assumed case to see whether or not it would hold up. One such case is understanding how single-particle interactions can scale to influence multi-particle interactions within a system. This concept is particularly important in colloidal rheology, where the collective behavior of particles under shear stress determines the material’s macroscopic properties.
 
 \subsection{Attaching spherical putty to the ceiling}
 
-Consider the common experience of sticking sphereical Blu Tack to a ceiling. This everyday occurrence is a testament to the complex interplay of forces that operate at the microscale. While it might seem straightforward to attribute the adhesion of Blu Tack to the ceiling to van der Waals forces alone, the reality is more nuanced, as explained by the DLVO theory.
+Consider the common experience of sticking spherical Blu Tack to a ceiling. This everyday occurrence is a testament to the complex interplay of forces that operate at the microscale. When Blu-Tack is pressed against a ceiling, the viscoelastic properties of the material allow it to deform and maximize the contact area, enhancing adhesion. This interaction is governed by van der Waals forces at the surface, a form of single-particle interaction.
 
-DLVO theory provides a framework for understanding the forces at play between charged surfaces in a liquid medium. However, when we consider Blu Tack, which is a pressure-sensitive adhesive, we encounter a scenario where DLVO theory's assumptions of flat, infinite surfaces do not hold. The viscoelastic nature of Blu Tack allows it to deform and flow, conforming to the irregularities of the ceiling surface. This increases the contact area and enhances adhesion, a factor not accounted for in the simplified models.
+However, in a colloidal suspension, similar single-particle forces, such as van der Waals attraction and electrostatic repulsion, are at play. When many such particles are present, these forces collectively influence the suspension's rheological properties, such as shear thinning and thickening. For instance, in shear thickening systems, as shear stress increases, particles may form hydroclusters—temporary multi-particle assemblies where the collective behavior results in a noticeable increase in viscosity.
 
 %Why did I make this
 \begin{figure}[h]     %Insert a figure as soon as possible
@@ -551,12 +552,8 @@ DLVO theory provides a framework for understanding the forces at play between ch
 \label{fig:disp}                 % Reference label to the figure.
 \end{figure}
 
-Moreover, the practical adhesion of Blu Tack involves more than just electrostatic and van der Waals forces. The malleable nature of Blu Tack means it can fill in the micro-grooves and surface asperities of the ceiling, creating a more substantial mechanical interlocking than what DLVO theory predicts. The theory's limitations become apparent when we note that it predicts an infinite force at zero separation distance, which is not observed in practice.
+This example serves as an analogy for how single-particle forces can scale in a suspension. Just as the Blu Tack conforms to surface irregularities to increase adhesion, particles in a suspension may aggregate or disperse based on similar forces, affecting the material's bulk properties. Thus, understanding single-particle interactions is a stepping stone to predicting and controlling multi-particle interactions, particularly in complex fluids and colloidal systems.
 
-This divergence from theory to practice indicates that while DLVO theory provides a foundational understanding, it does not encapsulate the full spectrum of forces in play. This discrepancy sets the stage for further exploration using tools like Atomic Force Microscopy (AFM), which can empirically measure the forces between surfaces at the microscale. By comparing AFM force curves with theoretical predictions, we can begin to refine our models to better represent the complexity of real-world interactions.
-
-In the case of Blu Tack, the ability to adhere to the ceiling without falling off under its own weight suggests that the combined effects of its viscoelastic properties and surface conformability are crucial. These physical characteristics allow Blu Tack to maintain a firm grip on the ceiling, defying gravity and providing an excellent example of adhesion that goes beyond the scope of classical models. This observation encourages us to consider additional factors such as the material's properties and surface topography in our understanding of colloidal and surface interactions.
+The ability of Blu Tack to adhere to the ceiling without falling off under its own weight suggests that the combined effects of its viscoelastic properties and surface conformability are crucial. These physical characteristics allow Blu Tack to maintain a firm grip on the ceiling, defying gravity and providing an excellent example of adhesion that goes beyond the scope of classical models. This observation encourages us to consider additional factors such as the material's properties and surface topography in our understanding of colloidal and surface interactions.
 
 Through this practical lens, we see the value of questioning and expanding upon established theories like DLVO. It is through the curiosity-driven inquiry into such everyday phenomena that we can deepen our understanding of the fundamental principles governing material adhesion and surface interactions.
-
-
