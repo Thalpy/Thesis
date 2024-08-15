@@ -1,20 +1,28 @@
 \chapter{Further analysis and discussion}
 
-This chapter aims to analyse and discuss the findings presented in the previous three chapters, focusing on the intricate details and implications of Atomic Force Microscopy (AFM) force curve analysis. The preceding chapters laid a foundational understanding of the colloidal interactions and the work involved to process the raw data into a usable format. This chapter instead will focus on using the previous chapters' data to draw conclusions about colloidal systems. The force-distance profiles obtained from AFM are analysed, providing a direct and nuanced insight into the particle interactions at an individual level. The force curves, reflecting the precise nature of forces acting at the nanoscale, will be juxtaposed against the bulk property measurements to draw a more comprehensive picture of the colloidal dynamics. This analysis will not only validate but also potentially challenge and refine the conclusions drawn from the bulk measurements, offering a more holistic understanding of the colloidal systems under study. Through this integrative approach, we aim to bridge the gap between our microscopic observations and derive behaviour on the macro scale. This chapter takes the following format, firstly over viewing the approach data, then the retract data.
+This chapter aims to analyse and discuss the findings presented in the previous three chapters, focusing on the intricate details and implications of Atomic Force Microscopy (AFM) force curve analysis. The preceding chapters laid a foundational understanding of the colloidal interactions and the work involved to process the raw data into a usable format. This chapter instead will focus on using the previous chapters' data to draw conclusions about colloidal systems. The force-distance profiles obtained from AFM are analysed, providing a direct and nuanced insight into the particle interactions at an individual level. The force curves, reflecting the precise nature of forces acting at the nanoscale, will be considered against the bulk property measurements to draw a more comprehensive picture of the overall force curve dynamics. This analysis will not only validate but also seek to challenge and refine the conclusions drawn from the bulk measurements, offering a more holistic understanding of the colloidal systems under study. Through this integrative approach, we aim to bridge the gap between our microscopic observations and derive behaviour on the macro scale. This chapter considers the approach data, then the retract data.
 
 \section{Approach force curves}
 
-The approach curve section of the data demonstrated a range of interesting effects and features. For one, the increase in LiCl concentration directly resulted in a decrease of the repulsive force upon the tip, likely due to the charge screening effect. At certain concentrations (550mM) this repulsive force flips into an attractive force, presumably where the electrostatic repulsion was muted enough for Van der Waals forces to predominate. However, even then, there was a notable range of attractive force, with some 550mM curves having very little attraction (550mM site 2). 
+The approach curve section of the data demonstrated a range of interesting effects and features. For one, the increase in LiCl concentration directly resulted in a decrease of the repulsive force upon the tip, likely due to the charge screening effect. At certain concentrations (550 mM) this repulsive force flips into an attractive force, presumably where the electrostatic repulsion was muted enough for Van der Waals forces to predominate. However, even then, there was a notable range of attractive force, with some 550 mM curves having very little attraction (550 mM site 2). 
 
-The variety in the magnitude of attractive forces at this high ionic strength, especially observed in the 550mM site 2 curves, further complicates the narrative. Such variability could be the result of surface heterogeneity, variations in ion distribution, or differing hydration layers, each of which could alter the force profile significantly.
+The variety in the magnitude of attractive forces at this high ionic strength, especially observed in the 550 mM site 2 curves, further complicates the narrative. Such variability could be the result of surface heterogeneity, variability in ion distribution, or differing hydration layers, each of which could alter the force profile significantly.
 
-Another interesting feature observed is the shelf. This shelf presented a sometime present energy barrier for the tip to overcome to come into contact. The presence of this shelf could possibly influence the plateau seen in the Averaged Approach Force vs LiCl Concentration graph, as the script was set to define contact as after the shelf.
+According to DLVO theory, as ionic strength increases, the electrostatic repulsion between similarly charged surfaces should decrease due to charge screening effects. This was observed in our approach curve data, where the repulsive forces reduced with increasing LiCl concentration. At 550 mM, the reduction in electrostatic repulsion allowed van der Waals forces to become dominant, resulting in a net attractive force. This behavior is in line with DLVO predictions.
 
-Interestingly, the absence of a shelf often correlated with lower repulsive forces, suggesting a relationship between the energy barrier and the overall force profile. In the case of 550mM concentrations, where an attractive force towards the surface was noted, the presence of an energy barrier despite the attraction further adds to the complexity. It raises questions about the nature of these barriers: whether they are purely electrostatic or if other forces, such as steric or hydration forces, contribute to their formation.
+However, the variability observed in the magnitude of attractive forces, especially at 550 mM, suggests that DLVO theory alone may not fully account for the interactions at play. Surface heterogeneity and localized variations in ion distribution can create deviations from the smooth, predictable force curves anticipated by DLVO. These factors introduce a level of complexity that suggests a need for a more nuanced model. For example, deviations could be due to the presence of patchy charge distributions or regions of differing hydration states on the silica surface, which are not captured by the uniform assumptions of DLVO.
+
+Another interesting feature observed is the shelf. This shelf presented an energy barrier for the tip to overcome to come into contact in some cases. The presence of this shelf could possibly influence lower salt concentrations observed force, as the script was set to define contact as after the shelf. Another interesting observation was the presence of the shelf on attractive force profiles.
+
+The presence of a 'shelf' in the approach curves represents an energy barrier that is not easily explained by DLVO theory. This shelf could be indicative of additional repulsive forces that are not purely electrostatic, such as steric hindrance or specific ion effects that create a temporary barrier before contact is established. The occasional presence of this shelf, and its correlation with reduced repulsive forces in the absence of the shelf, suggests that other forces, possibly related to hydration or structural forces within the confined liquid layer, may be at play. These forces would necessitate an extension of DLVO theory to include such factors, which become significant in high ionic strength environments.
+
+Interestingly, the absence of a shelf often correlated with lower repulsive forces, suggesting a relationship between the energy barrier and the overall force profile. In the case of 550 mM concentrations, where an attractive force towards the surface was noted, the presence of an energy barrier despite the attraction further adds to the complexity. It raises questions about the nature of these barriers: whether they are purely electrostatic or if other forces, such as steric or hydration forces, contribute to their formation. 
+
+The shelf also featured a snap to contact aspect, which indicated that at a certain threshold force this energy barrier was penetrated, allowing the cantilever to shift from repulsive forces to attractive forces.
 
 \section{Retract force curves}
 
-The retract force curves, which are often omitted due to their lack of acquiescence to DLVO, have several interesting properties too. Firstly, in general as the LiCl concentration increases, so too does the attractive force between the surface and the tip. But equally, when dwell time is applied, the attractive force additionally increases. This likely means that the mechanism holding the tip down during retrace may be dependant on ionic effects.
+The retract force curves, which are often omitted due to their lack of deviation from DLVO, have several interesting properties too. Firstly, in general as the LiCl concentration increases, so too does the attractive force between the surface and the tip. But equally, when dwell time is applied, the attractive force additionally increases. This likely means that the mechanism holding the tip down during retrace may be dependant on ionic effects.
 
 When dwell time is factored in, the attractive force further increases. This increment is indicative of a time-dependent process, possibly due to the reorganization of ions around the contact point, which enhances the attractive forces. The mechanism underlying this could be attributed to a combination of factors such as ion adsorption, water structuring, or surface conditioning over time, which requires further investigation.
 
@@ -22,15 +30,15 @@ The increasing attraction with dwell time also underscores the dynamic nature of
 
 In addition, the retract force curves with varying LiCl concentrations provide insights into the complexity beyond what is described by classical DLVO theory. The increased attraction at higher ionic strengths contradicts the expected screening effect that should reduce the interaction forces. This anomaly could be hinting at non-DLVO interactions, such as capillary forces, hydrophobic interactions, or specific ion effects, which are not accounted for in the classical theory.
 
-Additionally, there are some curiosities in the dataset, 25mM for example has a dramatic spike in attractive force towards the surface. This is further compounded by the dwell time decreasing the attractive force for 25mM. The shelf feature, as seen in the approach curves, is also present in the retract curve, indicating that the energy barrier may be more akin to an energy trap, which could lead towards the potential of surface roughness/frictional forces between the tip and surface.
+Additionally, there are some curiosities in the dataset, 25mM for example has a dramatic spike in attractive force towards the surface. This is further compounded by the dwell time decreasing the attractive force for 25mM. The shelf feature, as seen in the approach curves, is also present in the retract curve, indicating that the energy barrier may possibly be an energy trap.
 
 \section{Shelf analysis}
 
-The shelf seen in some datapoints is a consistent feature across multiple sites, present in the majority of the curves. The only concentration that doesn't feature the shelf in any of the sites is the 0.6mM concentrations, which is equally true in both the MFP and JPK AFMs.
+The shelf seen in some datasets is a consistent feature across multiple sites, present in the majority of the curves. The only concentration that doesn't feature the shelf in any of the sites is the 0.6mM concentrations, which is equally true in both the MFP and JPK AFMs.
 
-However the shelf was also seen in the JPK forcemaps as well - specifically the 10mM curves. Though, the shelf prominence varies between sites, some have a visible shelf that extends across multiple nanometers, while others don't. This feature is also seen in other papers from literature.\cite{guleryuz2012afm}
+However the shelf was also seen in the JPK forcemaps as well - specifically the 10mM curves. Though, the shelf feature varies between sites, some have a visible shelf that extends across multiple nanometers, while others don't. This feature is also seen in other papers from literature.\cite{guleryuz2012afm}
 
-However, it is prudent to ensure that the script is not the cause of this feature. As part of the curve is used to align the data into a straight line for the contact region, it is conceivable that this was introduced by the user defining said region.
+However, it is prudent to ensure that the script is not the cause of this feature. As part of the curve is used to align the data into a straight line for the contact region, it is conceivable that this was introduced by the user defining region.
 
 \begin{figure}[h!]
 \centering
@@ -64,7 +72,7 @@ Figures \ref{fig:Deriv2} and \ref{fig:CurveBack2} demonstrate that the fitting d
 
 One specific paper describes an attractive force that is observed when using a counterion at intermediate salt concentrations. This force has a range of about 1 nm and is distinct from the forces predicted by DLVO theory. It is believed that this additional force could be due to ion-ion correlations, which are interactions that can occur between ions in solution due to their charge. However, the shelf could also be influenced by other factors such as surface charge heterogeneities (variations in the distribution of charge on the surface) or charge fluctuation forces (forces that arise from temporary changes in the distribution of charge). \cite{Valmacco2016}
 
-However one interesting point about the findings in that paper is the notation of a roughly 1 nm range. Given that several of the graphs in the dataset feature shelves, an analysis of the shelf force (the force required for the energy barrier to yield) and an analysis of the shelf range (the width of the shelf as seen on the dataset) would serve as a useful exploration for determining overlaps between our data and theirs.
+However one interesting point about the findings in that paper is they identify a range of a roughly 1 nm. Given that several of the graphs in the dataset feature shelves, an analysis of the shelf force (the force required for the energy barrier to yield) and an analysis of the shelf range (the width of the shelf as seen on the dataset) would serve as a useful exploration for determining overlaps between our data and theirs.
 
 \begin{figure}[h!]
 \centering
@@ -78,24 +86,28 @@ This data was taken for all datapoints that could be extracted this way (one or 
 \begin{figure}[h!!]
 \centering
 \includegraphics[width=0.8\textwidth]{chapter8/Shelf/ShelfScatter2.png}
-\caption{Demonstrating the range of self force and self range. For the range of data, there was no significant change in the datapoints due to salt concentration for both features.}
+\caption{Demonstrating the range of self force and self range. For the range of data, there was no significant change in the datasets due to salt concentration for both features.}
 \label{fig:resultsShelf}
 \end{figure}
 
-The results in \ref{fig:resultsShelf} show that the shelf had a consistent range between 1-2nm, and the yield force was between 1.5-4nN. While the range was slightly higher in our data, our findings align with what Kilpatrick et al discusses \cite{Kilpatrick2013DirectlyProbing}. The fact that the shelf is consistent across a broad range of salt concentrations might imply that these additional forces are present regardless of ionic strength variations, possibly due to surface charge heterogeneities or charge fluctuation forces that are less sensitive to ionic strength.
+The results in figure \ref{fig:resultsShelf} show that the shelf had a consistent range between 1-2nm, and the yield force was between 1.5-4nN. While the range was slightly higher in our data, our findings align with what Kilpatrick et al discusses \cite{Kilpatrick2013DirectlyProbing}. The fact that the shelf is consistent across a broad range of salt concentrations might imply that these additional forces are present regardless of ionic strength variations, possibly due to surface charge heterogeneities or charge fluctuation forces that are less sensitive to ionic strength.
 
 In addition to this finding, the JPK forcemapping curves demonstrated the same shelf seen across the standard dataset. As the tip moved across multiple locations, the shelf force changed, however the shelf range was relatively static.
 
 \begin{figure}[h!!]
 \centering
 \includegraphics[width=0.8\textwidth]{chapter8/Shelf/083_approach.png}
-\caption{An example of an unprocessed curve (except force flooring) from the JPK forcemapping. The "shelf" can clearly be seen, with a sudden jump down to contact. The difference between this and the MFP could be due to the higher resolution the newer AFM offers.}
+\caption{An example of an unprocessed curve (except force flooring) from the JPK forcemapping. The ``shelf" can clearly be seen, with a sudden jump down to contact. The difference between this and the MFP could be due to the higher resolution the newer AFM offers.}
 \label{fig:noisey}
 \end{figure}
 
-One interesting aspect of this shelf as seen in the JPK AFM is the sudden attractive force felt by the tip. This again is in line with Kilpatrick et al.
+One interesting aspect of this shelf as seen in the JPK AFM is the sudden attractive force felt by the tip seen in figure \ref{fig:noisey}. This again is in line with Kilpatrick et al. 
 
-As such our findings match Kilpatrick et al. \cite{Kilpatrick2013DirectlyProbing}, where the shelf can be attributed to additional, non-DLVO attractive forces likely related to the specific ion effects, such as ion-ion correlations, surface charge heterogeneities, or other surface-specific interactions at the water-silica interface such as hydration forces. These forces can be significant in the presence of multivalent ions, which are known to impact the surface charge and hydration layers in a manner not fully accounted for by classical DLVO theory. As such, this provides evidence towards a growing call for improvements to the current DLVO theory.
+Another important consideration in understanding the shelf feature is the molecular size of glycerol. Glycerol molecules are roughly under 1 nm in size, which is significant given that the shelf observed in the force curves spans between 1 and 2 nm. This raises the possibility that various arrangements of glycerol molecules at the interface between the AFM tip and the sample could be contributing to the formation of this shelf. The alignment of glycerol molecules at the interface might provide a physical barrier, resulting in the shelf observed as the AFM tip approaches the surface. This suggests that the shelf could be a manifestation of the structured solvation layers formed by glycerol, which is consistent with known solvation phenomena where solvent molecules form ordered layers near a surface.
+
+This consideration is particularly relevant when combined with the observation that the shelf is consistently present across a wide range of salt concentrations, indicating that this barrier might be a result of specific solvation forces rather than purely electrostatic interactions as predicted by DLVO theory. 
+
+As such our findings match Kilpatrick et al. \cite{Kilpatrick2013DirectlyProbing}, where the shelf can be attributed to additional, non-DLVO attractive forces likely related to the specific ion effects, such as ion-ion correlations, surface charge heterogeneities, or other surface-specific interactions at the water-silica interface such as hydration forces. These forces can be significant in the presence of multivalent ions, which are known to impact the surface charge and hydration layers in a manner not fully accounted for by classical DLVO theory. As such, this provides consideration towards improvements to the current DLVO theory.
 
 \section{Overcoming the noise in data}
 
@@ -104,8 +116,8 @@ The noise in the data from MFP AFM is significant. Not all AFMs can be operated 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{chapter8/Shelf/027_approach_zoom.png}
-\caption{An example of a zoomed in portion of a raw curve. The noise is intense. The shelf feature can be somewhat seen in the curve, but could easily be discounted by the background noise.}
-\label{fig:noisey}
+\caption{An example of a zoomed in portion of a raw curve. The noise is intense. The shelf feature can be somewhat seen in the curve at 4 nN, but could easily be discounted by the background noise.}
+\label{fig:noisey2}
 \end{figure}
 
 These sources of noise could have impacted the resulting graphs from the age of the components in the system. Other sources of noise and frustration during the data taking process is due to the variability in the force feedback loop. It was observed that the AFM doesn't always apply consistent pressure, especially during the dwell time graphs, which was the source of difficulty during their processing. The data rate as well as the limited amount of binning that could possible be done, as features would be lost/smoothed out. 
@@ -129,6 +141,16 @@ The software utilises several methods of adjusting the curves towards a more use
 
 By making this software open source and accessible on a git repository, the scientific community can utilise, revise and improve upon tools that allow for a greater applicability of AFM. While the software presently is modest, the potential for the wider community to contribute and grow the software to address the current issues is always present. \cite{YourGithub2023}
 
+\section{Potential Variability from Hydration/Solvation Forces}
+
+The variability between at a single site and across multiple sites is likely influenced by a combination of factors, including surface heterogeneity and ion distribution. However, a significant contribution comes from hydration and solvation forces, which can vary substantially depending on the local environment at the interface between the AFM tip and the sample. These forces are especially relevant at higher salt concentrations, where the competition between electrostatic screening and the structuring of water molecules and ions near the surface becomes more pronounced.
+
+The hydration forces, in particular, may introduce variability as they depend on the local arrangement of water molecules around ions and the surfaces. This structuring is sensitive to small changes in the ionic environment, leading to fluctuations in the observed forces. Similarly, solvation forces, which arise from the organization of solvent molecules around ions, could further contribute to the observed variability, especially in systems where the solvent composition or ion concentration is non-uniform. \cite{israelachvili2011intermolecular}
+
+In this context, the software developed during this investigation provides a helpful capability that enhances the accuracy of these measurements, particularly by resolving the shelf feature in AFM force curves. The ability to detect and analyze this shelf feature, which might be obscured by baseline noise in other systems, represents a key result in the analysis of force curves. It allows for a clearer differentiation of the forces at play, particularly under conditions where hydration and solvation forces introduce variability. This advancement was only fully recognized in later stages of the analysis, but its implications for the overall understanding of the force profiles are profound.
+
+The ability to resolve such subtle features is useful identifying the sources of variability, and also for interpreting the interplay between different force contributions. The software's capability to resolve the shelf feature adds a layer of precision that ensures more accurate identification of contact points and the forces involved, thereby offering a more detailed and reliable analysis of the system's behavior under varying conditions.
+
 \section{Temporal Dynamics in Force Measurements}
 
 \subsection{The Influence of Tip Velocity}
@@ -143,18 +165,18 @@ These considerations collectively underscore the necessity of carefully selectin
 
 \section*{AFM contact force measurements and rheological behaviour of dense colloidal suspensions}
 
-The significance of the present work does not confine in the direct measurement and fundamental understanding of forces of material surfaces in close proximity within aqueous media. Moreover, it allows us to investigate a working hypothesis in the colloidal rheology community regarding the onset of shear thickening behaviour in dense colloidal suspensions.~\cite{reference1}
+The significance of this work extends beyond simply measuring and understanding the fundamental forces between material surfaces in aqueous media. It also provides insights into a key hypothesis within the colloidal rheology community regarding the onset of shear thickening behavior in dense colloidal suspensions.~\cite{reference1}
 
 Currently it is assumed that the colloidal particles do not experience any frictional forces at low shear stresses and it is only above an ``onset'' stress, $\sigma^*$, that frictional contact occurs leading to shear thickening behaviour.~\cite{reference2} It is speculated that it is this frictional contact occurring above the onset stress that is responsible for the characteristic viscosity increase observed during shear thickening. Following this reasoning, in order for the frictional contact to occur the shear stress has to overcome the repulsive interparticle force that inhibits contact, i.e. the repulsive critical “contact” force, $F_c$, which is directly related to the shear thickening onset stress $\sigma^*$. Using Derjaguin approximation [3], a critical surface energy $W^*$ can be associated with the critical force , $F_c$ (as measured by AFM) experiments as follows
 
 % The formula can be included as follows
 \[ W^*_{AFM} = \frac{F_c}{\pi R_t} \]
 
-Where $W^*_{AFM}$ is the critical surface energy deduced from AFM fd curves and $R_t$ is the radius of the colloidal sphere we have used in these measurements ($3.3 \mu m$) at varying ionic strengths. The usage of the critical surface energy to describe the interactions has advantages as it is an intrinsic surface materials/media property and is independent of sizes. Equivalently, the shear thickening onset shear stress $\sigma^*$ in rheology experiments should also be related to this critical surface energy $W^*$ and simple dimensional analysis indicates that $W^* \propto R\sigma^*$, where $R$ is the radius of colloidal particles used in rheological experiments. More precisely, numerical simulations have already confirmed this relationship and provide the numerical predictor~\cite{reference4}.
+Where $W^*_{AFM}$ is the critical surface energy deduced from AFM force distance curves and $R_t$ is the radius of the colloidal sphere we have used in these measurements ($3.3 \textmu m$) at varying ionic strengths. The usage of the critical surface energy to describe the interactions has advantages as it is an intrinsic surface materials/media property and is independent of sizes. Equivalently, the shear thickening onset shear stress $\sigma^*$ in rheology experiments should also be related to this critical surface energy $W^*$ and simple dimensional analysis indicates that $W^* \propto R\sigma^*$, where $R$ is the radius of colloidal particles used in rheological experiments. More precisely, numerical simulations have already confirmed this relationship and provide the numerical predictor~\cite{reference4}.
 
 \[ W^* = 2.11 R\sigma^* \]
 
-Samuel C. Brown conducted systematic rheological experiments (colloidal silica spheres of radius of 0.75 μm) at different ionic strengths and a set of his measurements is used to calculate the critical surface energy in Figure \ref{fig:critical_surface_energy} where we also depict the calculated critical stress from the completely independent AFM fd curves presented in this thesis. The agreement is remarkable and indicates strongly and directly for first time the validity of the interparticle friction origins of the shear thickening behaviour.
+Samuel C. Brown conducted systematic rheological experiments (colloidal silica spheres of radius of 0.75 \textmu m) at different ionic strengths and a set of his measurements is used to calculate the critical surface energy in Figure \ref{fig:critical_surface_energy} where we also depict the calculated critical stress from the completely independent AFM force distance curves presented in this thesis. The agreement is remarkable and indicates strongly and directly for first time the validity of the interparticle friction origins of the shear thickening behaviour.
 
 % Here's how you might include a figure with a caption:
 \begin{figure}[h!]
@@ -164,10 +186,17 @@ Samuel C. Brown conducted systematic rheological experiments (colloidal silica s
 \label{fig:critical_surface_energy}
 \end{figure}
 
+Comtet et al. \cite{comtet2017pairwise}, present a paper on the relationship between pairwise colloidal interactions and macroscopic rheological behavior. They demonstrated that the frictional interactions between particles at the nanoscale are directly correlated with the onset of discontinuous shear thickening (DST) in colloidal suspensions. This finding is particularly relevant when considering the critical stress observed in described above.
+
+In this study, revealed that the critical normal stress required to overcome repulsive forces at the particle level dictates the critical shear stress at which DST occurs. This suggests that the transition from a hydrodynamic regime, dominated by repulsive interactions, to a regime where frictional contact between particles prevails, is responsible for the macroscopic shear thickening behavior. this provides an explanation for the critical stress points observed in figure \ref{fig:critical_surface_energy}, where similar frictional forces may lead to the pronounced changes in rheological behavior, such as shear thickening or thinning.
+
+By linking these core thesis findings to the paper's results, it can be proposed that the critical stress thresholds observed are similarly influenced by the transition from repulsive to frictional forces between particles. The implications of this transition are evident in the rheological profiles, where the viscosity of the suspension increases dramatically beyond a certain shear stress, mirroring the DST observed by Comtet et al. This connection contextualises nanoscale interactions as a major component explaining macroscopic rheological phenomena.
+
+Furthermore, the application of these findings suggests that the variability in the rheological responses observed could be attributed to differences in the extent of frictional interactions at varying particle concentrations and ionic strengths. These insights not only support the observed data but also provide a theoretical framework that aligns with current understandings of shear thickening behavior, thereby enhancing the robustness of the conclusions drawn in this thesis.
+
 \section{Comparing results to DLVO theory}
 
-
-The Force at Contact vs. LiCl Concentration plot is designed to show how the force at the point of contact between an Atomic Force Microscopy (AFM) tip and a sample varies with the concentration of LiCl in a 50:50 water-glycerol mixture. This relationship is important for understanding how ionic strength affects the interaction forces at the nanoscale. In order to examine our results against theory the equations from Chapter 1 were used, which represent general use equations.
+The Force at Contact vs. LiCl Concentration plot is designed to show how the force at the point of contact between a spherical Atomic Force Microscopy (AFM) silica tip and a sample varies with the concentration of LiCl in a 50:50 water-glycerol mixture. This relationship is important for understanding how ionic strength affects the interaction forces at the nanoscale. In order to examine our results against theory the equations from Chapter 1 were used.
 
 \subsection*{Equations Used}
 
@@ -178,6 +207,16 @@ Several equations are used in the script to model the interactions. These equati
     \kappa^{-1} = \sqrt{\frac{2 N_A e^2 I}{\varepsilon_0 \varepsilon_r k_B T}},
     \]
     where $N_A$ is Avogadro's number, $e$ is the elementary charge, $I$ is the ionic strength, $\varepsilon_0$ is the vacuum permittivity, $\varepsilon_r$ is the relative permittivity of the mixture, $k_B$ is the Boltzmann constant, and $T$ is the temperature. $\epsilon_r$ was taken from \cite{behrends2006dielectric}
+
+\textbf{Effective Hamaker's constant}: The hamaker's constant for the silica-liquid medium (water:glycerol) can be approximated by using the Effective Medium Approximation. In the Effective Medium Approximation, the composite medium (water-glycerol mixture) is treated as an effective medium with an effective dielectric constant $\epsilon_{eff}$, calculated as:
+
+\begin{equation}
+    A_{eff} = \sqrt{A_{silica} \times A_{eff\_medium}}
+\end{equation}
+
+Here, $A_{silica}$ is the Hamaker constant for the silica-water interaction, taken as $0.63 \times 10^{-20} \, \text{J}$, \cite{Bergstrom1997} and $A_{eff\_medium}$ is the Hamaker constant for the water-glycerol mixture taken by combining both the water and glycerol Hamaker constants, taken as $3.85 \times 10^{-20} \, \text{J}$ for water and $5.7 \times 10^{-20} \, \text{J}$ for glycerol.
+
+The resulting Hamaker constant, $A_{eff}$, reflects the combined effect of the silica surface and the water-glycerol medium and is used in subsequent van der Waals force calculations within the context of the Atomic Force Microscopy (AFM) studies conducted.
     
 \textbf{Electrostatic Repulsion Force:} The electrostatic repulsion force per unit area between a sphere and a plane, taking into account the surface potential $\Psi_0$, is calculated as
     \[
@@ -191,7 +230,7 @@ Several equations are used in the script to model the interactions. These equati
     \]
     where $A_H$ is the Hamaker constant taken from \cite{Bergstrom1997}.
     
-\textbf{Total Interaction Energy:} The total interaction energy or force at a separation $h$ is the sum of the van der Waals and electrostatic forces. When adjusted for surface roughness, the combined rms roughnesses of the two surfaces was added to the separation distance as a simple means to model roughness.
+\textbf{Total Interaction Energy:} The total interaction energy or force at a separation $h$ is the sum of the van der Waals and electrostatic forces. When adjusted for surface roughness, the combined rms roughnesses of the two surfaces was added to the separation distance as a simple accessible means to model roughness. This assumes that the distance is similar to the roughnesses combined. 
 
 \begin{table}[h]
 \centering
@@ -208,18 +247,19 @@ Elementary Charge, $e$ & $1.602 \times 10^{-19}$ C \\ \hline
 Boltzmann Constant, $k_B$ & $1.38064852 \times 10^{-23}$ m\(^2\) kg s\(^{-2}\) K\(^{-1}\) \\ \hline
 Separation Distance, $h$ & $2 \times 10^{-9}$ m \\ \hline
 Hamaker Constant $A_H$ & $0.63 \times 10^{-20}$ J \cite{Bergstrom1997}\\ \hline
+Effective Hamaker Constant $A_eff$ & $1.735 \times 10^{-20}$ J\\ \hline
 Valency, $z_i$ & 1 (dimensionless) \\ \hline
 Roughness Values & $2.4 \times 10^{-10} + 6.45 \times 10^{-10}$ m (chpt 3) \\ \hline
 \end{tabular}
-\caption{Parameters with their values with units}
+\caption{Parameters for DLVO fit with their values with units}
 \label{table:parameters_units}
 \end{table}
 
 
 
-\subsection*{Plot Explanation}
+\subsection*{DLVO Plot}
 
-The plot displays the calculated force at contact as a function of LiCl concentration. Experimental data points are overlaid to compare the theoretical model with actual measurements. At first figure \ref{fig:calc1} was calculated without the consideration of surface roughness, to gain a baseline.
+The plot displays the calculated force at contact as a function of LiCl concentration. Experimental data points are overlaid to compare the theoretical model with actual measurements. At first figure \ref{fig:calc1} was calculated without the consideration of surface roughness.
 
 \begin{figure}[h!]
 \centering
@@ -239,6 +279,16 @@ One aspect that can easily be added is the roughnesses taken from Chapter 3 (0.2
 \label{fig:calc2}
 \end{figure}
 
-This addition brings down the curve into a better fit with the experimentally derived data (Figure \ref{fig:calc2}). While this isn't definitive, as there are plenty of other issues with DLVO (such as the inability to predict the shelf seen in both AFM datasets and other papers), it does show that DLVO is sensitive to surface roughness - which we have previously proven to be significantly rough. This trait that could potentially be responsible for the larger degree of variation seen between experimental sites, which could be an avenue worth further exploration.
+This addition brings down the curve into a better fit with the experimentally derived data (Figure \ref{fig:calc2}). While this isn't definitive, as there are plenty of other issues with DLVO (such as the inability to predict the shelf seen in both AFM datasets and other papers), it does show that DLVO is potentially sensitive to surface roughness - which we have previously proven to be significantly rough, though, equally, it shows that DLVO is sensitive to separation by this method. This trait that could potentially be responsible for the larger degree of variation seen between experimental sites, which could be an avenue worth further exploration.
 
 
+When incorporating the effective Hamaker constant into the calculations, we observe a  improvement in the overall fit between the theoretical model and experimental data. However, discrepancies still persist, particularly at lower salt concentrations. This suggests that while adjusting for the dielectric properties of the silica/water/glycerol system improves the model's accuracy, it may not fully capture all the relevant interactions. These remaining inconsistencies point to the significance of the solvent environment in the system, indicating that additional forces—such as solvation forces—might also play a significant role in influencing the observed behaviors. Thus, future models may need to account for these solvation effects to achieve a more comprehensive and accurate representation of the system's dynamics.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{chapter8/Calculated/ham_eff.png}
+\caption{Force at contact from AFM experimental data (red circles) compared against calculated DLVO using a hamaker constant respective of the silica-medium interface.}
+\label{fig:calc3}
+\end{figure}
+
+The force measurements taken across a variety of ionic strengths and surface conditions reveal complex interactions that extend beyond traditional DLVO theory. The observations made highlight the need for an expanded theoretical framework to accurately predict colloidal behavior in non-ideal environments. These findings set the stage for the concluding chapter, where the broader implications for colloidal science and potential future research directions will be discussed.
