@@ -17,7 +17,7 @@ The incorporation of a 5-second dwell time between the approach and retraction p
 
 \subsubsection{Solution pH Influence}
 
-The pH of the colloidal solution influences the surface charge on the silica particles, which, in turn, modulates the observed force interactions. Variations in pH are expected to alter the electrical double layer, thereby affecting the force profiles and interaction potentials. 
+The pH of the solution influences the surface charge on the silica particle tip, which, in turn, modulates the observed force interactions. Variations in pH are expected to alter the electrical double layer, thereby affecting the force profiles and interaction potentials. 
 
 \subsubsection{Forcemapping for wide range site analysis}
 
@@ -43,15 +43,9 @@ As ions redistribute themselves, they can more effectively screen the surface ch
 
 At higher speeds (2 Hz), the faster approach does not give ions sufficient time to rearrange and fully screen the surface charges. This incomplete ion distribution can lead to less effective screening and therefore a stronger observed electrostatic repulsion compared to slower approaches.
 
-The force applied to the tip can be calculated using Stokes' law. \cite{bird2001transport}
+The force applied to the tip can be calculated using Stokes' law given in \ref{eqn:Stokesdrag}. \cite{bird2001transport}
 
-\begin{equation} 
-F_d = 6 \pi \eta R v
-\end{equation}
-
-Where $F_d$ is the drag force (or hydrodynamic force), $\eta$ is the dynamic viscosity of the fluid, $R$ is the radius of the spherical particle, $v$ is the velocity of the particle relative to the fluid. The dynamic viscosity was calculated to be 0.0069 $Ns/m^2$ for 50:50 water:glycerol. \cite{Viscosity1} \cite{Viscosity2}
-
-Using this equation, the following expected force applied to the cantilever: $4.2e^{-14}$ N, 0.5Hz: $2.1e^{-13}$ N, 2Hz: $1.7e^{-12}$ N. Given the smaller magnitude it is expected that the change in tip speed shouldn't influence the results, or, the influence of tip speed is unlikely to be due to hydrodynamic forces in this case.
+The dynamic viscosity was calculated to be 0.0069 $Ns/m^2$ for 50:50 water:glycerol. \cite{Viscosity1} \cite{Viscosity2} Using this equation, the following expected force applied to the cantilever: $4.2e^{-14}$ N, 0.5Hz: $2.1e^{-13}$ N, 2Hz: $1.7e^{-12}$ N. Given the smaller magnitude it is expected that the change in tip speed shouldn't influence the results, or, the influence of tip speed is unlikely to be due to hydrodynamic forces in this case.
 
 \subsubsection{Averaged curve of data}
 
@@ -84,7 +78,7 @@ The overlap of the 0.1 Hz data with the 2 Hz data point suggests that at this lo
 \end{figure}
 
 The retrace curve (Figure \ref{fig:RetractAverageSpeed} shows a similar story - 
-the majority of the data points exhibit less attraction to the surface, making it easier for the AFM tip to disengage. This suggests that under certain conditions, the system might be relaxing, leading to reduced attraction during retraction. Specifically, 0.6 mM does not exhibit the large change seen in the approach phase, instead showing values within expected ranges. This behavior suggests that as tip speed decreases, the attractive interaction between the tip and the surface increases. Another notable observation is with the 25 mM data points; despite the range and magnitude of the attractive force spike being reduced in the data, the consistency between speeds indicates that the observed effect is likely due to site-specific factors rather than speed variations. As mentioned in Chapter 5 and 6, 25 mM is thought to be due to tip or solution contamination.
+during the majority of retraction phases, the AFM tip encounters less attraction to the surface, making disengagement easier. This observation suggests that under specific conditions, the system may undergo a relaxation process, thereby diminishing the attraction during retraction. Notably, at a 0.6 mM concentration, there is no substantial variation observed in the retraction phase compared to the approach, with values remaining within expected ranges. This implies that slower tip speeds might enhance the attractive interaction between the tip and the surface. Additionally, an intriguing observation is made with the 25 mM data points; despite the reduced range and magnitude of the attractive force spike in the data, the consistency across different speeds suggests that the effect is more likely due to site-specific factors rather than speed variations. This is further corroborated by findings in Chapters 5 and 6, where 25 mM data were hypothesized to result from either tip or solution contamination.
 
 Another aspect of investigation worth looking into is how the speed influences the reliability of the data. As tip speed increases, the volume of data decreases, as mentioned before, and as such it stands to reason that the standard deviation of the data would increase with this phenomena too.
 

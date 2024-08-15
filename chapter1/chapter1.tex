@@ -22,13 +22,13 @@
 
 The methods of how particles interact with one another have been a longstanding area of interest in physics. As matter encroaches upon one another, there is an interplay of attractive and repulsive forces, which is particularly evident on the microscale of colloidal particles. This transition from repulsive to attractive forces within solutions marks a pivotal point essential for understanding and manipulating the behavior of these colloidal systems. Such knowledge is not only of academic interest but also has significant practical implications, especially in how the rheological properties of solutions can shift given different conditions.
 
-This deep dive into the realm of particle interactions has far-reaching effects that ripple through numerous industries. For instance; the paint and coatings industry, the food industry, the biotech industry and the cosmetic industry, all industries dependant on understanding this interplay where stability and consistency are necessary variables. Furthermore, in the pharmaceutical domain, the implications are even more striking. The efficacy and stability of drugs for health and well-being are fundamentally anchored in these particle behaviors. On a larger canvas, the insights from this research catalyze innovations in smart materials, such as those used in the automotive sector for shock absorption. Beyond the immediate technological triumphs, the environmental aspect is non-trivial. A refined understanding of these interactions paves the way for more sustainable practices and materials, aligning with a global imperative to minimize waste and conserve energy. 
+This deep dive into the realm of particle interactions has far-reaching effects that ripple through numerous industries. For instance the paint and coatings industry \cite{funnypaint}, the food industry \cite{funnyfood}, the biotech industry \cite{pichot2004surface} and the cosmetic industry \cite{funnymakeup}, all industries dependant on understanding this interplay where stability and consistency are necessary variables. Furthermore, in the pharmaceutical domain, the implications are even more striking. The efficacy and stability of drugs for health and well-being are fundamentally anchored in these particle behaviors \cite{funnypharm}. On a larger canvas, the insights from this research catalyze innovations in smart materials, such as those used in the automotive sector for shock absorption \cite{funnyshock}. Beyond the immediate technological triumphs, the environmental aspect is non-trivial. A refined understanding of these interactions paves the way for more sustainable practices and materials, aligning with a global imperative to minimize waste and conserve energy. 
 
-Furthermore, the exploration of particle interactions in colloidal systems extends its significance to the realm of biology, shedding light on the fundamental mechanics of microscopic life. Bacteria, along with a myriad of other microorganisms, can be modelled as simplistic colloids. Their interactions, survival, and behavior in various environments are intricately tied to the same principles of repulsive and attractive forces that govern inanimate colloids. Understanding how these biological colloids interact with each other and their surroundings provides invaluable insights into microbial life. This knowledge is not just theoretical but has practical implications in areas like biotechnology and medicine. For instance, deciphering how bacterial colonies form, adhere to surfaces, disperse, or respond to different environmental conditions can inform the development of new antibiotics and treatments, as well as contribute to the understanding of biofilm formation and its prevention. Additionally, this understanding aids in the development of biosensors and other biotechnological applications where microbial interaction with their environment is key. 
+Furthermore, the exploration of particle interactions in colloidal systems extends its significance to the realm of biology, shedding light on the fundamental mechanics of microscopic life. Bacteria, along with a myriad of other microorganisms, can be modelled as simplistic colloids \cite{livingbact}. Their interactions, survival, and behavior in various environments are intricately tied to the same principles of repulsive and attractive forces that govern inanimate colloids. Understanding how these biological colloids interact with each other and their surroundings provides invaluable insights into microbial life. This knowledge is not just theoretical but has practical implications in areas like biotechnology and medicine. For instance, deciphering how bacterial colonies form, adhere to surfaces, disperse, or respond to different environmental conditions can inform the development of new antibiotics and treatments, as well as contribute to the understanding of biofilm formation and its prevention. Additionally, this understanding aids in the development of biosensors and other biotechnological applications where microbial interaction with their environment is key \cite{biosense}. 
 
 Moreover, the stability and behavior of colloidal suspensions are deeply influenced by these particle interactions. In industries where such suspensions are fundamental, the transition between repulsive and attractive forces directly impacts product stability and performance. Knowledge of where and when this transition occurs is instrumental in developing lasting products, or making a breakthrough in research.
 
-Additionally, these force transitions are central to the study of rheology, particularly concerning shear thickening phenomena. The shift from repulsive to attractive interactions among particles in a shear-thickening fluid is key to understanding the increase in viscosity under stress. A deeper understanding of this transition is critical for uncovering the physics that underlie this behavior, leading to the development of advanced materials with specifically tailored properties.
+Additionally, these force transitions are central to the study of rheology, particularly concerning shear thickening phenomena. The shift from repulsive to attractive interactions among particles in a shear-thickening fluid is key to understanding the increase in viscosity under stress. A deeper understanding of this transition is critical for uncovering the physics that underlie this behavior, leading to the development of advanced materials with specifically tailored properties \cite{rehoreview}.
 
 This PhD, born from a simple desire to understand the forces influencing colloidal interactions on the nanoscale, covers a story started from the simple curiosity of what forces affect colloidal particles when they come in contact with one another. How does this force lead into the wider observed behaviour? Where do these shifts come from and what causes them? Can we model and develop tools to predict their behavior? How do these effects relate to real world life environments and systems? and what breakthroughs can we share with the world? My aim, in truth, was partially to bridge theoretical knowledge with practical application, provide an independent contribution to science and to scale the giant that is modern physics and stand atop the giant's shoulders.
 
@@ -74,7 +74,7 @@ equation:
 
 \begin{equation}
 \
-F = \frac{q_1q_2}{4 \pi \epsilon_r \epsilon_0 r^2}
+F = \frac{q_1q_2}{4 \pi \epsilon_r \epsilon_0 h^2}
 \end{equation}
 
 In this formulation:
@@ -110,7 +110,7 @@ When oppositely charged ions in the solution approach the charged surface, they 
 \end{figure}
 
 %Foundations of colloid science
-These ions are subjected to an electrostatic potential ($\Psi$) as they get closer towards the oppositely charged surface. The positive counter-ions (see fig \ref{fig:ioncloud}) are attracted by the electric field generated from the negatively charged surface producing a potential seen in fig \ref{fig:psi}. 
+These ions are subjected to an electrostatic potential ($\Psi$) as they get closer towards the oppositely charged surface. Whereas \( \Psi_0 \) is defined as the surface potential of the colloidal particles. The positive counter-ions (see fig \ref{fig:ioncloud}) are attracted by the electric field generated from the negatively charged surface producing a potential seen in fig \ref{fig:psi}. 
 
 \begin{figure}[h]    
         \begin{center}
@@ -126,7 +126,7 @@ In addition to the electrostatic attraction, ions in colloidal systems are also 
 
 The concept of the electrical double layer has been explained through several historical models. The Helmholtz model, proposed in 1853, suggested a simple planar distribution of charges directly opposite the surface charge, akin to a parallel plate capacitor. This distribution is a function of the distance away from the surface, and thus surface charge. While this model provided a basis of understanding the interactions between solvent ions and surface charges as a function of distance, it was unable to account for the effects of kinetics on the system.
 
-The Gouy-Chapman model developed between 1910 and 1913 introduced a more dynamic understanding. This model considered the impact of thermal motion, leading to a diffuse distribution of ions. It relies on the linearized Poisson-Boltzmann equation, which correlates the electrostatic potential with the charge density around the colloidal particle, allowing for a theoretical description of the diffuse layer. This model assumes a uniform surface charge and a homogeneous dielectric constant for the solution, implying that ions form a diffuse point charge region rather than discrete binding sites.
+The Gouy-Chapman model developed between 1910 and 1913 introduced a more dynamic understanding. This model considered the impact of thermal motion, leading to a diffuse distribution of ions. this relies on the linearized Poisson-Boltzmann equation, which correlates the electrostatic potential with the charge density around the colloidal particle, allowing for a theoretical description of the diffuse layer. This model assumes a uniform surface charge and a homogeneous dielectric constant for the solution, implying that ions form a diffuse point charge region rather than discrete binding sites.
 
 % linearized Poisson-Boltzmann equation 
 %\begin{equation}
@@ -138,7 +138,7 @@ The Gouy-Chapman model developed between 1910 and 1913 introduced a more dynamic
 
 Within this region there is a volume of liquid that is unique to the bulk properties of the liquid phase. This region with a higher concentration of counter ions is called the Helmholtz region and is further split up into two parts. The closest to the surface being the inner Helmholtz plane - where ions are adsorbed onto the surface, and the outer Helmholtz layer contains solvated ions. Afterwards the diffuse layer is made up of unbound free ions influenced by Brownian motion.
 
-The Diffuse layer is characterized by a gradual reduction in counterion concentration until it reaches the bulk concentration level. The Stern layer comprises specifically adsorbed ions in the inner Helmholtz plane and more loosely associated solvated ions in the outer Helmholtz plane. This layer represents the initial structuring of ions influenced by the surface charge before transitioning into the more diffuse arrangement of the bulk solution." The distribution of ions in this layer is highly dependent on the electrolytes present in the solution.
+The Diffuse layer is characterized by a gradual reduction in counterion concentration until it reaches the bulk concentration level. The Stern layer comprises specifically adsorbed ions in the inner Helmholtz plane and more loosely associated solvated ions in the outer Helmholtz plane. This layer represents the initial structuring of ions influenced by the surface charge before transitioning into the more diffuse arrangement of the bulk solution. The distribution of ions in this layer is highly dependent on the electrolytes present in the solution.
 
 \begin{figure}[h]     %Insert a figure as soon as possible
         \begin{center}
@@ -190,7 +190,7 @@ U_E(h)= \frac{64 \pi \epsilon \epsilon_0 k_BT \Psi_0^2}{\kappa^2} e^{-\kappa h}
 \end{split}
 \end{equation}
 
-\( U_E(h) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \Psi_0 \) is the surface potential of the colloidal particles. \( \kappa \) is the inverse Debye length and determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. $T$ represents the absolute temperature and $k_B$ is the Boltzmann constant. \cite{OHSHIMA200218} \cite{behrens2001charge}
+\( U_E(h) \) represents the electrostatic repulsion energy as a function of the distance (\( h \)) between the particles. \( \epsilon_r \) is the relative permittivity of the medium, and \( \epsilon_0 \) is the vacuum permittivity. \( \kappa \) is the inverse Debye length and determines how quickly the potential decays with distance, related to the thickness of the electrical double layer. \( e^{-\kappa h} \) is an exponential term that describes how the repulsion decreases with the distance between the particle surfaces. $T$ represents the absolute temperature and $k_B$ is the Boltzmann constant. \cite{OHSHIMA200218} \cite{behrens2001charge}
 
 The Debye length is a key factor that governs the range of electrostatic interactions. In solutions with high ionic strength, the Debye length is shorter, leading to a more compressed double layer. Consequently, the electrostatic repulsion decreases more rapidly with distance, allowing particles to come closer before experiencing significant repulsive forces. In contrast, in low ionic strength solutions, the Debye length is longer, and particles experience repulsive forces over greater distances, contributing to the stability of the suspension by preventing aggregation.
 
@@ -273,7 +273,7 @@ These van der Waals forces, comprising Keesom, Debye, and London dispersion forc
 %Fill out - T
 \subsubsection{Mathematical basis of dispersion forces} %inseperable
 
-The van der Waals interaction energies in colloidal systems can be represented mathematically through various equations. Two such expressions for the van der Waals potential energy (\(U_{vdW}\)) are:
+The van der Waals interaction energies in colloidal systems can be represented mathematically through various equations. One such expressions for the van der Waals potential energy (\(U_{vdW}\)) is:
 
 \begin{equation}  %Alternative - from excel model paper (Nano focused, misses out on larger particles?) R must be distance then?? (nanocoatings practice and principles)
 %U_{vdW} (h) = - \frac{A  R}{6h^2} 
@@ -292,14 +292,14 @@ U_{vdW} = -\frac{A_H R}{6 h^2}
 %\end{equation}
 
 
-In these equations, \(U_{vdW}\) is the attractive cohesive energy, \(A_H\) is the Hamaker constant, \(R\) is the radius of the colloidal particle, and \(h\) is the distance between the two particles. Equation \ref{Hammy} is derived to use for sphere-plane interactions, and for different geometries different equations are often used. The Hamaker constant (\(A\)), a fundamental parameter in these equations, is influenced by the material properties of the colloidal particles and the medium. The Hamaker constant is given by:
+In these equations, \(U_{vdW}\) is the attractive cohesive energy, \(A_H\) is the Hamaker constant, \(R\) is the radius of the colloidal particle, and \(h\) is the distance between the two particles. For different geometries different equations are commonly used. The Hamaker constant (\(A\)), a fundamental parameter in these equations, is influenced by the material properties of the colloidal particles and the medium. The Hamaker constant is given by:
 
 \begin{equation} %Foundation of collodial science
-A = \pi^2 C p_1 p_2
+A_H = \pi^2 C p_1 p_2
 \end{equation}
 
 
-Where \(C\) is the interaction parameter, given by the coefficient in the particle-particle pair interaction, and \(p_1\) and \(p_2\) represent the number densities of the two interacting particle types. \cite{FoundColloidBook} The interaction parameter \(C\) is determined as follows:
+Where \(C\) is the interaction parameter, given by the coefficient in the particle-particle pair interaction, and \(p_1\) and \(p_2\) represent the number densities of the two interacting particle types. The Hamaker constant is often taken from reference papers, which are provided to support calculations from experimental data \cite{Bergstrom1997}. Hamaker constants can be subject to a combining relation to improve their accuracy for complex solutions/systems. \cite{FoundColloidBook} The interaction parameter \(C\) is determined as follows:
 
 \begin{equation}
 %w(h) = - \frac{C}{r^6}
@@ -308,11 +308,11 @@ C = -w(h) h^6
 
 where \(w(h)\) denotes the pair interaction energy between two particles. 
 
-One striking element of these interactions is their short range - their significance only felt up to tens of nanometers. This is significant in colloidal systems particularly in solvent environments, where the Hamaker constant (\(A\)) assumes characteristic values depending on the colloidal and solvent properties. The interaction range significantly influences colloidal properties such as aggregation, stability, and rheology, highlighting the importance of understanding these forces.\cite{israelachvili2011intermolecular} %Great where did my citation go
+One striking element of these interactions is their short range - their significance only felt up to tens of nanometers. This is significant in colloidal systems particularly in solvent environments, where the Hamaker constant (\(A_H\)) assumes characteristic values depending on the colloidal and solvent properties. The interaction range significantly influences colloidal properties such as aggregation, stability, and rheology, highlighting the importance of understanding these forces.\cite{israelachvili2011intermolecular} %Great where did my citation go
 
 \section{The Interplay of Attractive and Repulsive Forces on Colloidal Systems}
 
-The intricate balance between attractive and repulsive forces plays a pivotal role in determining the stability of colloidal systems. This interplay between van der Waals forces and electrostatic interactions, forms the theoretical foundation of colloidal behavior. While van der Waals forces tend to draw particles together, potentially leading to aggregation, it is the counteracting electrostatic repulsion that often dictates whether a colloidal system remains stable or not. The stability of colloids thus depends on the equilibrium between these competing forces. Delving deeper into this complex interaction, the subsequent sections will explore the Lennard-Jones potential and the DLVO theory. The Lennard-Jones potential provides a fundamental model for understanding the balance of attraction and repulsion at a molecular level, while the DLVO theory offers a comprehensive framework that elucidates how this equilibrium contributes to the overall stability of colloidal systems and provides the main theoretical basis of understanding this practical thesis.
+The intricate balance between attractive and repulsive forces plays a pivotal role in determining the stability of colloidal systems. This interplay between van der Waals forces and electrostatic interactions, forms the theoretical foundation of colloidal behavior. While van der Waals forces tend to draw particles together, potentially leading to aggregation, it is the counteracting electrostatic repulsion that often dictates whether a colloidal system remains stable or not. The stability of colloids thus depends on the equilibrium between these competing forces. Delving deeper into this complex interaction, the subsequent sections will explore the Lennard-Jones potential and DLVO theory. The Lennard-Jones potential provides a fundamental model for understanding the balance of attraction and repulsion at a molecular level, while the DLVO theory offers a comprehensive framework that elucidates how this equilibrium contributes to the overall stability of colloidal systems and provides the main theoretical basis of understanding this practical thesis.
 
 \subsection{Lennard-Jones potential} %Mostly bulk? Not sure if needed.
 %Give a history lesson not a maths lesson
@@ -323,7 +323,7 @@ The Lennard-Jones potential stands as an introduction in modeling intermolecular
         \begin{center}
           \includegraphics[width=100mm]{chapter1/Lennard's potato.PNG}
 \end{center}
-\caption{The Lennard-Jones potential function. The potential energy between the two particles is given as a function of distance. As the particles begin to get closer, the experience attraction. As the distance between the two shortens, the attraction eventually gives way to a infinitely increasing repulsive force.}
+\caption{The Lennard-Jones potential function. The potential energy between the two particles is given as a function of distance. As the particles begin to get closer, the experience attraction. As the distance between the two shortens, the attraction eventually gives way to a infinitely increasing repulsive force. $h_0$ is the distance where the force between two particles is zero.}
 \label{fig:potato}                 % Reference label to the figure.
 \end{figure}
 
@@ -395,7 +395,7 @@ This assumes that the interacting objects are flat planes, and not spherical obj
 
 \subsubsection{Derjaguin approximation}
 
-The Derjaguin approximation is a useful approximation in colloidal science, particularly for calculating the interaction forces between particles with non-linear geometries. It simplifies the complex interactions in colloidal systems to a more manageable form, particularly useful when dealing with spherical particles or sphere-plane interactions.
+The Derjaguin approximation is a useful approximation in colloidal science, particularly for calculating the interaction forces between particles with non-flat geometries. It simplifies the complex interactions in colloidal systems to a more manageable form, particularly useful when dealing with spherical particles or sphere-plane interactions.
 
 %THIS IS DEYAGUIN APPROX PLS
 In the Derjaguin approximation, The force $F$ experienced by two interacting spherical colloidal particles is given by the free energy ($W$) of two plates per unit area with respect to the distance between the two ($h$). This relationship is expressed as:
@@ -469,9 +469,10 @@ Assuming conditions of linear flow and a constant velocity \( v_0 \), the hydrod
 
 \begin{equation}
 F_H = 6 \pi \eta R v_0
+\label{Stokesdrag}
 \end{equation}
 
-Where, \( \eta \) represents the viscosity of the fluid, and R is the radius of the colloidal particle. This force known as Stokes drag assumes that particles are sufficiently spaced apart to negate interparticle hydrodynamic effects is valid under solution conditions of low Reynolds number and with spherical particles.\cite{naudascher1991hydrodynamic}
+Where, \( \eta \) represents the viscosity of the fluid. This force known as Stokes drag assumes that particles are sufficiently spaced apart to negate interparticle hydrodynamic effects is valid under solution conditions of low Reynolds number and with spherical particles.\cite{naudascher1991hydrodynamic}
 
 Hydrodynamic interactions highlights the complexity of colloidal behavior, particularly when external forces are in play outside of the realm of DLVO. It highlights the need for a multifaceted consideration to understanding colloidal systems, beyond the descriptions of purely thermodynamic or static interaction models.
 
@@ -505,12 +506,12 @@ Colloidal particle suspensions often form non-Newtonian fluids. Unlike Newtonian
 Non-Newtonian behavior in colloidal suspensions arises from the complex interplay of these intermolecular forces. For example, in shear thinning, the alignment or structural rearrangement of particles under shear stress reduces internal resistance, a phenomenon deeply rooted in the balance of attractive and repulsive forces at the molecular level.\cite{Rheo2}
 
 \subsection{Shear Thinning and Thickening}
-Shear thickening in colloidal suspensions occurs when an increase in shear force leads to an increase in viscosity. Shear thinning consequently is when the same suspension decreases it's viscosity from shear forces. While it may be intuitive to expect that the effects draw from the same mechanical interaction, it has yet to be proven. The current theory is that shear thinning derives from small structural changes in the suspended system. The decrease in viscosity seen in shear thinning emulsions under shear stress can be attributed to the reorientation of particles from reducing the effective area of intermolecular resistance. This reorientation is facilitated by the delicate balance of forces acting at the nanoscale. 
+Shear thickening in colloidal suspensions occurs when an increase in shear force leads to an increase in viscosity. Shear thinning conversely is when the same suspension decreases it's viscosity from shear forces. While it may be intuitive to expect that the effects draw from the same mechanical interaction, it has yet to be proven. The current theory is that shear thinning derives from small structural changes in the suspended system. The decrease in viscosity seen in shear thinning emulsions under shear stress can be attributed to the reorientation of particles from reducing the effective area of intermolecular resistance. This reorientation is facilitated by the delicate balance of forces acting at the nanoscale. 
 
 Shear thickening presents a more complex scenario. The addition of salt to a colloidal suspension can suppress electrostatic repulsion between particles, a factor that can significantly influence the transition from shear thinning to thickening. By reducing electrostatic repulsion, salt can promote closer particle interactions, leading to hydroclustering under high shear, resulting in increased viscosity. Where particles form temporary immobilized clusters under compression, and order-to-disorder transitions, where applied forces disrupt the structured flow of particles, increasing viscosity. \cite{hydroshock, ShockCrash}
 
 \subsection{Lubrication Forces}
- This layer is thought to prevent physical contact, and thus frictional forces, between two interacting colloids. From this postulation, the infinite force at contact problem is solved, as the colloids never come into contact, instead separated by the viscous, lubricating layer between them during floculation. 
+This layer is thought to prevent physical contact, and thus frictional forces, between two interacting colloids. From this postulation, the colloids never come into contact, instead separated by the viscous, lubricating layer between them during floculation. 
 
 Lubrication forces are thought to be the dominant force regarding inter-collodial interactions, causing their observed behaviour and structure (for systems with a high colloidal concentration). These forces arise from thin lubricating layers between particles, preventing direct contact and thus reducing friction. These layers, influenced by van der Waals and electrostatic forces, prevent direct particle contact, facilitating movement and contributing to the unique rheological properties of the suspension. This mechanism potentially resolves the infinite force at $h = 0$ issue in theoretical models, as particles never physically touch but are separated by the lubricating layer. Such forces allow particles to disperse once the applied shear force is removed causing the characteristic shift in viscosity. \cite{israelachvili2011intermolecular}
 
@@ -520,13 +521,13 @@ This theory assumes spherical particles, which may not always be the case in rea
 
 Simple viscous drag is a critical aspect of hydrodynamic interactions in colloidal systems. This drag arises from the resistance experienced by colloidal particles as they move through a fluid, heavily influenced by the fluid's viscosity and the particle's velocity. It, along with hydrodynamic forces mentioned before, draws from fluid dynamics, and influences particle movement. With one focusing on individual particle behaviour, and the current focusing on bulk effects. Viscous drag is always in the direction opposite to the motion of the particle, whereas other hydrodynamic forces might have different directions based on flow patterns and particle shape.
 
-This relationship assumes low Reynolds number conditions, where the flow of fluid around the particle is laminar and the effects of inertia are negligible compared to viscous forces.
+Viscous drag assumes low Reynolds number conditions, where the flow of fluid around the particle is laminar and the effects of inertia are negligible compared to viscous forces.
 
 \subsection{Rheology of suspended colloidal particles}
 
 As you scale up the viscosity of a liquid and start applying these forces from the microscale to a collective sum on the macroscale you start to see interesting behaviours arise from the inter-molecular forces.
 
-While Rheology relies on deriving its understanding of such systems from a macroscopic lense, simulations take the current theory underpinning current scientific understanding to build up a theoretical landscape imitating reality. This in silico landscape often relies on equations use to simulate particle-particle interactions across all of the simulation. Simulations work by drawing a defined box with either periodic or constrained boundary conditions, in two or three dimensions, where each particle's sum force is calculated based upon the other particles within the box. Then, afterwards, the frame of reference is shifted forwards a certain amount of time, with the particle's positions moved based upon the last frame's force. This tick happens over and over, with the total time and accuracy dependent on the delta timestep.\cite{foss_brady_2000}
+While Rheology relies on deriving its understanding of such systems from a macroscopic lens, simulations take the current theory underpinning current scientific understanding to build up a theoretical landscape imitating reality. This in silico landscape often relies on equations use to simulate particle-particle interactions across all of the simulation. Simulations work by drawing a defined box with either periodic or constrained boundary conditions, in two or three dimensions, where each particle's sum force is calculated based upon the other particles within the box. Then, afterwards, the frame of reference is shifted forwards a certain amount of time, with the particle's positions moved based upon the last frame's force. This tick happens over and over, with the total time and accuracy dependent on the delta timestep.\cite{foss_brady_2000}
  
 As a result it is important to experimentally verify the results of simulations as the limits of mathematical models can influence the results. As such it is a powerful visualising tool to express how a system is functioning, however, as such it is imperative that the equations used to power this simulation are accurate. 
 

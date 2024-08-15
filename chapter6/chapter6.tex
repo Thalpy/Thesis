@@ -18,7 +18,7 @@ The retraction phase often reveals information about the adhesive properties of 
 
 \section{MFP-1D contact force derivation}
 
-This section will overview the results for the following LiCl concentrations: 0.6mM, 1.6mM, 5mM, 10mM, 25mM, 50mM, 230mM, 550mM. For each concentration multiple sites are analysed, highlighting features of each curve in preparation for analysis. The analytical approach to processing this large dataset is given in Chapter 4. 
+This section will overview the results for the following LiCl concentrations: 0.6 mM, 1.6 mM, 5 mM, 10 mM, 25 mM, 50 mM, 230 mM, 550 mM. For each concentration multiple sites are analysed, highlighting features of each curve in preparation for analysis. The analytical approach to processing this large dataset is given in Chapter 4. 
 
 The removal of retract curves followed the same rationale as in the previous chapter, with these curves often overlapping with those removed during the approach phase. This overlap was primarily due to machine errors, such as unsuccessful surface contact or insufficient data points within the measurement window. Despite these necessary exclusions, the large volume of collected data ensured that the overall analysis remained robust and unaffected by the removals.
 
@@ -42,7 +42,7 @@ Each retrace corresponds to the same site defined in chapter 5, as this is the b
 
 29 curves in total were processed. Of these processed curves the average attractive force was -0.1 nN $\pm$ 0.2 nN}
 
-0.6mM demonstrates the variability present in retrace curves. Occasionally, a retrace will have a higher attractive force. In general however, 0.6mM has very little to no attractive forces between the interacting elements.
+0.6 mM demonstrates the difficulty present in fitting curves with short contact regions. Occasionally, a retrace will have a higher attractive force. In general however, 0.6 mM has very little to no attractive forces between the interacting elements.
 
 %1.6
 \insertretractfigures{6}{1.6}{1}{The retract curves for Site 1 show the expected behavior, with a slight increase in attractive forces as the AFM tip retracts from the surface. The retract curve’s widening in the attractive force region reflects the expected minor adhesive interactions that start to become more noticeable as ionic strength increases.
@@ -59,6 +59,7 @@ Each retrace corresponds to the same site defined in chapter 5, as this is the b
 The contact region of this graph also demonstrates a bend in the data. This can sometimes occur in the data, where theory meets reality. In this case it could be where the cantilever is bending non linearly during the contact phase, or where the surface hardness may be variable. It may also arise from surface roughness or surface indentations.
 
 128 curves in total were processed. Of these processed curves the average attractive force was -0.8 nN $\pm$ 0.9 nN}
+
 \insertretractfigures{6}{5}{2}{In comparison to site 1, the attractive force is less dramatic, missing the adhesion event seen before.
 The contact region demonstrates a slight drift in the data. In this case it is likely from a slightly imperfect fit. In this case the fit is adequate to use however as the deviation from adjusting to the other direction does not impact the contact force significantly. Additionally, in some cases, a perfect fit cannot be reached from how the script is set up to process the data, or the average between all of the curves causes a tilt by how the script attempts to fit across the dataset range.
 
@@ -128,7 +129,15 @@ At the concentration of 5 mM LiCl, the range of pull-off forces shows increased 
 
 The final concentration follows the trend that 230mM shows, a marked increase of attractive force. Across the 3 sites observed the data collected agrees with each other, and appears coherent.
 
-\section{Overall force vs LiCl concentration graphs}
+\section{Comparison with literature}
+
+A similar work by Kappl and Butt \cite{buttkappl} focuses on measuring adhesion forces between colloidal particles using AFM, providing a detailed analysis of how surface roughness, humidity, and applied load influence these forces.
+
+In our work, similar methodologies were employed to investigate forces between silica surfaces in various ionic strengths, yet the focus extends beyond adhesion to explore the relationship between these microscale forces and the macroscopic rheological behavior of dense colloidal suspensions. Kappl and Butt observed that surface roughness plays a crucial role in deviating adhesion forces from theoretical predictions. This observation aligns with our findings where surface roughness significantly affects the measured forces, contributing to variations in the rheological properties of the suspensions.
+
+Furthermore, while Kappl and Butt’s work primarily addresses the methodological aspects and implications for colloidal stability via adhesion forces, our results indicate that the observed forces, influenced by surface roughness and ionic strength, have a direct impact on the rheological properties, particularly in how these properties deviate from expected behavior in dense suspensions. \cite{buttkappl} 
+
+\section{Overall force vs LiCl concentration graphs conclusions}
 
 The pull off forces calculated were subsequently averaged, with the standard deviation calculated using equation \ref{eq:Stdevavg}.
 
