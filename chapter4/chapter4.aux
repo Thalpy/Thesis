@@ -1,0 +1,109 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Atomic force spectroscopy analysis}{81}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{81}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}MFP-1D}{81}{section.4.2}\protected@file@percent }
+\citation{AFMTalk}
+\citation{AFMTalk}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Operation setup for the MFP-1D AFM that was used for force measurements.}}{82}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:forceAFM.jpg}{{4.1}{82}{Operation setup for the MFP-1D AFM that was used for force measurements}{figure.caption.42}{}}
+\citation{reference4}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Operational setup for the MFP-1D AFM that was used for force measurements. Adapted from \cite  {AFMTalk}}}{83}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:Head.jpg}{{4.2}{83}{Operational setup for the MFP-1D AFM that was used for force measurements. Adapted from \cite {AFMTalk}}{figure.caption.43}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Experimental setup}{83}{subsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Initial Setup and Challenges}{83}{figure.caption.44}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Experimental schematic of MFP-1D during operation. The AFM is abstracted away into a back box to highlight the motion that the cantilever takes with respect to the surface. The stage control provides horizontal control, and therefore moves the projected site of contact along the petri dish surface.}}{84}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:Chapter4ExperiSetup}{{4.3}{84}{Experimental schematic of MFP-1D during operation. The AFM is abstracted away into a back box to highlight the motion that the cantilever takes with respect to the surface. The stage control provides horizontal control, and therefore moves the projected site of contact along the petri dish surface}{figure.caption.44}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Issues Identified and Interim Solutions}{84}{figure.caption.44}\protected@file@percent }
+\citation{PlasUV}
+\citation{PlasTreat}
+\citation{SilicaAFMCleaning}
+\@writefile{toc}{\contentsline {subsubsection}{Final Protocol}{85}{figure.caption.44}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The view of a damaged chip from sequential plasma treatment. Normally a clean chip presents an observed silver colour on the outside, but from over-treatment the surface has worn away, resulting in the presentation seen above.}}{86}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:ScorchedEarth}{{4.4}{86}{The view of a damaged chip from sequential plasma treatment. Normally a clean chip presents an observed silver colour on the outside, but from over-treatment the surface has worn away, resulting in the presentation seen above}{figure.caption.45}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Connection with Rheology}{87}{subsection.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}MFP-1D force-distance curves acquisition and processing}{87}{subsection.4.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Acquisition}{87}{subsection.4.2.3}\protected@file@percent }
+\citation{python}
+\citation{numpy}
+\citation{KcConst}
+\@writefile{toc}{\contentsline {subsubsection}{Processing}{88}{subsection.4.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces An example of a individual graph produced at this point. Minimal processing has been done with only the deflection converted into force (nN) vs piezo z position ($\mu $m)}}{89}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:EgRawGraph}{{4.5}{89}{An example of a individual graph produced at this point. Minimal processing has been done with only the deflection converted into force (nN) vs piezo z position ($\mu $m)}{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces An example of a individual graph produced for a single approach curve. The orange region of the graph is the area used in the farfield drift reduction and used to set the floor of the data to 0.}}{90}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:farfielddrift}{{4.6}{90}{An example of a individual graph produced for a single approach curve. The orange region of the graph is the area used in the farfield drift reduction and used to set the floor of the data to 0}{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces An example plot of an approach curve. The area used to help define contact is highlighted by the purple dots overlaying the raw curve.}}{91}{figure.caption.48}\protected@file@percent }
+\newlabel{fig:contactRegion}{{4.7}{91}{An example plot of an approach curve. The area used to help define contact is highlighted by the purple dots overlaying the raw curve}{figure.caption.48}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces An example plot of the averaged approach gradient. The "approach gradient" in this context refers to the slope of the deflection as the AFM tip approaches the surface. Specifically, it is the rate at which the deflection changes as the AFM piezoelectric element moves the cantilever closer to the sample surface. This gradient provides insight into the force interactions occurring as the tip nears the surface, which is critical for understanding phenomena like the "jump to contact." This graph focuses specifically on the region after contact and the area used to define contact is highlighted by vertical dotted black lines (aka the defined contact region). The horizontal black line indicates the extrapolation of the data. in this case the data is binned to reduce noise. The height of each blue bar indicates the standard deviation for each point.}}{92}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:EgAvgDeriv}{{4.8}{92}{An example plot of the averaged approach gradient. The "approach gradient" in this context refers to the slope of the deflection as the AFM tip approaches the surface. Specifically, it is the rate at which the deflection changes as the AFM piezoelectric element moves the cantilever closer to the sample surface. This gradient provides insight into the force interactions occurring as the tip nears the surface, which is critical for understanding phenomena like the "jump to contact." This graph focuses specifically on the region after contact and the area used to define contact is highlighted by vertical dotted black lines (aka the defined contact region). The horizontal black line indicates the extrapolation of the data. in this case the data is binned to reduce noise. The height of each blue bar indicates the standard deviation for each point}{figure.caption.49}{}}
+\citation{SavitzkyGolay}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces An example plot of all the curves for a given site processed up until this point. A reference black line is overlaid demonstrating what a curve would look like with only terminal electrostatic repulsion. This figure represents about 100 curves aligned atop one another.}}{93}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:proc_force_sep_mastercurve}{{4.9}{93}{An example plot of all the curves for a given site processed up until this point. A reference black line is overlaid demonstrating what a curve would look like with only terminal electrostatic repulsion. This figure represents about 100 curves aligned atop one another}{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces An example plot of the final processed force curve. The y axis has been translated to show the distance from contact, with a black line highlighting the defined point of contact. The datapoint used to define the force at contact is highlighted in red.}}{93}{figure.caption.51}\protected@file@percent }
+\newlabel{fig:EgFinalCurve}{{4.10}{93}{An example plot of the final processed force curve. The y axis has been translated to show the distance from contact, with a black line highlighting the defined point of contact. The datapoint used to define the force at contact is highlighted in red}{figure.caption.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces An example of a histogram produced from a set of curves for specific site. The mean force is given at the top with the standard deviation.}}{94}{figure.caption.52}\protected@file@percent }
+\newlabel{fig:EgForceHisto}{{4.11}{94}{An example of a histogram produced from a set of curves for specific site. The mean force is given at the top with the standard deviation}{figure.caption.52}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Validation of results}{94}{subsection.4.2.4}\protected@file@percent }
+\citation{NWizardPic}
+\citation{NWizardPic}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces A preliminary log-log plot produced to investigate the expected Debye length vs the recorded Debye length at different salt concentrations. The black line indicates the approximated $\kappa $, whereas site one and two are two different recording areas on the glass surface.}}{95}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:DebyeLength}{{4.12}{95}{A preliminary log-log plot produced to investigate the expected Debye length vs the recorded Debye length at different salt concentrations. The black line indicates the approximated $\kappa $, whereas site one and two are two different recording areas on the glass surface}{figure.caption.53}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Nanowizard}{95}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Analysis differences for JPK NanoWizard}{95}{subsection.4.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Operation setup for the Nanowizard AFM that was used for force measurements \cite  {NWizardPic}.}}{96}{figure.caption.54}\protected@file@percent }
+\newlabel{fig:Nanowizard.png}{{4.13}{96}{Operation setup for the Nanowizard AFM that was used for force measurements \cite {NWizardPic}}{figure.caption.54}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Development and Significance of the Force Curve Analysis Software}{96}{section.4.4}\protected@file@percent }
+\@setckpt{chapter4/chapter4}{
+\setcounter{page}{98}
+\setcounter{equation}{2}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{13}
+\setcounter{table}{0}
+\setcounter{caption@flags}{2}
+\setcounter{continuedfloat}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{0}
+\setcounter{lotdepth}{1}
+\setcounter{section@level}{0}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{54}
+\setcounter{NAT@ctr}{0}
+\setcounter{@pps}{0}
+\setcounter{@ppsavesec}{0}
+\setcounter{@ppsaveapp}{0}
+\setcounter{lstnumber}{1}
+\setcounter{parentequation}{0}
+\setcounter{blindtext}{1}
+\setcounter{Blindtext}{5}
+\setcounter{blind@countparstart}{0}
+\setcounter{blindlist}{0}
+\setcounter{blindlistlevel}{0}
+\setcounter{blindlist@level}{0}
+\setcounter{blind@listcount}{0}
+\setcounter{blind@levelcount}{0}
+\setcounter{blind@randomcount}{0}
+\setcounter{blind@randommax}{0}
+\setcounter{blind@pangramcount}{0}
+\setcounter{blind@pangrammax}{0}
+\setcounter{AM@survey}{0}
+\setcounter{lstlisting}{0}
+}

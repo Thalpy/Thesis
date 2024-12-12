@@ -1,0 +1,180 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {0.1}Abstract}{1}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Lay Abstract}{1}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Declaration}{2}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Acknowledgements}{3}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Introduction to the Thesis}{26}{section.0.5}%
+\contentsline {subsubsection}{Chapter 1: Introduction to Surface Forces}{26}{section.0.5}%
+\contentsline {subsubsection}{Chapter 2: Atomic Force Microscopy}{26}{section.0.5}%
+\contentsline {subsubsection}{Chapter 3: Surface Imaging}{26}{section.0.5}%
+\contentsline {subsubsection}{Chapter 4: Atomic Force Spectroscopy Analysis}{26}{section.0.5}%
+\contentsline {subsubsection}{Chapter 5: Analysis of Approach Force Curves in Colloidal Systems}{27}{section.0.5}%
+\contentsline {subsubsection}{Chapter 6: Analysis of Retract Force Curves in Colloidal Systems}{27}{section.0.5}%
+\contentsline {subsubsection}{Chapter 7: Operational Parameter Exploration and Their Implications}{27}{section.0.5}%
+\contentsline {subsubsection}{Chapter 8: Further Analysis and Discussion}{27}{section.0.5}%
+\contentsline {chapter}{\numberline {1}Introduction to surface forces}{28}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Interparticle Colloidal forces}{29}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Electrostatic interactions}{31}{subsection.1.1.1}%
+\contentsline {subsubsection}{Charge screening}{32}{equation.1.1.1}%
+\contentsline {subsubsection}{Electrostatic repulsion}{35}{equation.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.2}Van der Waals Forces}{36}{subsection.1.1.2}%
+\contentsline {subsubsection}{Mathematical basis of dispersion forces}{38}{equation.1.1.7}%
+\contentsline {section}{\numberline {1.2}The Interplay of Attractive and Repulsive Forces on Colloidal Systems}{39}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Lennard-Jones potential}{40}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}DLVO theory}{41}{subsection.1.2.2}%
+\contentsline {subsubsection}{Derjaguin approximation}{43}{figure.caption.10}%
+\contentsline {subsubsection}{Limitations of DLVO Theory}{44}{figure.caption.11}%
+\contentsline {subsubsection}{Reversibility of Particle Contacts}{44}{figure.caption.11}%
+\contentsline {section}{\numberline {1.3}Dynamic forces}{45}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Hydrodynamic Interactions}{45}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Steric Forces}{46}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Bulk interactions and properties}{47}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Rheology}{47}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Non-Newtonian Fluids}{47}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Shear Thinning and Thickening}{47}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Lubrication Forces}{48}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Simple Viscous Drag in Colloidal Systems}{48}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Rheology of suspended colloidal particles}{49}{subsection.1.4.6}%
+\contentsline {section}{\numberline {1.5}Considering reality}{49}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Attaching spherical putty to the ceiling}{49}{subsection.1.5.1}%
+\contentsline {chapter}{\numberline {2}Atomic force microscopy}{51}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{51}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Basic overview of AFM operation}{52}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Tip Calibration}{57}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Common artifacts in AFM}{59}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}The tip}{60}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Scanner error}{61}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Vibrations}{62}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Incorrect user parameters and feedback errors}{62}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Imaging mode AFM}{63}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Mathematical alignment and error correction of AFM images}{63}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}Surface Force profiling}{66}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Anatomy of a force curve}{67}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Error correction of force curves}{68}{subsection.2.6.2}%
+\contentsline {chapter}{\numberline {3}Surface Imaging}{70}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{70}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Surface analysis}{71}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Measuring the surface of mica}{71}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Silica Surface Analysis}{72}{subsection.3.2.2}%
+\contentsline {subsubsection}{Results}{74}{figure.caption.31}%
+\contentsline {subsubsection}{Drift anaylsis}{77}{figure.caption.37}%
+\contentsline {section}{\numberline {3.3}Silica particle surface resolution}{77}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Atomic force spectroscopy analysis}{81}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{81}{section.4.1}%
+\contentsline {section}{\numberline {4.2}MFP-1D}{81}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Experimental setup}{83}{subsection.4.2.1}%
+\contentsline {subsubsection}{Initial Setup and Challenges}{83}{figure.caption.44}%
+\contentsline {subsubsection}{Issues Identified and Interim Solutions}{84}{figure.caption.44}%
+\contentsline {subsubsection}{Final Protocol}{85}{figure.caption.44}%
+\contentsline {subsection}{\numberline {4.2.2}Connection with Rheology}{87}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}MFP-1D force-distance curves acquisition and processing}{87}{subsection.4.2.3}%
+\contentsline {subsubsection}{Acquisition}{87}{subsection.4.2.3}%
+\contentsline {subsubsection}{Processing}{88}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Validation of results}{94}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Nanowizard}{95}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis differences for JPK NanoWizard}{95}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Development and Significance of the Force Curve Analysis Software}{96}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Analysis of Approach Force Curves in Colloidal Systems}{98}{chapter.5}%
+\contentsline {section}{\numberline {5.1}MFP-1D contact force derivation}{98}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}A note on rejected curves}{98}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Contact force calculations}{99}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Diversity and Range of Data Points}{100}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}0.6mM Site 1}{101}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}0.6mM Site 2}{102}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}0.6mM Site 3}{103}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}1.6mM Site 1}{104}{subsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.1.8}1.6mM Site 2}{105}{subsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.1.9}5mM Site 1}{107}{subsection.5.1.9}%
+\contentsline {subsection}{\numberline {5.1.10}5mM Site 2}{108}{subsection.5.1.10}%
+\contentsline {subsection}{\numberline {5.1.11}5mM Site 3}{109}{subsection.5.1.11}%
+\contentsline {subsection}{\numberline {5.1.12}10mM Site 1}{111}{subsection.5.1.12}%
+\contentsline {subsection}{\numberline {5.1.13}10mM Site 2}{112}{subsection.5.1.13}%
+\contentsline {subsection}{\numberline {5.1.14}10mM Site 3}{113}{subsection.5.1.14}%
+\contentsline {subsection}{\numberline {5.1.15}25mM Site 1}{114}{subsection.5.1.15}%
+\contentsline {subsection}{\numberline {5.1.16}25mM Site 2}{115}{subsection.5.1.16}%
+\contentsline {subsection}{\numberline {5.1.17}25mM Site 3}{116}{subsection.5.1.17}%
+\contentsline {subsection}{\numberline {5.1.18}50mM Site 1}{117}{subsection.5.1.18}%
+\contentsline {subsection}{\numberline {5.1.19}50mM Site 2}{118}{subsection.5.1.19}%
+\contentsline {subsection}{\numberline {5.1.20}230mM Site 1}{119}{subsection.5.1.20}%
+\contentsline {subsection}{\numberline {5.1.21}230mM Site 2}{120}{subsection.5.1.21}%
+\contentsline {subsection}{\numberline {5.1.22}550mM Site 1}{121}{subsection.5.1.22}%
+\contentsline {subsection}{\numberline {5.1.23}550mM Site 2}{122}{subsection.5.1.23}%
+\contentsline {subsection}{\numberline {5.1.24}550mM Site 3}{123}{subsection.5.1.24}%
+\contentsline {section}{\numberline {5.2}Overall force vs LiCl concentration graph}{124}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Discussion of Force Measurements and Salt Concentration Effects}{125}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Analysis of Retract Force Curves in Colloidal Systems}{127}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{127}{section.6.1}%
+\contentsline {subsubsection}{Analysis of Silica-silica retract curves}{127}{section.6.1}%
+\contentsline {section}{\numberline {6.2}MFP-1D contact force derivation}{128}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}0.6mM Site 1}{130}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}0.6mM Site 2}{131}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}0.6mM Site 3}{132}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}1.6mM Site 1}{134}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}1.6mM Site 2}{135}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}5mM Site 1}{137}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.7}5mM Site 2}{138}{subsection.6.2.7}%
+\contentsline {subsection}{\numberline {6.2.8}5mM Site 3}{139}{subsection.6.2.8}%
+\contentsline {subsection}{\numberline {6.2.9}10mM Site 1}{141}{subsection.6.2.9}%
+\contentsline {subsection}{\numberline {6.2.10}10mM Site 2}{142}{subsection.6.2.10}%
+\contentsline {subsection}{\numberline {6.2.11}10mM Site 3}{143}{subsection.6.2.11}%
+\contentsline {subsection}{\numberline {6.2.12}25mM Site 1}{145}{subsection.6.2.12}%
+\contentsline {subsection}{\numberline {6.2.13}25mM Site 2}{146}{subsection.6.2.13}%
+\contentsline {subsection}{\numberline {6.2.14}25mM Site 3}{147}{subsection.6.2.14}%
+\contentsline {subsection}{\numberline {6.2.15}50mM Site 1}{149}{subsection.6.2.15}%
+\contentsline {subsection}{\numberline {6.2.16}50mM Site 2}{150}{subsection.6.2.16}%
+\contentsline {subsection}{\numberline {6.2.17}230mM Site 1}{152}{subsection.6.2.17}%
+\contentsline {subsection}{\numberline {6.2.18}230mM Site 2}{153}{subsection.6.2.18}%
+\contentsline {subsection}{\numberline {6.2.19}550mM Site 1}{155}{subsection.6.2.19}%
+\contentsline {subsection}{\numberline {6.2.20}550mM Site 2}{156}{subsection.6.2.20}%
+\contentsline {subsection}{\numberline {6.2.21}550mM Site 3}{157}{subsection.6.2.21}%
+\contentsline {section}{\numberline {6.3}Comparison with literature}{158}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Overall force vs LiCl concentration graphs conclusions}{158}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Operational parameter exploration and their implications}{162}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{162}{section.7.1}%
+\contentsline {subsubsection}{Tip Speed Variations}{162}{section.7.1}%
+\contentsline {subsubsection}{Effect of Dwell Time}{163}{section.7.1}%
+\contentsline {subsubsection}{Solution pH Influence}{163}{section.7.1}%
+\contentsline {subsubsection}{Forcemapping for wide range site analysis}{163}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Tip speed analysis}{164}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Expected effect of tip speed on results}{164}{subsection.7.2.1}%
+\contentsline {subsubsection}{Averaged curve of data}{165}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Dwell time}{168}{section.7.3}%
+\contentsline {section}{\numberline {7.4}pH analysis}{170}{section.7.4}%
+\contentsline {section}{\numberline {7.5}JPK Forcemapping}{172}{section.7.5}%
+\contentsline {subsubsection}{0.6mM approach}{172}{section.7.5}%
+\contentsline {subsubsection}{0.6mM retract}{173}{figure.caption.192}%
+\contentsline {subsubsection}{10 mM approach}{174}{figure.caption.194}%
+\contentsline {subsubsection}{10 mM retract}{176}{figure.caption.196}%
+\contentsline {chapter}{\numberline {8}Further analysis and discussion}{178}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Approach force curves}{178}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Retract force curves}{180}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Shelf analysis}{180}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Overcoming the noise in data}{185}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Potential Variability from Hydration/Solvation Forces}{187}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Temporal Dynamics in Force Measurements}{188}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}The Influence of Tip Velocity}{188}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.6.2}Dielectric Relaxation, Ion Mobility and Measurement Fidelity}{188}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.6.3}Implications for Measurement Strategy}{188}{subsection.8.6.3}%
+\contentsline {section}{\numberline {8.7}Comparing results to DLVO theory}{191}{section.8.7}%
+\contentsline {chapter}{\numberline {9}Conclusion}{195}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Future work}{196}{section.9.1}%
+\contentsline {chapter}{\numberline {10}Appendix}{199}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Tip Speed Analysis Histograms}{199}{section.10.1}%
+\contentsline {paragraph}{S1 2Hz}{201}{figure.caption.217}%
+\contentsline {paragraph}{S2 2Hz}{202}{figure.caption.219}%
+\contentsline {paragraph}{S3 2Hz}{203}{figure.caption.221}%
+\contentsline {paragraph}{S1 0.1Hz}{204}{figure.caption.223}%
+\contentsline {paragraph}{S1 2Hz}{205}{figure.caption.225}%
+\contentsline {paragraph}{S2 0.1Hz}{206}{figure.caption.227}%
+\contentsline {paragraph}{S2 2Hz}{207}{figure.caption.229}%
+\contentsline {paragraph}{S3 0.1Hz}{208}{figure.caption.231}%
+\contentsline {paragraph}{S3 2Hz}{209}{figure.caption.233}%
+\contentsline {paragraph}{S1 2Hz}{210}{figure.caption.235}%
+\contentsline {paragraph}{S2 2Hz}{211}{figure.caption.237}%
+\contentsline {paragraph}{S3 2Hz}{212}{figure.caption.239}%
+\contentsline {paragraph}{S1 2Hz}{213}{figure.caption.241}%
+\contentsline {paragraph}{S2 2Hz}{214}{figure.caption.243}%
+\contentsline {paragraph}{S2 2Hz}{215}{figure.caption.245}%
+\contentsline {paragraph}{S3 2Hz}{216}{figure.caption.247}%
+\contentsline {chapter}{Bibliography}{217}{section*.249}%
+\contentsfinish 
